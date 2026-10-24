@@ -1,0 +1,19 @@
+{
+  "left": {
+    "source_median_deg": 63.31909005959147,
+    "g1_median_deg": 63.32102713993461,
+    "mean_abs_elbow_error_deg": 0.009634680413900776,
+    "max_abs_elbow_error_deg": 0.0638352445341539,
+    "elbow_limit_frame_fraction": 0.0,
+    "max_exported_arm_joint_speed_rad_s": 16.470041275024414
+  },
+  "right": {
+    "source_median_deg": 66.04030353938,
+    "g1_median_deg": 66.05327327583426,
+    "mean_abs_elbow_error_deg": 0.009850653188887379,
+    "max_abs_elbow_error_deg": 0.08890504725149384,
+    "elbow_limit_frame_fraction": 0.0,
+    "max_exported_arm_joint_speed_rad_s": 13.04880428314209
+  },
+  "method": "Source shoulder-elbow-wrist bend (0 degrees straight), PCHIP interpolated to exported timestamps, compared with exact G1 USDA shoulder_roll/elbow/wrist_roll link geometry. This is a kinematic comparison, not a dynamic feasibility test."
+}

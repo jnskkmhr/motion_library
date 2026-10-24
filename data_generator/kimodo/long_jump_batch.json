@@ -1,0 +1,15 @@
+{
+  "seeds": [48, 49, 50, 51],
+  "motions": [
+    {
+      "name": "jump_gap",
+      "duration": 5.0,
+      "travel": 2.05,
+      "gap_width": 1.4,
+      "platform_height": 0.45,
+      "takeoff_time": 1.5,
+      "landing_time": 2.3,
+      "prompt": "A person performs a powerful standing long jump across a wide gap. They bend deeply at the hips and knees while swinging both arms backward, then explosively extend both legs and swing both arms forward and upward at takeoff. They travel far forward through the air, reach both feet toward the landing platform, land on both feet with bent knees, use their arms to regain balance, and stand up."
+    }
+  ]
+}

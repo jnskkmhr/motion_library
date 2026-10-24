@@ -1,0 +1,77 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 199,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.04544260388170646,
+    "worst_pair": [
+      42,
+      "right_foot_collision",
+      "platform"
+    ],
+    "max_support_anchor_error_m": 0.3605706593948895,
+    "mean_support_anchor_error_m": 0.04541145841558756,
+    "max_joint_limit_violation_rad": 0.2080022692680359,
+    "max_mjcf_usda_ankle_fk_difference_m": 3.9381253086334667e-07,
+    "max_joint_speed_rad_s": 8.123665809631348,
+    "forward_travel_m": 0.9160205721855164,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.06030150753768844,
+      0.09547738693467336
+    ],
+    "minimum_knee_support_gap_m": -0.016706649930215922,
+    "landed_on_far_platform": false,
+    "both_feet_airborne_frames": 20,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "joint-limit violation",
+      "support anchor error exceeds 15 mm or no support detected",
+      "gap jump/landing not established"
+    ]
+  },
+  "refined": {
+    "frames": 199,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.00021039373558323637,
+    "worst_pair": [
+      52,
+      "right_foot_collision",
+      "platform"
+    ],
+    "max_support_anchor_error_m": 0.00045685891100234245,
+    "mean_support_anchor_error_m": 5.026724375670955e-05,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.2905370467583026e-07,
+    "max_joint_speed_rad_s": 8.085424423217773,
+    "forward_travel_m": 0.9103422164916992,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.021249668332279426,
+    "landed_on_far_platform": true,
+    "both_feet_airborne_frames": 20,
+    "passes_geometric_checks": true,
+    "rejection_reasons": []
+  },
+  "estimated_contact_fraction": [
+    0.8190954773869347,
+    0.8190954773869347,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

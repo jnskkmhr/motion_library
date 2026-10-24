@@ -1,0 +1,329 @@
+{
+  "description": "Extraction provenance; original paths are historical, not runtime dependencies.",
+  "motions": [
+    {
+      "directory": "data/claw/00452_crouch",
+      "source": "claw",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/claw/00452_crouch",
+      "experimental": false
+    },
+    {
+      "directory": "data/claw/00543_hand_crawl",
+      "source": "claw",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/claw/00543_hand_crawl",
+      "experimental": false
+    },
+    {
+      "directory": "data/claw/02067_elbow_crawl",
+      "source": "claw",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/claw/02067_elbow_crawl",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_06",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_06",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_08",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_08",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_14",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_14",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_16",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_16",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_20",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_20",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_26",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_26",
+      "experimental": false
+    },
+    {
+      "directory": "data/omniretarget/climb_28",
+      "source": "omniretarget",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/climb_28",
+      "experimental": false
+    },
+    {
+      "directory": "data/deep_wholebody_parkour/dive_roll",
+      "source": "deep_wholebody_parkour",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/deep_dive_roll",
+      "experimental": false
+    },
+    {
+      "directory": "data/deep_wholebody_parkour/jump_sit",
+      "source": "deep_wholebody_parkour",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/deep_jump_sit",
+      "experimental": false
+    },
+    {
+      "directory": "data/deep_wholebody_parkour/kneel_climb",
+      "source": "deep_wholebody_parkour",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/deep_kneel_climb",
+      "experimental": false
+    },
+    {
+      "directory": "data/deep_wholebody_parkour/roll_vault",
+      "source": "deep_wholebody_parkour",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/deep_roll_vault",
+      "experimental": false
+    },
+    {
+      "directory": "data/parc/jump_001",
+      "source": "parc",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/parc_jump_001",
+      "experimental": false
+    },
+    {
+      "directory": "data/parc/jump_002",
+      "source": "parc",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/parc_jump_002",
+      "experimental": false
+    },
+    {
+      "directory": "data/parc/jump_003",
+      "source": "parc",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/parc_jump_003",
+      "experimental": false
+    },
+    {
+      "directory": "data/parc/jump_004",
+      "source": "parc",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/parc_jump_004",
+      "experimental": false
+    },
+    {
+      "directory": "data/parc/jump_005",
+      "source": "parc",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/reference_comparison/parc_jump_005",
+      "experimental": false
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/climb_high_platform/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/climb_high_platform/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/crawl/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/crawl/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/crouch_stand/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/crouch_stand/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/crouch_walk/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/crouch_walk/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/ramp_down/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/ramp_down/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/ramp_up/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/ramp_up/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/step_over/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/step_over/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/first_generated_clips/two_hand_vault/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/first_generated_clips/two_hand_vault/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/long_jump_v1/jump_gap/seed_48",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/long_jump_v1/jump_gap/seed_48",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/long_jump_v1/jump_gap/seed_49",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/long_jump_v1/jump_gap/seed_49",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/long_jump_v1/jump_gap/seed_50",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/long_jump_v1/jump_gap/seed_50",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/long_jump_v1/jump_gap/seed_51",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/long_jump_v1/jump_gap/seed_51",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/bear_walk/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/bear_walk/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/bear_walk/seed_45",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/bear_walk/seed_45",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/bear_walk/seed_46",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/bear_walk/seed_46",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/bear_walk/seed_47",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/bear_walk/seed_47",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crawl/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crawl/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crawl/seed_45",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crawl/seed_45",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crawl/seed_46",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crawl/seed_46",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crawl/seed_47",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crawl/seed_47",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crouch/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crouch/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crouch/seed_45",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crouch/seed_45",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crouch/seed_46",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crouch/seed_46",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/crouch/seed_47",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/crouch/seed_47",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/jump_gap/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/jump_gap/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/jump_gap/seed_45",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/jump_gap/seed_45",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/jump_gap/seed_46",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/jump_gap/seed_46",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/jump_gap/seed_47",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/jump_gap/seed_47",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/ramp/seed_44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/ramp/seed_44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/ramp/seed_45",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/ramp/seed_45",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/ramp/seed_46",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/ramp/seed_46",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_batch_v1/ramp/seed_47",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_batch_v1/ramp/seed_47",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_first_platform_seed44",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_first_platform_seed44",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/terrain_first_platform_seed45",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/kimodo/outputs/terrain_first_platform_seed45",
+      "experimental": true
+    },
+    {
+      "directory": "data/kimodo/supplied_stairs",
+      "source": "kimodo",
+      "origin": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/kimodo_stairs",
+      "experimental": true
+    }
+  ]
+}

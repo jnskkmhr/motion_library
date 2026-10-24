@@ -1,0 +1,47 @@
+{
+  "terrain_modified": false,
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "collision_method": "MuJoCo geom distances; mesh convex hulls",
+  "generated": {
+    "frames": 199,
+    "fps": 50.0,
+    "max_support_ankle_target_error_m": 0.1270022125462214,
+    "mean_support_ankle_target_error_m": 0.019667924995045872,
+    "max_robot_terrain_penetration_m": 0.04306344004781176,
+    "worst_pair": [
+      "left_foot_collision",
+      "platform",
+      168
+    ],
+    "max_joint_limit_violation_rad": 0.0015628635883331299,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.2889349413655076e-07,
+    "max_joint_speed_rad_s": 6.263115882873535,
+    "max_joint_acceleration_rad_s2": 160.92044067382812,
+    "passes_geometric_checks": false
+  },
+  "refined": {
+    "frames": 199,
+    "fps": 50.0,
+    "max_support_ankle_target_error_m": 0.00012427338498300538,
+    "mean_support_ankle_target_error_m": 7.536074601934161e-06,
+    "max_robot_terrain_penetration_m": 2.584421942719572e-05,
+    "worst_pair": [
+      "right_foot_collision",
+      "platform",
+      159
+    ],
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.978984234904615e-07,
+    "max_joint_speed_rad_s": 9.486154556274414,
+    "max_joint_acceleration_rad_s2": 218.0494842529297,
+    "passes_geometric_checks": true
+  },
+  "geometric_thresholds": {
+    "support_error_m": 0.01,
+    "terrain_penetration_m": 0.002,
+    "joint_limit_violation_rad": 0.0001
+  },
+  "mimic_loader_validated": true,
+  "video_frames": 199
+}

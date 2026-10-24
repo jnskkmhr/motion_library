@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="G1 whole-body motion references with paired terrain, video previews, and NPZ downloads.">
+  <title>G1 Motion Library</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="config.js"></script>
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="index.html"><span class="mark">G1</span> Motion library</a><a id="repository" class="quiet" href="https://github.com/jnskkmhr/motion_library">GitHub ↗</a></header>
+<main>
+  <div class="intro"><div><p class="eyebrow">WHOLE-BODY MOTION · 29 DOF</p><h1>One robot. Many ways to move.</h1><p class="sub">Motion references with terrain. Choose a clip to inspect the movement and its data.</p></div><div class="total"><strong id="total">—</strong><span>motion clips</span></div></div>
+  <nav id="sources" aria-label="Motion sources"></nav>
+  <div class="workspace">
+    <aside><label for="search">Find a motion</label><input id="search" type="search" placeholder="Jump, crawl, climb…"><div class="list-heading"><span>AVAILABLE MOTIONS</span><span id="count"></span></div><div id="motion-list" role="group" aria-label="Choose a motion"></div><p id="empty" hidden>No matching motions.</p></aside>
+    <section class="viewer" aria-label="Motion preview">
+      <div class="view-heading"><div><p id="source-name" class="eyebrow"></p><h2 id="motion-name"></h2></div><span id="status" class="badge"></span></div>
+      <div class="screen"><video id="video" controls playsinline preload="metadata" aria-label="Selected motion video"></video><p id="video-error" hidden>Video could not be loaded. Check that the data directory is served alongside docs.</p></div>
+      <div class="controls"><div id="variants" role="group" aria-label="Motion variant"></div><label class="repeat"><input id="loop" type="checkbox"> Repeat</label><button id="previous" aria-label="Previous motion">←</button><span id="position"></span><button id="next" aria-label="Next motion">→</button></div>
+      <div class="details"><dl><div><dt>Duration</dt><dd id="duration"></dd></div><div><dt>Frame rate</dt><dd id="fps"></dd></div><div><dt>Terrain</dt><dd id="terrain"></dd></div></dl><div class="links"><a id="npz-github" class="primary" target="_blank" rel="noopener">View NPZ on GitHub ↗</a><a id="npz-download" download>Download NPZ ↓</a></div></div>
+      <p class="note">Kinematic replay · Dynamic tracking has not been validated. <a id="report" target="_blank" rel="noopener">View report ↗</a></p>
+    </section>
+  </div>
+  <footer><span>Unitree G1 · Spherical hand pads · Motion + terrain in one NPZ</span><span>Use ← → to change clips</span></footer>
+</main>
+<noscript>Enable JavaScript to select motions. Data files are available in the repository's data directory.</noscript>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "seeds": [44, 45, 46, 47],
+  "motions": [
+    {"name": "crouch", "duration": 6.0, "travel": 1.6, "roof_height": 1.02, "prompt": "A person crouches down, walks forward under a low overhead obstacle with knees bent, and then stands up."},
+    {"name": "crawl", "duration": 6.0, "travel": 1.2, "roof_height": 0.70, "prompt": "A person crawls forward slowly on both hands and knees under a low obstacle, keeping the body close to the ground."},
+    {"name": "ramp", "duration": 6.0, "travel": 1.35, "slope_degrees": 8.0, "prompt": "A person walks slowly uphill on a gentle inclined ramp and stops."},
+    {"name": "bear_walk", "duration": 6.0, "travel": 1.2, "roof_height": 0.90, "prompt": "A person bear crawls slowly forward on hands and feet, supporting the body with both hands, keeping knees lifted off the ground."},
+    {"name": "jump_gap", "duration": 4.0, "travel": 1.0, "gap_width": 0.35, "platform_height": 0.45, "prompt": "A person bends both knees and jumps forward across a gap, lands on both feet on the other platform, and stands still."}
+  ]
+}

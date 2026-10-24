@@ -1,0 +1,12 @@
+{
+  "model": "Kimodo-G1-RP-v1",
+  "source_type": "generated",
+  "prompt": "A person performs a powerful standing long jump across a wide gap. They bend deeply at the hips and knees while swinging both arms backward, then explosively extend both legs and swing both arms forward and upward at takeoff. They travel far forward through the air, reach both feet toward the landing platform, land on both feet with bent knees, use their arms to regain balance, and stand up.",
+  "seed": 48,
+  "duration": 5.0,
+  "terrain_source": "specified_before_generation",
+  "constraints_sha256": "5eba17764e0dc66d126549e370a25473ac306d2ea5eea4dda19c1c6f79aecaa1",
+  "dynamic_tracking_validated": false,
+  "kimodo_revision": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+  "fps": 30
+}

@@ -1,0 +1,71 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.1366807794441765,
+    "worst_pair": [
+      285,
+      "right_knee_link_collision",
+      "platform"
+    ],
+    "max_support_anchor_error_m": 0.16102817877559053,
+    "mean_support_anchor_error_m": 0.05398427678716281,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.7293415291610463e-07,
+    "max_joint_speed_rad_s": 8.834342002868652,
+    "forward_travel_m": 1.284027338027954,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.1939799331103679,
+      0.22408026755852842
+    ],
+    "minimum_knee_support_gap_m": -0.1366807794441765,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "support anchor error exceeds 15 mm or no support detected"
+    ]
+  },
+  "refined": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0,
+    "worst_pair": [
+      67,
+      "left_foot_collision",
+      "floor"
+    ],
+    "max_support_anchor_error_m": 0.0065438772381692005,
+    "mean_support_anchor_error_m": 0.0018421742431275567,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 5.18280972798546e-07,
+    "max_joint_speed_rad_s": 13.43579387664795,
+    "forward_travel_m": 1.2562224864959717,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.02199496974143425,
+    "passes_geometric_checks": true,
+    "rejection_reasons": []
+  },
+  "estimated_contact_fraction": [
+    0.46488294314381273,
+    0.43478260869565216,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

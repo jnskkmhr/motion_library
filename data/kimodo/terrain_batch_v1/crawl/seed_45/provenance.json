@@ -1,0 +1,12 @@
+{
+  "model": "Kimodo-G1-RP-v1",
+  "source_type": "generated",
+  "prompt": "A person crawls forward slowly on both hands and knees under a low obstacle, keeping the body close to the ground.",
+  "seed": 45,
+  "duration": 6.0,
+  "terrain_source": "specified_before_generation",
+  "constraints_sha256": "efb69f9a49828b836fcc6a5a2a72b5bd5137aac31a683417897bc8a73ca4376f",
+  "dynamic_tracking_validated": false,
+  "kimodo_revision": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+  "fps": 30
+}

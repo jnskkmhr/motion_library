@@ -1,0 +1,88 @@
+{
+  "name": "crouch",
+  "duration": 6.0,
+  "travel": 1.6,
+  "roof_height": 1.02,
+  "prompt": "A person crouches down, walks forward under a low overhead obstacle with knees bent, and then stands up.",
+  "terrain_boxes": [
+    [
+      0.75,
+      0,
+      1.06,
+      0.6000000000000001,
+      1.2,
+      0.08
+    ],
+    [
+      0.45,
+      -0.6,
+      0.51,
+      0.06,
+      0.06,
+      1.02
+    ],
+    [
+      0.45,
+      0.6,
+      0.51,
+      0.06,
+      0.06,
+      1.02
+    ],
+    [
+      1.05,
+      -0.6,
+      0.51,
+      0.06,
+      0.06,
+      1.02
+    ],
+    [
+      1.05,
+      0.6,
+      0.51,
+      0.06,
+      0.06,
+      1.02
+    ]
+  ],
+  "terrain_box_quat": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "support_surface_indices": [
+    0
+  ],
+  "coordinate_system": "Z-up, X-forward, meters",
+  "geometry_source": "specified_before_generation",
+  "mjcf": "/home/jkamohara/isaac/newton-assets/unitree_g1/mjcf/g1_29dof_rev_1_0_box_foot_ball_hand.xml",
+  "mjcf_sha256": "25cc3b3179435b3f00f2529e5a1dfbde758de7f0c3476fdbec2ed83e53e0318d"
+}

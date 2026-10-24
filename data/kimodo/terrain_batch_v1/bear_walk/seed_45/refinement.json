@@ -1,0 +1,14 @@
+{
+  "refinement_version": 2,
+  "contact_speed_threshold_m_s": {
+    "feet": 0.35,
+    "hands_and_knees": 0.18
+  },
+  "collision_clearance_target_m": 0.001,
+  "terrain_modified": false,
+  "contact_source": "geometry/speed heuristic; prescribed jump support windows",
+  "refinement_fps": 50,
+  "dynamic_tracking_validated": false,
+  "max_root_correction_m": 0.18809815279636868,
+  "max_joint_correction_rad": 2.011882468408788
+}

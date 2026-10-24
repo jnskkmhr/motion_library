@@ -1,0 +1,15 @@
+{
+  "geometry_source": "new passage fitted to motion and target robot mesh bounds",
+  "motion_modified": false,
+  "roof_underside_height_m": 1.164898412826624,
+  "standing_mesh_height_m": 1.31862101649162,
+  "roof_clearance_m": 0.04,
+  "minimum_body_bound_separation_from_passage_m": 0.03999998271170613,
+  "passage_length_m": 0.625432586669922,
+  "passage_width_m": 1.0345241219851302,
+  "full_source_frame_count_preserved": 281,
+  "dynamic_tracking_validated": false,
+  "ground_contact_validated": false,
+  "ending": "Original clip ending preserved; no stand-up or stopping transition added.",
+  "robot_asset": "UNITREE_G1_29DOF_BALL_HAND_CFG"
+}

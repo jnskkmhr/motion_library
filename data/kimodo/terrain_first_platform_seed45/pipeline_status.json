@@ -1,0 +1,15 @@
+{
+  "robot_asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "terrain": "fixed_platform",
+  "completed": [
+    "prepare_platform",
+    "generate",
+    "refine_contacts",
+    "export_generated",
+    "export_mimic",
+    "validate_platform",
+    "record_video"
+  ],
+  "passes_geometric_checks": true,
+  "dynamic_tracking_validated": false
+}

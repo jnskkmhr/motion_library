@@ -1,0 +1,76 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.020738556201203143,
+    "worst_pair": [
+      216,
+      "left_foot_collision",
+      "floor"
+    ],
+    "max_support_anchor_error_m": 0.13528129238601896,
+    "mean_support_anchor_error_m": 0.049271816751731506,
+    "max_joint_limit_violation_rad": 0.16651904582977295,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.185319688182476e-07,
+    "max_joint_speed_rad_s": 6.300833225250244,
+    "forward_travel_m": 1.2815823554992676,
+    "hand_near_support_fraction": [
+      0.14046822742474915,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.016710806382960963,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "joint-limit violation",
+      "support anchor error exceeds 15 mm or no support detected",
+      "insufficient hand support"
+    ]
+  },
+  "refined": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.0006710019560284067,
+    "worst_pair": [
+      119,
+      "right_foot_collision",
+      "floor"
+    ],
+    "max_support_anchor_error_m": 0.035436872001236415,
+    "mean_support_anchor_error_m": 0.006668309633205592,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.135219721021488e-07,
+    "max_joint_speed_rad_s": 66.19853210449219,
+    "forward_travel_m": 1.2636827230453491,
+    "hand_near_support_fraction": [
+      0.24749163879598662,
+      0.11036789297658862
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.025153004081053892,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "support anchor error exceeds 15 mm or no support detected",
+      "insufficient hand support"
+    ]
+  },
+  "estimated_contact_fraction": [
+    0.745819397993311,
+    0.7892976588628763,
+    0.13377926421404682,
+    0.07357859531772576,
+    0.0,
+    0.0
+  ]
+}

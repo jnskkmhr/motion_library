@@ -1,0 +1,72 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.08213689308028528,
+    "worst_pair": [
+      62,
+      "head_link_collision",
+      "platform"
+    ],
+    "max_support_anchor_error_m": 0.10572342891926093,
+    "mean_support_anchor_error_m": 0.018272300152758,
+    "max_joint_limit_violation_rad": 0.13041096925735474,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.3365504432194e-07,
+    "max_joint_speed_rad_s": 7.2571797370910645,
+    "forward_travel_m": 1.6200506687164307,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.22742474916387959,
+      0.07023411371237458
+    ],
+    "minimum_knee_support_gap_m": -0.022489995085883008,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "joint-limit violation",
+      "support anchor error exceeds 15 mm or no support detected"
+    ]
+  },
+  "refined": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.000913634832890451,
+    "worst_pair": [
+      172,
+      "left_foot_collision",
+      "floor"
+    ],
+    "max_support_anchor_error_m": 0.002401876012798925,
+    "mean_support_anchor_error_m": 0.00024574184930870816,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.2575856346038776e-07,
+    "max_joint_speed_rad_s": 20.760438919067383,
+    "forward_travel_m": 1.6206563711166382,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.020017762109722337,
+    "passes_geometric_checks": true,
+    "rejection_reasons": []
+  },
+  "estimated_contact_fraction": [
+    0.7591973244147158,
+    0.7993311036789298,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

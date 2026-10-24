@@ -1,0 +1,12 @@
+{
+  "model": "Kimodo-G1-RP-v1",
+  "source_type": "generated",
+  "prompt": "A person bends both knees and jumps forward across a gap, lands on both feet on the other platform, and stands still.",
+  "seed": 45,
+  "duration": 4.0,
+  "terrain_source": "specified_before_generation",
+  "constraints_sha256": "b7094bba9e0c6a295a84621b135b5cd6b1ddc539668a271b42c5c36729b16c88",
+  "dynamic_tracking_validated": false,
+  "kimodo_revision": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+  "fps": 30
+}

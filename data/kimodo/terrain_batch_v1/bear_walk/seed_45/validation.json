@@ -1,0 +1,76 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.02110223555761276,
+    "worst_pair": [
+      48,
+      "left_foot_collision",
+      "floor"
+    ],
+    "max_support_anchor_error_m": 0.11952693906285326,
+    "mean_support_anchor_error_m": 0.03429200265070892,
+    "max_joint_limit_violation_rad": 0.20080095529556274,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.366598519503495e-07,
+    "max_joint_speed_rad_s": 6.850620269775391,
+    "forward_travel_m": 1.25380539894104,
+    "hand_near_support_fraction": [
+      0.23411371237458195,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.056856187290969896
+    ],
+    "minimum_knee_support_gap_m": 0.01199125670611792,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "joint-limit violation",
+      "support anchor error exceeds 15 mm or no support detected",
+      "insufficient hand support",
+      "knees not kept off ground"
+    ]
+  },
+  "refined": {
+    "frames": 299,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0,
+    "worst_pair": [
+      1,
+      "left_foot_collision",
+      "floor"
+    ],
+    "max_support_anchor_error_m": 0.012651257848340371,
+    "mean_support_anchor_error_m": 0.003721851759987298,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.208532935895404e-07,
+    "max_joint_speed_rad_s": 57.85554885864258,
+    "forward_travel_m": 1.2303224802017212,
+    "hand_near_support_fraction": [
+      0.3411371237458194,
+      0.016722408026755852
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.02577826137816852,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "insufficient hand support"
+    ]
+  },
+  "estimated_contact_fraction": [
+    0.7859531772575251,
+    0.8193979933110368,
+    0.3377926421404682,
+    0.016722408026755852,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 249,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.08050835001323783,
+    "worst_pair": [
+      118,
+      "left_foot_collision",
+      "terrain_1"
+    ],
+    "max_support_anchor_error_m": 0.48587800339810994,
+    "mean_support_anchor_error_m": 0.06976916175569406,
+    "max_joint_limit_violation_rad": 0.3528969883918762,
+    "max_mjcf_usda_ankle_fk_difference_m": 5.062597763227927e-07,
+    "max_joint_speed_rad_s": 17.408172607421875,
+    "forward_travel_m": 2.066298484802246,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.14859437751004015,
+      0.08433734939759036
+    ],
+    "minimum_knee_support_gap_m": -0.051264307473592736,
+    "landed_on_far_platform": true,
+    "both_feet_airborne_frames": 37,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "joint-limit violation",
+      "support anchor error exceeds 15 mm or no support detected"
+    ]
+  },
+  "refined": {
+    "frames": 249,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0,
+    "worst_pair": [
+      217,
+      "left_foot_collision",
+      "terrain_1"
+    ],
+    "max_support_anchor_error_m": 0.004515571402830366,
+    "mean_support_anchor_error_m": 0.0013444379191605742,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.2392632804144625e-07,
+    "max_joint_speed_rad_s": 17.021272659301758,
+    "forward_travel_m": 2.0475597381591797,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.021973619101689046,
+    "landed_on_far_platform": true,
+    "both_feet_airborne_frames": 38,
+    "passes_geometric_checks": true,
+    "rejection_reasons": []
+  },
+  "estimated_contact_fraction": [
+    0.8433734939759037,
+    0.8433734939759037,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

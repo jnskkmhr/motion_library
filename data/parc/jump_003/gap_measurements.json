@@ -1,0 +1,15 @@
+{
+  "method": "World XY pelvis path over low terrain cells, interpolated at 1 ms; excludes feet and flight distance; approximately millimeter temporal sampling resolution, not measurement accuracy",
+  "crossings": [
+    {
+      "entry_time_s": 1.332,
+      "exit_time_s": 1.801,
+      "gap_length_along_pelvis_xy_path_m": 2.1542694650698713
+    },
+    {
+      "entry_time_s": 3.567,
+      "exit_time_s": 4.09,
+      "gap_length_along_pelvis_xy_path_m": 2.24960295720307
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "terrain_modified": false,
+  "method": "Bounded per-frame IK for support feet and robot-terrain separation",
+  "contact_schedule_source": "prescribed_before_generation",
+  "refinement_fps": 50,
+  "dynamic_tracking_validated": false,
+  "max_root_correction_m": 0.03254293099908942,
+  "max_joint_correction_rad": 0.8451564525364822,
+  "scope": "Base translation and leg joints optimized; upper-body angles limited to MJCF ranges. No dynamics optimization."
+}

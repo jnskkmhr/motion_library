@@ -1,0 +1,28 @@
+{
+  "coordinate_system": "Z-up, X-forward, meters",
+  "geometry_source": "specified_before_generation",
+  "terrain_boxes": [
+    [
+      0.85,
+      0,
+      0.075,
+      1.2,
+      1.2,
+      0.15
+    ]
+  ],
+  "terrain_box_quat": [
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "duration": 4.0,
+  "fps": 30,
+  "prompt": "A person steps up onto a low platform with the left foot, brings the right foot onto it, and stands still.",
+  "contact_schedule": "Left swing 0.6\u20131.6 s; right swing 2.0\u20133.2 s; stationary support otherwise.",
+  "mjcf": "/home/jkamohara/isaac/newton-assets/unitree_g1/mjcf/g1_29dof_rev_1_0_box_foot_ball_hand.xml",
+  "mjcf_sha256": "25cc3b3179435b3f00f2529e5a1dfbde758de7f0c3476fdbec2ed83e53e0318d"
+}

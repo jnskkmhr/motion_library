@@ -1,0 +1,45 @@
+{
+  "seeds": [44, 45, 46, 47],
+  "motions": [
+    {
+      "name": "ramp_up",
+      "prompt": "A person walks forward up an inclined ramp with steady steps",
+      "duration": 6.0
+    },
+    {
+      "name": "ramp_down",
+      "prompt": "A person walks carefully down an inclined ramp",
+      "duration": 6.0
+    },
+    {
+      "name": "step_over",
+      "prompt": "A person approaches a low obstacle, lifts one foot over it, then steps the other foot over and continues forward",
+      "duration": 6.0
+    },
+    {
+      "name": "crouch_stand",
+      "prompt": "A person stands still, slowly crouches down deeply, pauses, and stands back up",
+      "duration": 5.0
+    },
+    {
+      "name": "crouch_walk",
+      "prompt": "A person lowers into a crouch and walks forward under a low overhead obstacle while keeping their head down",
+      "duration": 6.0
+    },
+    {
+      "name": "crawl",
+      "prompt": "A person kneels down, places both hands on the ground, and crawls forward on hands and knees",
+      "duration": 7.0
+    },
+    {
+      "name": "climb_high_platform",
+      "prompt": "A person places both hands on a high platform, pulls their body upward, brings one knee onto the platform, and climbs onto it",
+      "duration": 8.0
+    },
+    {
+      "name": "two_hand_vault",
+      "prompt": "A person approaches a waist-high obstacle, plants both hands on top, vaults both legs over it, and lands on their feet on the other side",
+      "duration": 5.0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "model": "Kimodo-G1-RP-v1",
+  "source_type": "generated",
+  "prompt": "A person walks slowly uphill on a gentle inclined ramp and stops.",
+  "seed": 44,
+  "duration": 6.0,
+  "terrain_source": "specified_before_generation",
+  "constraints_sha256": "e7ef54b8e31e36c69f1853c89b123259d840219a90de76fc3612c4a79c83dc84",
+  "dynamic_tracking_validated": false,
+  "kimodo_revision": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+  "fps": 30
+}

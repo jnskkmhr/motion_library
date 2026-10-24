@@ -1,0 +1,75 @@
+"use strict";
+const clips = window.MOTION_CATALOG.clips;
+const config = window.MOTION_CONFIG;
+const $ = (id) => document.getElementById(id);
+let source = "all", query = "", selected = null, variantIndex = 0;
+const filtered = () => clips.filter(c => (source === "all" || c.source === source) && `${c.name} ${c.id} ${c.source_name}`.toLowerCase().includes(query));
+const local = path => "../" + path.split("/").map(encodeURIComponent).join("/");
+const github = path => `${config.repository}/blob/${encodeURIComponent(config.branch)}/${path.split("/").map(encodeURIComponent).join("/")}`;
+function button(text, handler) { const b = document.createElement("button"); b.type = "button"; b.textContent = text; b.onclick = handler; return b; }
+function renderSources() {
+  $("sources").replaceChildren();
+  const sources = [["all", "All sources"], ...new Map(clips.map(c => [c.source, c.source_name])).entries()];
+  for (const [id, label] of sources) {
+    const b = button(label, () => { source = id; renderSources(); renderList(); });
+    b.setAttribute("aria-pressed", String(source === id)); $("sources").append(b);
+  }
+}
+function renderList() {
+  const visible = filtered();
+  $("count").textContent = visible.length;
+  $("empty").hidden = visible.length > 0;
+  if (!visible.some(c => c.id === selected?.id)) selected = visible[0] || null;
+  $("motion-list").replaceChildren();
+  for (const c of visible) {
+    const b = button("", () => select(c)); b.className = "motion"; b.dataset.id = c.id;
+    const name = document.createElement("span"), info = document.createElement("small");
+    name.textContent = c.name; info.textContent = `${c.source_name} · ${c.variants[0].duration.toFixed(2)} s`;
+    b.append(name, info); b.setAttribute("aria-pressed", String(selected?.id === c.id)); $("motion-list").append(b);
+  }
+  if (selected) select(selected); else { $("video").pause(); document.querySelector(".viewer").hidden = true; }
+}
+function select(clip, index = 0) {
+  selected = clip; variantIndex = index;
+  document.querySelector(".viewer").hidden = false;
+  const v = clip.variants[index], visible = filtered(), position = visible.findIndex(c => c.id === clip.id);
+  $("source-name").textContent = clip.source_name;
+  $("motion-name").textContent = clip.name;
+  $("status").textContent = clip.experimental ? "Experimental" : "Reference motion";
+  $("status").className = "badge" + (clip.experimental ? " experimental" : "");
+  $("duration").textContent = `${v.duration.toFixed(2)} s`;
+  $("fps").textContent = `${v.fps} FPS`;
+  $("terrain").textContent = ({mesh:"Triangle mesh",boxes:"Boxes",ground:"Ground"})[v.terrain];
+  $("npz-github").href = github(v.npz); $("npz-download").href = local(v.npz);
+  $("npz-download").download = `${clip.id.replaceAll("/", "_")}_${index === 0 ? "motion" : "generated"}.npz`;
+  const report = clip.reports.validation || clip.reports.source_validation || clip.reports.provenance;
+  $("report").hidden = !report; if (report) $("report").href = github(report);
+  $("video-error").hidden = true;
+  $("video").pause(); $("video").src = local(v.video);
+  if (clip.poster && index === 0) $("video").poster = local(clip.poster); else $("video").removeAttribute("poster");
+  $("video").load();
+  $("variants").replaceChildren();
+  for (const [i, variant] of clip.variants.entries()) {
+    const b = button(variant.name, () => select(clip, i)); b.setAttribute("aria-pressed", String(i === index)); $("variants").append(b);
+  }
+  $("position").textContent = `${position + 1} / ${visible.length}`;
+  $("previous").disabled = position <= 0; $("next").disabled = position >= visible.length - 1;
+  document.querySelectorAll(".motion").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.id === clip.id)));
+  history.replaceState(null, "", "#" + encodeURIComponent(clip.id));
+}
+function step(delta) {
+  const visible = filtered(), index = visible.findIndex(c => c.id === selected?.id) + delta;
+  if (index >= 0 && index < visible.length) select(visible[index]);
+}
+$("search").addEventListener("input", e => { query = e.target.value.toLowerCase().trim(); renderList(); });
+$("previous").onclick = () => step(-1); $("next").onclick = () => step(1);
+$("loop").onchange = e => { $("video").loop = e.target.checked; };
+$("video").onerror = () => { $("video-error").hidden = false; };
+document.addEventListener("keydown", e => {
+  if (["INPUT", "TEXTAREA", "VIDEO", "BUTTON"].includes(e.target.tagName) || e.ctrlKey || e.altKey || e.metaKey) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); step(e.key === "ArrowRight" ? 1 : -1); }
+});
+$("repository").href = config.repository; $("total").textContent = clips.length;
+try { selected = clips.find(c => c.id === decodeURIComponent(location.hash.slice(1))); } catch { selected = null; }
+selected ||= clips.find(c => c.id === "parc/jump_005") || clips[0];
+renderSources(); renderList();

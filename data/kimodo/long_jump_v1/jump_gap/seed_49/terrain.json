@@ -1,0 +1,50 @@
+{
+  "name": "jump_gap",
+  "duration": 5.0,
+  "travel": 2.05,
+  "gap_width": 1.4,
+  "platform_height": 0.45,
+  "takeoff_time": 1.5,
+  "landing_time": 2.3,
+  "prompt": "A person performs a powerful standing long jump across a wide gap. They bend deeply at the hips and knees while swinging both arms backward, then explosively extend both legs and swing both arms forward and upward at takeoff. They travel far forward through the air, reach both feet toward the landing platform, land on both feet with bent knees, use their arms to regain balance, and stand up.",
+  "terrain_boxes": [
+    [
+      -0.7,
+      0,
+      0.225,
+      2,
+      1.4,
+      0.45
+    ],
+    [
+      2.7,
+      0,
+      0.225,
+      2,
+      1.4,
+      0.45
+    ]
+  ],
+  "terrain_box_quat": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "support_surface_indices": [
+    1,
+    2
+  ],
+  "coordinate_system": "Z-up, X-forward, meters",
+  "geometry_source": "specified_before_generation",
+  "mjcf": "/home/jkamohara/isaac/newton-assets/unitree_g1/mjcf/g1_29dof_rev_1_0_box_foot_ball_hand.xml",
+  "mjcf_sha256": "25cc3b3179435b3f00f2529e5a1dfbde758de7f0c3476fdbec2ed83e53e0318d"
+}

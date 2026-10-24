@@ -1,0 +1,76 @@
+{
+  "dynamic_tracking_validated": false,
+  "self_collision_validated": false,
+  "terrain_modified": false,
+  "collision_method": "MJCF primitives and convex mesh hulls at exported frames",
+  "generated": {
+    "frames": 249,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0.07413199955225735,
+    "worst_pair": [
+      120,
+      "left_foot_collision",
+      "terrain_1"
+    ],
+    "max_support_anchor_error_m": 0.48238339515506923,
+    "mean_support_anchor_error_m": 0.06397412004042669,
+    "max_joint_limit_violation_rad": 0.2588720917701721,
+    "max_mjcf_usda_ankle_fk_difference_m": 4.997599690748089e-07,
+    "max_joint_speed_rad_s": 17.807443618774414,
+    "forward_travel_m": 2.088932752609253,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.012048192771084338,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": -0.045321468888856964,
+    "landed_on_far_platform": true,
+    "both_feet_airborne_frames": 36,
+    "passes_geometric_checks": false,
+    "rejection_reasons": [
+      "robot-terrain penetration exceeds 2 mm",
+      "joint-limit violation",
+      "support anchor error exceeds 15 mm or no support detected"
+    ]
+  },
+  "refined": {
+    "frames": 249,
+    "fps": 50.0,
+    "max_robot_terrain_penetration_m": 0,
+    "worst_pair": [
+      75,
+      "right_foot_collision",
+      "platform"
+    ],
+    "max_support_anchor_error_m": 0.006586755034049109,
+    "mean_support_anchor_error_m": 0.001220611350762974,
+    "max_joint_limit_violation_rad": 0,
+    "max_mjcf_usda_ankle_fk_difference_m": 5.166333272299539e-07,
+    "max_joint_speed_rad_s": 19.088729858398438,
+    "forward_travel_m": 2.083385705947876,
+    "hand_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "knee_near_support_fraction": [
+      0.0,
+      0.0
+    ],
+    "minimum_knee_support_gap_m": 0.02223300786308252,
+    "landed_on_far_platform": true,
+    "both_feet_airborne_frames": 37,
+    "passes_geometric_checks": true,
+    "rejection_reasons": []
+  },
+  "estimated_contact_fraction": [
+    0.8433734939759037,
+    0.8433734939759037,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

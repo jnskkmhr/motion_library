@@ -1,0 +1,12 @@
+{
+  "model": "Kimodo-G1-RP-v1",
+  "source_type": "generated",
+  "prompt": "A person crouches down, walks forward under a low overhead obstacle with knees bent, and then stands up.",
+  "seed": 45,
+  "duration": 6.0,
+  "terrain_source": "specified_before_generation",
+  "constraints_sha256": "a3c0b1b32c4ec9a743df34be5bc004a19bf6e56a9eab8f6ae4ceab1e9201afdf",
+  "dynamic_tracking_validated": false,
+  "kimodo_revision": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+  "fps": 30
+}
