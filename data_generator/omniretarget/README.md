@@ -26,3 +26,27 @@ Then use the [shared USD exporter](../shared/README.md). The importer converts
 Drake's root quaternion/translation ordering to XYZ + xyzw and names all joints.
 Changing to the ball-hand asset can introduce contact errors; it does not refine
 hand positions. Existing results: [`data/omniretarget`](../../data/omniretarget).
+
+## Reproduce the complete climbing selection
+
+The library now includes all 29 released `climb_00`–`climb_28` trajectories.
+Seven were previously present; the ACP-source update adds the other 22 without
+changing the earlier files. Their exact membership in ACP's training set is unknown.
+
+```bash
+uv run python data_generator/omniretarget/download.py --output vendor/omniretarget
+uv run python data_generator/build_acp_library.py --sources omniretarget \
+  --omniretarget_source vendor/omniretarget --output_root outputs/acp_rebuild \
+  --isaaclab_python /path/to/IsaacLab/.venv/bin/python \
+  --mjcf /path/to/newton-assets/unitree_g1/mjcf/g1_29dof_rev_1_0_box_foot_ball_hand.xml
+```
+
+`download.py` pins the dataset revision and downloads the robot-terrain archive,
+source robot joint labels, and referenced terrain models. `build_acp_library.py`
+uses `acp_sources.json` to select the 22 new clips, exports the exact ball-hand USD
+body states, normalizes terrain keys, screens joint limits/foot geometry, and
+records a complete video. Logs go under ignored `outputs/acp_logs/`.
+`--resume` reuses completed stages for an unchanged request.
+
+Joint-limit or contact-screening failures remain visible in `validation.json`.
+No clip is marked training-ready merely because its NPZ loads successfully.

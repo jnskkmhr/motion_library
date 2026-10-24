@@ -1,0 +1,12 @@
+{
+  "frames": 1006,
+  "fps": 50.0,
+  "joint_limit_excess_rad": {},
+  "max_joint_speed_rad_s": 8.569323539733887,
+  "min_foot_corner_world_z_m": -0.002350798071548664,
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "note": "Sampled joint/geometry screening only; no full-body collision or dynamics validation.",
+  "max_foot_corner_depth_below_box_top_m": 0.745629955591542,
+  "depth_definition": "Local box-Z depth at corners whose XY lies inside the box footprint; not minimum collision penetration."
+}

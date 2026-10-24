@@ -14,6 +14,8 @@ LABELS = {
     "parc": "PARC",
     "deep_wholebody_parkour": "Deep Whole-body Parkour",
     "kimodo": "Kimodo",
+    "lafan": "LAFAN",
+    "mixamo": "Mixamo",
 }
 NAMES = {
     "00452_crouch": "Crouched walking",
@@ -30,10 +32,17 @@ NAMES = {
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
+    parser.add_argument(
+        "--include-local",
+        action="store_true",
+        help="Build a separate gallery including local-only LAFAN/Mixamo exports",
+    )
     args = parser.parse_args()
     root = args.root.resolve()
     clips = []
     for source, label in LABELS.items():
+        if source in ("lafan", "mixamo") and not args.include_local:
+            continue
         for path in sorted((root / "data" / source).rglob("motion.npz")):
             folder = path.parent
             relative = folder.relative_to(root / "data" / source)
@@ -72,6 +81,9 @@ def main():
                 )
             reports = {p.stem: str(p.relative_to(root)) for p in folder.glob("*.json")}
             poster = folder / "preview.jpg"
+            provenance = (
+                json.loads((folder / "provenance.json").read_text()) if (folder / "provenance.json").is_file() else {}
+            )
             clips.append(
                 {
                     "id": str(folder.relative_to(root / "data")),
@@ -79,6 +91,8 @@ def main():
                     "source_name": label,
                     "name": name,
                     "experimental": source == "kimodo",
+                    "local_only": source in ("lafan", "mixamo"),
+                    "source_url": provenance.get("source_url"),
                     "variants": variants,
                     "reports": reports,
                     "poster": str(poster.relative_to(root)) if poster.is_file() else None,
@@ -86,8 +100,14 @@ def main():
             )
     catalog = {"schema_version": 1, "clips": clips}
     encoded = json.dumps(catalog, indent=2, ensure_ascii=False) + "\n"
-    (root / "data/catalog.json").write_text(encoded)
-    (root / "docs/catalog.js").write_text("window.MOTION_CATALOG = " + encoded.rstrip() + ";\n")
+    catalog_path = root / ("data/catalog.local.json" if args.include_local else "data/catalog.json")
+    script_path = root / ("docs/local-catalog.js" if args.include_local else "docs/catalog.js")
+    catalog_path.write_text(encoded)
+    script_path.write_text("window.MOTION_CATALOG = " + encoded.rstrip() + ";\n")
+    if args.include_local:
+        page = (root / "docs/index.html").read_text().replace('src="catalog.js"', 'src="local-catalog.js"')
+        page = page.replace("<title>G1 Motion Library</title>", "<title>G1 Motion Library — local previews</title>")
+        (root / "docs/local.html").write_text(page)
     print(f"Catalog: {len(clips)} clips; {sum(len(c['variants']) for c in clips)} video/NPZ pairs")
 
 

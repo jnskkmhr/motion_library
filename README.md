@@ -12,6 +12,8 @@ data_generator/
   kimodo/                 # Generation, constraints, contact refinement
   claw/                   # Import released G1 trajectories
   omniretarget/           # Import G1 motions and supplied terrain
+  lafan/                  # Download/import public G1 retargets for local use
+  mixamo/                 # Import local FBX with Blender + G1 IK
   parc/                   # Human-to-G1 IK with corrected arm mapping
   deep_wholebody_parkour/  # Import released G1 motion and scanned terrain
   shared/                 # USD export, terrain fitting, hand asset conversion
@@ -60,8 +62,10 @@ drivers are not pip dependencies of this standalone library. See the
 
 ## Data and provenance
 
-The catalog includes 19 non-Kimodo references and the current experimental Kimodo
-outputs. Old PARC arm conversions, superseded contact-refinement archives, and a
+The public catalog includes 41 non-Kimodo references and 35 experimental Kimodo
+outputs. Five additional LAFAN previews are prepared locally. See
+[ACP source additions](data_generator/ACP_SOURCES.md) for provenance, scripts, and
+why the LAFAN/Mixamo derivatives stay local. Old PARC arm conversions, superseded contact-refinement archives, and a
 duplicate crawl preview are omitted. Kimodo is retained for inspection, separately
 from the non-Kimodo collection previously installed in mimic.
 

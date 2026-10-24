@@ -1,5 +1,6 @@
 """Check catalog links, named motion arrays, terrain geometry, and video timing."""
 
+import argparse
 import hashlib
 import json
 import shutil
@@ -17,7 +18,9 @@ def require(condition, message):
 
 
 def main():
-    catalog = json.loads((ROOT / "data/catalog.json").read_text())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--catalog", type=Path, default=ROOT / "data/catalog.json")
+    catalog = json.loads(parser.parse_args().catalog.read_text())
     require(shutil.which("ffprobe"), "Install FFmpeg (ffprobe) to validate video frame counts.")
     pairs = 0
     for clip in catalog["clips"]:

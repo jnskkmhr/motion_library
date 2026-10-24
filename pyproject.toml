@@ -18,6 +18,9 @@ dependencies = [
 
 [project.optional-dependencies]
 kimodo = ["kimodo", "torch>=2.7,<3", "torchvision>=0.22"]
+mixamo = [
+    "bpy==4.5.0 ; python_full_version < '3.12'",
+]
 
 [dependency-groups]
 dev = ["ruff>=0.14", "playwright>=1.50"]

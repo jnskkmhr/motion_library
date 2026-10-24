@@ -1,0 +1,62 @@
+{
+  "paper": "https://arxiv.org/html/2610.31608v1#S0.SS7.SSS1",
+  "note": "Same source datasets, not a claim to reproduce ACP's private clip selection or retargeting.",
+  "omniretarget": {
+    "clips": [
+      "climb_00",
+      "climb_01",
+      "climb_02",
+      "climb_03",
+      "climb_04",
+      "climb_05",
+      "climb_07",
+      "climb_09",
+      "climb_10",
+      "climb_11",
+      "climb_12",
+      "climb_13",
+      "climb_15",
+      "climb_17",
+      "climb_18",
+      "climb_19",
+      "climb_21",
+      "climb_22",
+      "climb_23",
+      "climb_24",
+      "climb_25",
+      "climb_27"
+    ]
+  },
+  "lafan": [
+    {
+      "name": "walking_01",
+      "clip": "walk1_subject1.csv",
+      "start": 0,
+      "end": 12
+    },
+    {
+      "name": "walking_02",
+      "clip": "walk2_subject1.csv",
+      "start": 0,
+      "end": 12
+    },
+    {
+      "name": "fall_and_get_up_01",
+      "clip": "fallAndGetUp1_subject1.csv",
+      "start": 2,
+      "end": 12
+    },
+    {
+      "name": "fall_and_get_up_02",
+      "clip": "fallAndGetUp3_subject1.csv",
+      "start": 31,
+      "end": 39
+    },
+    {
+      "name": "jumping_01",
+      "clip": "jumps1_subject1.csv",
+      "start": 0,
+      "end": 12
+    }
+  ]
+}

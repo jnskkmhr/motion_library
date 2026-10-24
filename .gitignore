@@ -9,3 +9,13 @@ __pycache__/
 outputs/
 vendor/
 _site/
+# LAFAN derivatives and Mixamo assets stay local under their source terms.
+data/lafan/*/
+data/mixamo/*/
+docs/local.html
+docs/local-catalog.js
+
+.venv-mixamo/
+data/catalog.local.json
+core
+core.*

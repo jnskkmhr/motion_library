@@ -7,6 +7,8 @@
       "source_name": "CLAW",
       "name": "Crouched walking",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -35,6 +37,8 @@
       "source_name": "CLAW",
       "name": "Hand crawl",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -63,6 +67,8 @@
       "source_name": "CLAW",
       "name": "Elbow crawl",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -86,11 +92,187 @@
       "poster": "data/claw/02067_elbow_crawl/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_00",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 00",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_00/motion.npz",
+          "video": "data/omniretarget/climb_00/motion.mp4",
+          "fps": 50.0,
+          "frames": 1006,
+          "duration": 20.12,
+          "last_sample_time": 20.1,
+          "sha256": "5775b9d676674d0c5878e951b2ff1a75cf39a89065193f2c70d7c55def34277f",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_00/provenance.json",
+        "validation": "data/omniretarget/climb_00/validation.json",
+        "build_request": "data/omniretarget/climb_00/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_01",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 01",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_01/motion.npz",
+          "video": "data/omniretarget/climb_01/motion.mp4",
+          "fps": 50.0,
+          "frames": 870,
+          "duration": 17.4,
+          "last_sample_time": 17.38,
+          "sha256": "f5352b137010f893efb061cd0e45fc59b1bc96f76f39e39aff360609c6c3b0c2",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_01/provenance.json",
+        "validation": "data/omniretarget/climb_01/validation.json",
+        "build_request": "data/omniretarget/climb_01/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_02",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 02",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_02/motion.npz",
+          "video": "data/omniretarget/climb_02/motion.mp4",
+          "fps": 50.0,
+          "frames": 1167,
+          "duration": 23.34,
+          "last_sample_time": 23.32,
+          "sha256": "3a78b8f8c962ab6a9614109c481c9175189e68993f8bb3ebb54e86dbc133893c",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_02/provenance.json",
+        "validation": "data/omniretarget/climb_02/validation.json",
+        "build_request": "data/omniretarget/climb_02/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_03",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 03",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_03/motion.npz",
+          "video": "data/omniretarget/climb_03/motion.mp4",
+          "fps": 50.0,
+          "frames": 1009,
+          "duration": 20.18,
+          "last_sample_time": 20.16,
+          "sha256": "ce991ebfa4cd48feda0dc1cf34ddec1ccb637228cc1a2de179dad7e12b717cc3",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_03/provenance.json",
+        "validation": "data/omniretarget/climb_03/validation.json",
+        "build_request": "data/omniretarget/climb_03/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_04",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 04",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_04/motion.npz",
+          "video": "data/omniretarget/climb_04/motion.mp4",
+          "fps": 50.0,
+          "frames": 1254,
+          "duration": 25.08,
+          "last_sample_time": 25.06,
+          "sha256": "e34430b7026bebc90b88a0a53bc317505f9de34c5bd1f7c586317cd75479d289",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_04/provenance.json",
+        "validation": "data/omniretarget/climb_04/validation.json",
+        "build_request": "data/omniretarget/climb_04/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_05",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 05",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_05/motion.npz",
+          "video": "data/omniretarget/climb_05/motion.mp4",
+          "fps": 50.0,
+          "frames": 1001,
+          "duration": 20.02,
+          "last_sample_time": 20.0,
+          "sha256": "26a72ab494265bd4640e8e159fbc04658c3b1330d4e556f4331fc92b995a719f",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_05/provenance.json",
+        "validation": "data/omniretarget/climb_05/validation.json",
+        "build_request": "data/omniretarget/climb_05/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_06",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 06",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -113,11 +295,42 @@
       "poster": "data/omniretarget/climb_06/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_07",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 07",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_07/motion.npz",
+          "video": "data/omniretarget/climb_07/motion.mp4",
+          "fps": 50.0,
+          "frames": 491,
+          "duration": 9.82,
+          "last_sample_time": 9.8,
+          "sha256": "8089e8aced4c0d5c052ffa66c441671b3d170dbbc828a84613866bc8d9ba4968",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_07/provenance.json",
+        "validation": "data/omniretarget/climb_07/validation.json",
+        "build_request": "data/omniretarget/climb_07/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_08",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 08",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -140,11 +353,158 @@
       "poster": "data/omniretarget/climb_08/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_09",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 09",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_09/motion.npz",
+          "video": "data/omniretarget/climb_09/motion.mp4",
+          "fps": 50.0,
+          "frames": 541,
+          "duration": 10.82,
+          "last_sample_time": 10.8,
+          "sha256": "e114de8dc4816cb48d2c7256422f8a10824d1f30dd22ecba4199cac2401afeb2",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_09/provenance.json",
+        "validation": "data/omniretarget/climb_09/validation.json",
+        "build_request": "data/omniretarget/climb_09/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_10",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 10",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_10/motion.npz",
+          "video": "data/omniretarget/climb_10/motion.mp4",
+          "fps": 50.0,
+          "frames": 756,
+          "duration": 15.12,
+          "last_sample_time": 15.1,
+          "sha256": "5441bd84afa902e078ef56e30d238b81990861965d3a1d57d8a53feb8ce35c29",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_10/provenance.json",
+        "validation": "data/omniretarget/climb_10/validation.json",
+        "build_request": "data/omniretarget/climb_10/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_11",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 11",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_11/motion.npz",
+          "video": "data/omniretarget/climb_11/motion.mp4",
+          "fps": 50.0,
+          "frames": 762,
+          "duration": 15.24,
+          "last_sample_time": 15.22,
+          "sha256": "a9589fd2f157e60213c7939d65e4c5bde9f202f20a7143456018f5029c2ef266",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_11/provenance.json",
+        "validation": "data/omniretarget/climb_11/validation.json",
+        "build_request": "data/omniretarget/climb_11/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_12",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 12",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_12/motion.npz",
+          "video": "data/omniretarget/climb_12/motion.mp4",
+          "fps": 50.0,
+          "frames": 959,
+          "duration": 19.18,
+          "last_sample_time": 19.16,
+          "sha256": "22586f538a347fb1063fea2965d957c886372ceb6080a53c3c69b8e2b5648867",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_12/provenance.json",
+        "validation": "data/omniretarget/climb_12/validation.json",
+        "build_request": "data/omniretarget/climb_12/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_13",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 13",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_13/motion.npz",
+          "video": "data/omniretarget/climb_13/motion.mp4",
+          "fps": 50.0,
+          "frames": 1097,
+          "duration": 21.94,
+          "last_sample_time": 21.92,
+          "sha256": "7a4257e7710ec7b4b92f8592813e249eb36755f63cfda8bd0a818b46d9fce844",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_13/provenance.json",
+        "validation": "data/omniretarget/climb_13/validation.json",
+        "build_request": "data/omniretarget/climb_13/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_14",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 14",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -167,11 +527,42 @@
       "poster": "data/omniretarget/climb_14/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_15",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 15",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_15/motion.npz",
+          "video": "data/omniretarget/climb_15/motion.mp4",
+          "fps": 50.0,
+          "frames": 309,
+          "duration": 6.18,
+          "last_sample_time": 6.16,
+          "sha256": "4db7576c221386eae91e8025735d3cc34145e582cefb44fdcac74b003cdf90e4",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_15/provenance.json",
+        "validation": "data/omniretarget/climb_15/validation.json",
+        "build_request": "data/omniretarget/climb_15/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_16",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 16",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -194,11 +585,100 @@
       "poster": "data/omniretarget/climb_16/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_17",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 17",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_17/motion.npz",
+          "video": "data/omniretarget/climb_17/motion.mp4",
+          "fps": 50.0,
+          "frames": 252,
+          "duration": 5.04,
+          "last_sample_time": 5.02,
+          "sha256": "fe755d693bf1e9c9362cdb65698f876caf7603b3d4fb44c2c0e2fdeb27ad9f16",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_17/provenance.json",
+        "validation": "data/omniretarget/climb_17/validation.json",
+        "build_request": "data/omniretarget/climb_17/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_18",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 18",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_18/motion.npz",
+          "video": "data/omniretarget/climb_18/motion.mp4",
+          "fps": 50.0,
+          "frames": 281,
+          "duration": 5.62,
+          "last_sample_time": 5.6,
+          "sha256": "0876416a16c625a467cfa10d688e197aea6d7f9daa6cd0346d8177edbc5b7fe5",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_18/provenance.json",
+        "validation": "data/omniretarget/climb_18/validation.json",
+        "build_request": "data/omniretarget/climb_18/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_19",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 19",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_19/motion.npz",
+          "video": "data/omniretarget/climb_19/motion.mp4",
+          "fps": 50.0,
+          "frames": 391,
+          "duration": 7.82,
+          "last_sample_time": 7.8,
+          "sha256": "94241e35d3faa297dd658833c1cd7af26adf922eafdedce35f054af01c130898",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_19/provenance.json",
+        "validation": "data/omniretarget/climb_19/validation.json",
+        "build_request": "data/omniretarget/climb_19/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_20",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 20",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -221,11 +701,158 @@
       "poster": "data/omniretarget/climb_20/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_21",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 21",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_21/motion.npz",
+          "video": "data/omniretarget/climb_21/motion.mp4",
+          "fps": 50.0,
+          "frames": 347,
+          "duration": 6.94,
+          "last_sample_time": 6.92,
+          "sha256": "d4f2fba0ed2580333b382c928f441d2d3aac2b8930c145a6b820e7b56abd788e",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_21/provenance.json",
+        "validation": "data/omniretarget/climb_21/validation.json",
+        "build_request": "data/omniretarget/climb_21/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_22",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 22",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_22/motion.npz",
+          "video": "data/omniretarget/climb_22/motion.mp4",
+          "fps": 50.0,
+          "frames": 566,
+          "duration": 11.32,
+          "last_sample_time": 11.3,
+          "sha256": "155b72c3734357297f9fc9c4d6231fa1cd6165b7314d901e44d5a362cfaafe11",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_22/provenance.json",
+        "validation": "data/omniretarget/climb_22/validation.json",
+        "build_request": "data/omniretarget/climb_22/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_23",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 23",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_23/motion.npz",
+          "video": "data/omniretarget/climb_23/motion.mp4",
+          "fps": 50.0,
+          "frames": 581,
+          "duration": 11.62,
+          "last_sample_time": 11.6,
+          "sha256": "3d6672494fb701e73184e16cd7755ee51e629223537df63905b41cb895428365",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_23/provenance.json",
+        "validation": "data/omniretarget/climb_23/validation.json",
+        "build_request": "data/omniretarget/climb_23/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_24",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 24",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_24/motion.npz",
+          "video": "data/omniretarget/climb_24/motion.mp4",
+          "fps": 50.0,
+          "frames": 522,
+          "duration": 10.44,
+          "last_sample_time": 10.42,
+          "sha256": "32c5cdd01ce7d3386d1e97afc2fe863ebb779270bf0f9df6396b3eb8df5a1217",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_24/provenance.json",
+        "validation": "data/omniretarget/climb_24/validation.json",
+        "build_request": "data/omniretarget/climb_24/build_request.json"
+      },
+      "poster": null
+    },
+    {
+      "id": "omniretarget/climb_25",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 25",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_25/motion.npz",
+          "video": "data/omniretarget/climb_25/motion.mp4",
+          "fps": 50.0,
+          "frames": 561,
+          "duration": 11.22,
+          "last_sample_time": 11.2,
+          "sha256": "de11328ec2c99ff83d726a975c4ebc633c76208151f079cd2e29dd4c6f7e0cf1",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_25/provenance.json",
+        "validation": "data/omniretarget/climb_25/validation.json",
+        "build_request": "data/omniretarget/climb_25/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_26",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 26",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -248,11 +875,42 @@
       "poster": "data/omniretarget/climb_26/preview.jpg"
     },
     {
+      "id": "omniretarget/climb_27",
+      "source": "omniretarget",
+      "source_name": "OmniRetarget",
+      "name": "Climb 27",
+      "experimental": false,
+      "local_only": false,
+      "source_url": null,
+      "variants": [
+        {
+          "name": "Reference",
+          "npz": "data/omniretarget/climb_27/motion.npz",
+          "video": "data/omniretarget/climb_27/motion.mp4",
+          "fps": 50.0,
+          "frames": 296,
+          "duration": 5.92,
+          "last_sample_time": 5.9,
+          "sha256": "8f274bafe547b9d34aa8487128c1a87c4c0f006cf75d2cd981494cf22b95c4c6",
+          "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+          "terrain": "boxes"
+        }
+      ],
+      "reports": {
+        "provenance": "data/omniretarget/climb_27/provenance.json",
+        "validation": "data/omniretarget/climb_27/validation.json",
+        "build_request": "data/omniretarget/climb_27/build_request.json"
+      },
+      "poster": null
+    },
+    {
       "id": "omniretarget/climb_28",
       "source": "omniretarget",
       "source_name": "OmniRetarget",
       "name": "Climb 28",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -280,6 +938,8 @@
       "source_name": "PARC",
       "name": "Running jump 01",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -309,6 +969,8 @@
       "source_name": "PARC",
       "name": "Running jumps 02",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -338,6 +1000,8 @@
       "source_name": "PARC",
       "name": "Running jumps 03",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -367,6 +1031,8 @@
       "source_name": "PARC",
       "name": "Turning jumps 04",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -396,6 +1062,8 @@
       "source_name": "PARC",
       "name": "Running jumps 05",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -425,6 +1093,8 @@
       "source_name": "Deep Whole-body Parkour",
       "name": "Dive roll",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -452,6 +1122,8 @@
       "source_name": "Deep Whole-body Parkour",
       "name": "Jump sit",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -479,6 +1151,8 @@
       "source_name": "Deep Whole-body Parkour",
       "name": "Kneel climb",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -506,6 +1180,8 @@
       "source_name": "Deep Whole-body Parkour",
       "name": "Roll vault",
       "experimental": false,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -533,6 +1209,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / climb high platform / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -559,6 +1237,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / crawl / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -585,6 +1265,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / crouch stand / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -611,6 +1293,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / crouch walk / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -637,6 +1321,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / ramp down / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -663,6 +1349,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / ramp up / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -689,6 +1377,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / step over / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -715,6 +1405,8 @@
       "source_name": "Kimodo",
       "name": "First generated clips / two hand vault / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -741,6 +1433,8 @@
       "source_name": "Kimodo",
       "name": "Long jump v1 / jump gap / seed 48",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -782,6 +1476,8 @@
       "source_name": "Kimodo",
       "name": "Long jump v1 / jump gap / seed 49",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -823,6 +1519,8 @@
       "source_name": "Kimodo",
       "name": "Long jump v1 / jump gap / seed 50",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -864,6 +1562,8 @@
       "source_name": "Kimodo",
       "name": "Long jump v1 / jump gap / seed 51",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -905,6 +1605,8 @@
       "source_name": "Kimodo",
       "name": "Supplied stairs",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -932,6 +1634,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / bear walk / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -973,6 +1677,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / bear walk / seed 45",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1014,6 +1720,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / bear walk / seed 46",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1055,6 +1763,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / bear walk / seed 47",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1096,6 +1806,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crawl / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1137,6 +1849,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crawl / seed 45",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1178,6 +1892,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crawl / seed 46",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1219,6 +1935,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crawl / seed 47",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1260,6 +1978,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crouch / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1301,6 +2021,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crouch / seed 45",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1342,6 +2064,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crouch / seed 46",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1383,6 +2107,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / crouch / seed 47",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1424,6 +2150,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / jump gap / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1465,6 +2193,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / jump gap / seed 45",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1506,6 +2236,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / jump gap / seed 46",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1547,6 +2279,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / jump gap / seed 47",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1588,6 +2322,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / ramp / seed 44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1629,6 +2365,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / ramp / seed 45",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1670,6 +2408,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / ramp / seed 46",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1711,6 +2451,8 @@
       "source_name": "Kimodo",
       "name": "Terrain batch v1 / ramp / seed 47",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1752,6 +2494,8 @@
       "source_name": "Kimodo",
       "name": "Terrain first platform seed44",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",
@@ -1793,6 +2537,8 @@
       "source_name": "Kimodo",
       "name": "Terrain first platform seed45",
       "experimental": true,
+      "local_only": false,
+      "source_url": null,
       "variants": [
         {
           "name": "Reference",

@@ -1,0 +1,6 @@
+{
+  "source": "omniretarget",
+  "name": "climb_23",
+  "settings": "/home/jkamohara/isaac/skill_chaining/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/multi_task_locomotion/motion_generation/outputs/omniretarget/source",
+  "mjcf": "/home/jkamohara/isaac/newton-assets/unitree_g1/mjcf/g1_29dof_rev_1_0_box_foot_ball_hand.xml"
+}
