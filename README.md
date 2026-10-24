@@ -35,6 +35,7 @@ uv run python tools/validate_library.py
 uv run python -m http.server 8000 --bind 127.0.0.1
 ```
 
+The validation command also needs FFmpeg (`ffprobe`) installed on the host.
 Open <http://localhost:8000/docs/>. Select a source and motion, use the previous/next
 buttons or arrow keys, and switch between refined/generated motion where available.
 Each view links to the corresponding NPZ on GitHub and offers a local download.

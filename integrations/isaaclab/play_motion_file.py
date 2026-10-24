@@ -3,28 +3,26 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""Replay a WBC motion from an npz file.
+"""Replay a named G1 motion and its paired terrain with Isaac Lab/Newton.
+
+Run with the Isaac Lab interpreter, adding video dependencies through uv:
 
 .. code-block:: bash
 
-    uv run python source/isaaclab_tasks/isaaclab_tasks/contrib/mimic/data/motions/npz/play_motion_file.py \
-        --motion_file source/isaaclab_tasks/isaaclab_tasks/contrib/mimic/data/motions/npz/g1_TO_jump_forward.npz
+    uv run --no-project --python /path/to/IsaacLab/.venv/bin/python \
+        --with imageio --with imageio-ffmpeg python integrations/isaaclab/play_motion_file.py \
+        --motion_file data/parc/jump_005/motion.npz
 
-Untagged motion files use the legacy PhysX joint order. Files with ``joint_names``
-metadata are reordered by name for Newton. No Isaac Sim Kit installation is required.
-Files tagged with ``robot_asset=UNITREE_G1_29DOF_BOX_FOOT_CFG`` use the mimic task's
-box-foot robot. Optional ``terrain_boxes`` rows contain world-frame box centers
-and full sizes: ``[x, y, z, size_x, size_y, size_z]`` in meters, Z-up.
-Optional ``terrain_box_quat`` rows give box orientations in xyzw order.
-Optional ``terrain_vertices`` and ``terrain_faces`` store a world-frame triangle
-mesh. ``ground_height`` sets the ground plane's world Z coordinate in meters.
+The robot asset is selected from NPZ metadata. Terrain accepts canonical
+``terrain_position``, ``terrain_dimension``, and ``terrain_quat`` keys as well
+as the legacy box fields. Positions are meters in the motion reference frame;
+box dimensions are full sizes and box quaternions are xyzw. Mesh vertices and
+faces can be supplied alongside boxes. ``ground_height`` explicitly sets ground Z.
 
-Pass ``--video`` to save the replay to an mp4 instead of only viewing it. This works headless:
-
-.. code-block:: bash
-
-    uv run python source/isaaclab_tasks/isaaclab_tasks/contrib/mimic/data/motions/npz/play_motion_file.py \
-        --motion_file .../leap_g1_retargeted.npz --video --headless
+Interactive playback follows the source FPS and holds the final pose. ``--loop``
+repeats without blending the last-to-first transition. Add ``--video --headless``
+to record a full clip without wall-clock pacing. This is kinematic replay, not a
+tracking-policy rollout. See integrations/isaaclab/README.md for requirements.
 """
 
 from __future__ import annotations
