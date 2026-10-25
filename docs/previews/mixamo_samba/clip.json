@@ -1,0 +1,29 @@
+{
+  "id": "mixamo/samba_dancing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "name": "Samba dancing",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://github.com/mrdoob/three.js/blob/r180/examples/models/fbx/Samba%20Dancing.fbx",
+  "description": "Public Mixamo sample from Three.js, retargeted to G1. This is an importer demonstration, not ACP\u2019s stair or ladder data. Baseline fitting has foot sliding and up to 6.9 cm of foot penetration below the ground plane; it is not ready for training. Animation arrays stay local.",
+  "variants": [
+    {
+      "name": "G1 preview",
+      "video": "docs/previews/mixamo_samba/motion.mp4",
+      "video_sha256": "b0b7882fa133e41b1b683b98b97e296ff3854739efe329cfb6d83f410d800559",
+      "fps": 50.0,
+      "frames": 911,
+      "duration": 18.22,
+      "last_sample_time": 18.2,
+      "terrain": "ground",
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_samba/provenance.json",
+    "validation": "docs/previews/mixamo_samba/validation.json"
+  },
+  "poster": null
+}

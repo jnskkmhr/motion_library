@@ -20,7 +20,8 @@
     These come from a source cited by ACP; its exact clip selection is not public.</p>
     <p><strong>LAFAN:</strong> the download script prepares five local G1 previews: walking, falling/getting up, and jumping.
     Converted files stay local under the source's no-derivatives terms. <a href="https://github.com/jnskkmhr/motion_library/blob/main/data_generator/lafan/README.md">Build local previews ↗</a></p>
-    <p><strong>Mixamo:</strong> an FBX importer is provided for your own downloads. No Mixamo clips are bundled.
+    <p><strong>Mixamo:</strong> select the Mixamo tab to watch the Samba dancing sample retargeted to G1.
+    This public sample comes from Three.js; it is not ACP’s stair, ladder, or sitting data. The video is published; animation arrays stay local.
     <a href="https://github.com/jnskkmhr/motion_library/blob/main/data_generator/mixamo/README.md">Import instructions ↗</a></p>
     <p><a href="https://arxiv.org/html/2610.31608v1">ACP paper, supplementary Table S1 ↗</a></p>
   </details>
@@ -31,6 +32,7 @@
       <div class="screen"><video id="video" controls playsinline preload="metadata" aria-label="Selected motion video"></video><p id="video-error" hidden>Video could not be loaded. Check that the data directory is served alongside docs.</p></div>
       <div class="controls"><div id="variants" role="group" aria-label="Motion variant"></div><label class="repeat"><input id="loop" type="checkbox"> Repeat</label><button id="previous" aria-label="Previous motion">←</button><span id="position"></span><button id="next" aria-label="Next motion">→</button></div>
       <div class="details"><dl><div><dt>Duration</dt><dd id="duration"></dd></div><div><dt>Frame rate</dt><dd id="fps"></dd></div><div><dt>Terrain</dt><dd id="terrain"></dd></div></dl><div class="links"><a id="npz-github" class="primary" target="_blank" rel="noopener">View NPZ on GitHub ↗</a><a id="npz-download" download>Download NPZ ↓</a></div></div>
+      <p id="clip-description" class="note" hidden></p>
       <p class="note">Kinematic replay · Dynamic tracking has not been validated. <a id="report" target="_blank" rel="noopener">View report ↗</a></p>
     </section>
   </div>

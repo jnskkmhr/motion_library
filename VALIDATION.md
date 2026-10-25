@@ -33,13 +33,20 @@ contact feasibility, policy tracking success, or readiness of every clip for tra
   Source frame ranges and the root XY translation are recorded in provenance.
 - All 27 new references passed the sampled joint-limit check. Foot-geometry reports
   are included; this is not a full contact/dynamic validation.
-- Public catalog: 76 clips / 102 NPZ-video pairs. Local catalog: 81 clips / 107 pairs.
+- Public catalog: 77 clips / 102 NPZ-video pairs plus one video-only preview.
+  Local catalog: 82 clips / 108 NPZ-video pairs.
   Array/terrain integrity, hashes, video frame counts and FPS passed for all pairs.
 - Public and local galleries passed browser checks, including 29 OmniRetarget and
   five LAFAN selections, video loading, source/download links, and mobile layout.
 - Mixamo FBX import uses the uv-locked Blender 4.5 Python 3.11 wheel. A synthetic
   animated skeleton passed the FBX transform/timing round trip and joint-limited
-  G1 IK. No real Mixamo file was available, so its motion quality remains untested.
+  G1 IK. The real Three.js r180 Mixamo Samba sample also passes import and exact-asset
+  export: 911 frames at 50 Hz. The paired G1 video was visually inspected.
+  Joint limits pass, but foot sliding and up to 6.9 cm of ground penetration
+  remain; it is explicitly labeled an unvalidated importer demonstration.
+- Browser checks cover the Mixamo tab, video playback, direct clip link, source
+  attribution, hidden public NPZ download, restored ordinary NPZ links, local
+  NPZ access, and mobile layout.
 - Python compilation, scoped Ruff checks, JavaScript syntax, and uv lock checks passed.
 
 LAFAN derivatives, local catalogs, and Mixamo asset directories are ignored by Git.

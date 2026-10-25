@@ -98,6 +98,11 @@ def main():
                     "poster": str(poster.relative_to(root)) if poster.is_file() else None,
                 }
             )
+    # Rendered samples may be public even when the underlying animation stays local.
+    for preview in sorted((root / "docs/previews").glob("*/clip.json")):
+        clip = json.loads(preview.read_text())
+        if not any(existing["id"] == clip["id"] for existing in clips):
+            clips.append(clip)
     catalog = {"schema_version": 1, "clips": clips}
     encoded = json.dumps(catalog, indent=2, ensure_ascii=False) + "\n"
     catalog_path = root / ("data/catalog.local.json" if args.include_local else "data/catalog.json")
@@ -108,7 +113,7 @@ def main():
         page = (root / "docs/index.html").read_text().replace('src="catalog.js"', 'src="local-catalog.js"')
         page = page.replace("<title>G1 Motion Library</title>", "<title>G1 Motion Library — local previews</title>")
         (root / "docs/local.html").write_text(page)
-    print(f"Catalog: {len(clips)} clips; {sum(len(c['variants']) for c in clips)} video/NPZ pairs")
+    print(f"Catalog: {len(clips)} clips; {sum(len(c['variants']) for c in clips)} variants")
 
 
 if __name__ == "__main__":

@@ -1,9 +1,9 @@
-# Mixamo: local FBX importer
+# Mixamo: FBX importer and G1 video preview
 
-ACP cites Mixamo for stair climbing, ladder climbing, and sitting. Mixamo requires
-an Adobe account; no downloaded Mixamo files were available during this update.
-This directory prepares an importer for your own FBX exports. No Mixamo motion is
-bundled, and this is not ACP's retargeting implementation.
+ACP cites Mixamo for stair climbing, ladder climbing, and sitting. The gallery now shows a real Mixamo Samba Dancing sample from the public Three.js
+examples, converted with this importer. This is not ACP's retargeting implementation
+or its stair/ladder/sitting data. Only the rendered video is published; source FBX
+and converted NPZ arrays stay local.
 
 ## Install and import
 
@@ -39,12 +39,45 @@ Without this option, the output only declares a flat plane at Z=0; that does not
 make a ladder/stair/sitting animation terrain-compatible. Inspect the reported
 scale, robot geometry, and intended contacts before constructing a tracking task.
 
-The FBX path and IK are checked with a synthetic animated skeleton. Real Mixamo
-naturalness, contact fit, and dynamic tracking remain untested until a real export
-is supplied. This importer is a starting point, not a validated climbing dataset.
+The FBX path and IK were checked with a synthetic skeleton and the real Samba
+Dancing sample. The latter shows foot sliding and up to 6.9 cm of foot penetration
+below the ground plane. This is an importer demonstration, not a validated training
+or climbing dataset. Dynamic tracking has not been tested.
 
 [Adobe's FAQ](https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400?lang=en)
 restricts redistribution of animation files and also lists restrictions on machine
 learning use. The importer does not establish permission for training. Use the
 terms applicable to your own download. Local exports in `data/mixamo/<clip>/` are
 ignored by Git and can be inspected through `tools/build_catalog.py --include-local`.
+
+## View the sample
+
+[Public G1 video](https://jnskkmhr.github.io/motion_library/docs/#mixamo%2Fsamba_dancing).
+Select **Mixamo → Samba dancing**. The public entry links to its source rather than
+advertising an unavailable NPZ download. The local gallery includes the converted NPZ.
+
+The sample was downloaded from:
+`https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/fbx/Samba%20Dancing.fbx`.
+Its SHA-256 is recorded in `docs/previews/mixamo_samba/provenance.json`.
+
+To reproduce it, download that FBX, then use the import command above with
+`--output data/mixamo/samba_dancing`. Export and record using your Isaac Lab Python:
+
+```bash
+/path/to/IsaacLab/.venv/bin/python data_generator/shared/export_mimic.py \
+  --input data/mixamo/samba_dancing/g1_qpos.npz \
+  --output data/mixamo/samba_dancing/motion_raw.npz \
+  --robot_asset UNITREE_G1_29DOF_BALL_HAND_CFG
+uv run python tools/normalize_terrain.py \
+  --input data/mixamo/samba_dancing/motion_raw.npz \
+  --output data/mixamo/samba_dancing/motion.npz --ground_height 0
+uv run --no-project --python /path/to/IsaacLab/.venv/bin/python \
+  --with imageio --with imageio-ffmpeg python integrations/isaaclab/play_motion_file.py \
+  --motion_file data/mixamo/samba_dancing/motion.npz \
+  --video --headless --video_folder data/mixamo/samba_dancing \
+  --video_resolution 960 640 --camera_offset -1.5 -2.5 0.8
+uv run python tools/build_catalog.py --include-local
+```
+
+Open `docs/local.html` to inspect the local video and download the converted NPZ.
+The public video, provenance, and screening report live in `docs/previews/mixamo_samba/`.
