@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_to_top",
+  "name": "Climbing Up A Ladder To Standing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Ladder",
+  "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_To_Top.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_to_top/motion.mp4",
+      "video_sha256": "203119b8cc8ebc8403610968cbe9465714db61006223545923c6855fd7f56c54",
+      "fps": 50.0,
+      "frames": 201,
+      "duration": 4.02,
+      "last_sample_time": 4.0,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_to_top/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_to_top/validation.json"
+  }
+}

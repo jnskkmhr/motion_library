@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/jumping_3",
+  "name": "Jumping Over An Obstacle With 2 Hands Planted",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Vault",
+  "description": "Vault. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jumping_3.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_jumping_3/motion.mp4",
+      "video_sha256": "86154bd92b86e8f8f9b6eceab09fa6e29c1ed9ceb1b2c444f642fb12eb407f2b",
+      "fps": 50.0,
+      "frames": 61,
+      "duration": 1.22,
+      "last_sample_time": 1.2,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_jumping_3/provenance.json",
+    "validation": "docs/previews/mixamo_jumping_3/validation.json"
+  }
+}

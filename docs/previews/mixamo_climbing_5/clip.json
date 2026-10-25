@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_5",
+  "name": "Starting To Climb Onto A Box Or Short Fence",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_5.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_5/motion.mp4",
+      "video_sha256": "fcbfc67a8a0f5769bb7bd0ad25b0618bfc4c6f540914e65df460636f8c087a93",
+      "fps": 50.0,
+      "frames": 114,
+      "duration": 2.28,
+      "last_sample_time": 2.26,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_5/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_5/validation.json"
+  }
+}

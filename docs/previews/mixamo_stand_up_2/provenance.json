@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 0.0019540489286911608,
+      "max_elbow_flexion_error_deg": 0.07500918493976307,
+      "max_segment_direction_error_deg": 0.23970885409299736,
+      "elbow_limit_frame_fraction": 0.0
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 0.012190051920773414,
+      "max_elbow_flexion_error_deg": 0.3650776326566497,
+      "max_segment_direction_error_deg": 0.3431911795187034,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Stand_Up_2.fbx",
+  "source_sha256": "5c44381a5d6ba310a4f3f4e075d108de872f4008025ddd32ecb35b5f0c8cbd54",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 249,
+  "source_frames": 249,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Stand_Up_2.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "c9c6d314-b96c-11e4-a802-0aaa78deedf9",
+  "source_description": "Standing Up From Back",
+  "category": "Recovery and roll",
+  "display_name": "Standing Up From Back",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": false,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

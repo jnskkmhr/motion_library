@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_up_wall",
+  "name": "Climbing Up A Wall",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_Up_Wall.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_up_wall/motion.mp4",
+      "video_sha256": "dd20bcf4b5d3816b1d6f3f53934a902dc72de4b26ca82489a1817aea3c4483d4",
+      "fps": 50.0,
+      "frames": 101,
+      "duration": 2.02,
+      "last_sample_time": 2.0,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_up_wall/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_up_wall/validation.json"
+  }
+}

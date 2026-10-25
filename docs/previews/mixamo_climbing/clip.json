@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing",
+  "name": "Run To Start Climbing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing/motion.mp4",
+      "video_sha256": "e247584a4285b053e9c0be9e35f004b893cfc6e24ea8341936e6eaed41f2b488",
+      "fps": 50.0,
+      "frames": 192,
+      "duration": 3.84,
+      "last_sample_time": 3.82,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing/provenance.json",
+    "validation": "docs/previews/mixamo_climbing/validation.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/crouch_to_prone",
+  "name": "Crouching To Laying Prone Transition",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crouch and duck",
+  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouch_To_Prone.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_crouch_to_prone/motion.mp4",
+      "video_sha256": "b65d18d23769c78f674cbbbc0f16af61668bdea2e49f746c08291e42abe3fd93",
+      "fps": 50.0,
+      "frames": 91,
+      "duration": 1.82,
+      "last_sample_time": 1.8,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_crouch_to_prone/provenance.json",
+    "validation": "docs/previews/mixamo_crouch_to_prone/validation.json"
+  }
+}

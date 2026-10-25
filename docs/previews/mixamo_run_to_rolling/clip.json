@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/run_to_rolling",
+  "name": "Run Ro Roll Eveade To Run",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Recovery and roll",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Run_To_Rolling.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_run_to_rolling/motion.mp4",
+      "video_sha256": "996c4fdacb4461f710b4adec0fc1ca07adb279dafce100150698a34b51fe7c79",
+      "fps": 50.0,
+      "frames": 122,
+      "duration": 2.44,
+      "last_sample_time": 2.42,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_run_to_rolling/provenance.json",
+    "validation": "docs/previews/mixamo_run_to_rolling/validation.json"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 0.03308792194988178,
+      "max_elbow_flexion_error_deg": 0.20470624940270712,
+      "max_segment_direction_error_deg": 0.21120935091037743,
+      "elbow_limit_frame_fraction": 0.0
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 0.021091181157118766,
+      "max_elbow_flexion_error_deg": 0.054179003550950226,
+      "max_segment_direction_error_deg": 0.07267361752488931,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Jump_5.fbx",
+  "source_sha256": "9e59bf9d86f0d5f2bb1d47ef0d7874e7eddfc807db9d0a9d9fb17b6135bc79d5",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 29,
+  "source_frames": 29,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jump_5.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "c9ccec92-b96c-11e4-a802-0aaa78deedf9",
+  "source_description": "Backward Running Jump",
+  "category": "Jump and landing",
+  "display_name": "Backward Running Jump",
+  "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": false,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

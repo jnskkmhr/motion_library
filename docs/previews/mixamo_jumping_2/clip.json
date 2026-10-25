@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/jumping_2",
+  "name": "Jumping Down From 2ft High Platform With One Foot",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Jump and landing",
+  "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jumping_2.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_jumping_2/motion.mp4",
+      "video_sha256": "03b655c98ab1aed4755f42b248c4661df7340258497609dc5b4a45ae6a3eb5ed",
+      "fps": 50.0,
+      "frames": 121,
+      "duration": 2.42,
+      "last_sample_time": 2.4,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_jumping_2/provenance.json",
+    "validation": "docs/previews/mixamo_jumping_2/validation.json"
+  }
+}

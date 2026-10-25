@@ -40,7 +40,9 @@ uv run python -m http.server 8000 --bind 127.0.0.1
 The validation command also needs FFmpeg (`ffprobe`) installed on the host.
 Open <http://localhost:8000/docs/>. Select a source and motion, use the previous/next
 buttons or arrow keys, and switch between refined/generated motion where available.
-Each view links to the corresponding NPZ on GitHub and offers a local download.
+Bundled references link to their NPZ on GitHub. Mixamo video previews link to the
+source; their converted NPZs are available through the local gallery. Use the
+Motion type filter for stairs, ladders, crawling, vaults, and other navigation skills.
 Opening `docs/index.html` directly also works; its catalog is loaded as a script.
 
 Default dependencies support dataset inspection, import, MuJoCo retargeting, and
@@ -63,7 +65,9 @@ drivers are not pip dependencies of this standalone library. See the
 ## Data and provenance
 
 The public catalog includes 41 non-Kimodo references and 35 experimental Kimodo
-outputs. Five additional LAFAN previews are prepared locally. See
+outputs, plus 82 rendered Mixamo navigation candidates. Five additional LAFAN
+previews and the 82 converted Mixamo NPZs are prepared locally. Each new Mixamo
+clip is capped at 60 seconds without stretching shorter animations. See
 [ACP source additions](data_generator/ACP_SOURCES.md) for provenance, scripts, and
 why the LAFAN/Mixamo derivatives stay local. Old PARC arm conversions, superseded contact-refinement archives, and a
 duplicate crawl preview are omitted. Kimodo is retained for inspection, separately

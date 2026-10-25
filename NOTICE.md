@@ -20,9 +20,12 @@ Upstream sources are recorded in each clip's provenance:
 - LAFAN: https://github.com/ubisoft/ubisoft-laforge-animation-dataset and
   https://huggingface.co/datasets/lvhaidong/LAFAN1_Retargeting_Dataset . Source
   terms are CC BY-NC-ND 4.0; converted outputs are kept local and ignored by Git.
-- Mixamo: https://www.mixamo.com/ . Adobe account/download terms apply. The gallery includes a rendered G1 video of the
-  Mixamo Samba Dancing sample from Three.js r180. Source FBX and converted NPZ
-  arrays are not bundled. See docs/previews/mixamo_samba/provenance.json.
+- Mixamo: https://www.mixamo.com/ . The navigation previews use selected animations
+  from https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters at the
+  revision recorded in data_generator/mixamo/navigation_manifest.json. Credit:
+  Adobe Mixamo and the Linzhan Mou / UniMate dataset release. Adobe terms apply.
+  Public files contain rendered G1 videos and provenance, not source FBX or derived
+  animation arrays. This does not grant permission to redistribute or train on the data.
 - G1 robot geometry: Unitree assets and the local newton-assets hand-pad variant.
   Robot meshes, model weights, and credentials are not bundled here.
 

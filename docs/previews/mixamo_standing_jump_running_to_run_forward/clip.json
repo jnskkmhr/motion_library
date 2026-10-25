@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/standing_jump_running_to_run_forward",
+  "name": "Running Jump To Run Forward",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Jump and landing",
+  "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Standing_Jump_Running_To_Run_Forward.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_standing_jump_running_to_run_forward/motion.mp4",
+      "video_sha256": "6b5e7973cecc6f21c4c82b9a07cfcf3fe7598e0cdd2c6ebce0ea44f76c5da75f",
+      "fps": 50.0,
+      "frames": 102,
+      "duration": 2.04,
+      "last_sample_time": 2.02,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_standing_jump_running_to_run_forward/provenance.json",
+    "validation": "docs/previews/mixamo_standing_jump_running_to_run_forward/validation.json"
+  }
+}

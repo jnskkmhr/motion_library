@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_4",
+  "name": "Climbing Up A Slope",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_4.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_4/motion.mp4",
+      "video_sha256": "da54cdb006021a52b4e5595f29bfc3ec971cdbe847d670b4dccbed399d9efcaf",
+      "fps": 50.0,
+      "frames": 232,
+      "duration": 4.64,
+      "last_sample_time": 4.62,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_4/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_4/validation.json"
+  }
+}

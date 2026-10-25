@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/stand",
+  "name": "Standing From Crouched Hands On Ground",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Recovery and roll",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Stand.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_stand/motion.mp4",
+      "video_sha256": "dea91045d702e3d7a53c444d90791327b5118c9ef554159c16fa7664f6beb474",
+      "fps": 50.0,
+      "frames": 156,
+      "duration": 3.12,
+      "last_sample_time": 3.1,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_stand/provenance.json",
+    "validation": "docs/previews/mixamo_stand/validation.json"
+  }
+}

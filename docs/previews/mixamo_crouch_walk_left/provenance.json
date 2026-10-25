@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 0.005045277263178065,
+      "max_elbow_flexion_error_deg": 0.12118705132507941,
+      "max_segment_direction_error_deg": 0.17839220133760939,
+      "elbow_limit_frame_fraction": 0.0
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 0.003061561081373015,
+      "max_elbow_flexion_error_deg": 0.07689722584603813,
+      "max_segment_direction_error_deg": 0.131366761432012,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Crouch_Walk_Left.fbx",
+  "source_sha256": "5dc6241732b7ebb1aafb1cdb2c6b18d2dbd8b6ee314191f14ace3cfdff9fd2ae",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 36,
+  "source_frames": 36,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouch_Walk_Left.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "14f7890c-4431-4944-95d0-f7c46a1c538b",
+  "source_description": "Walking Left While Crouched",
+  "category": "Crouch and duck",
+  "display_name": "Walking Left While Crouched",
+  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": false,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

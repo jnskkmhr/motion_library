@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/braced_hang_to_crouch",
+  "name": "Climb Wall From Braced Hang To Crouch",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Braced_Hang_To_Crouch.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_braced_hang_to_crouch/motion.mp4",
+      "video_sha256": "24a0249deb9700784701e6e6697ca680860d7f3dc65f5148362a38238ed51f72",
+      "fps": 50.0,
+      "frames": 57,
+      "duration": 1.14,
+      "last_sample_time": 1.12,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_braced_hang_to_crouch/provenance.json",
+    "validation": "docs/previews/mixamo_braced_hang_to_crouch/validation.json"
+  }
+}

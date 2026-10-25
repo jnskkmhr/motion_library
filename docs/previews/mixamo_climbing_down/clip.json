@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_down",
+  "name": "Climbing Down To Standing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_Down.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_down/motion.mp4",
+      "video_sha256": "2336f46f54a429e227442e5f644bedd841a58b5ed665e0894561afc8e8a9a750",
+      "fps": 50.0,
+      "frames": 172,
+      "duration": 3.44,
+      "last_sample_time": 3.42,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_down/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_down/validation.json"
+  }
+}

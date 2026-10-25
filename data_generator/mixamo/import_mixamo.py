@@ -194,6 +194,7 @@ def main():
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--fps", type=float, default=30)
     p.add_argument("--animation_index", type=int, default=0)
+    p.add_argument("--max_duration", type=float, default=60.0, help="Maximum output duration in seconds (default 60)")
     p.add_argument(
         "--terrain", type=Path, help="Optional JSON with explicit canonical box/mesh fields, in target G1 meters/Z-up"
     )
@@ -204,7 +205,13 @@ def main():
         p.error("FPS must be finite and positive.")
     if a.output.exists() and any(a.output.iterdir()):
         p.error("Choose a new output directory.")
+    if not np.isfinite(a.max_duration) or a.max_duration <= 0:
+        p.error("Maximum duration must be finite and positive.")
     names, pos, quat, rest_pos, rest_quat, animation = extract_fbx(a.input, a.fps, a.animation_index)
+    source_frames = len(pos)
+    # Leave room for the last resampled frame at the 50 Hz export rate.
+    cap = int(np.floor((a.max_duration - 1 / 50) * a.fps)) + 1
+    pos, quat = pos[:cap], quat[:cap]
     if len(pos) < 3:
         p.error("Animation needs at least three sampled frames.")
     model, result, report = retarget(names, pos, quat, rest_pos, rest_quat, a.fps, a.mjcf)
@@ -241,6 +248,9 @@ def main():
         animation=animation,
         fps=a.fps,
         frames=len(result),
+        source_frames=source_frames,
+        max_duration_seconds=a.max_duration,
+        truncated=len(result) < source_frames,
         public_distribution=False,
         exact_acp_clip=False,
         terrain_source=str(a.terrain) if a.terrain else "Assumed ground Z=0; obstacle geometry not recovered",

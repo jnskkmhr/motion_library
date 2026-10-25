@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/stand_to_crouch",
+  "name": "Standing To Crouching Transition",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crouch and duck",
+  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Stand_To_Crouch.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_stand_to_crouch/motion.mp4",
+      "video_sha256": "74e877be7e0872893e338cd345bb5f9fc9776ea4fdfa729dd8fb89b81a1d5053",
+      "fps": 50.0,
+      "frames": 76,
+      "duration": 1.52,
+      "last_sample_time": 1.5,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_stand_to_crouch/provenance.json",
+    "validation": "docs/previews/mixamo_stand_to_crouch/validation.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/running_up_stairs",
+  "name": "Running Up Stairs",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Stairs",
+  "description": "Stairs. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Running_Up_Stairs.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_running_up_stairs/motion.mp4",
+      "video_sha256": "a176d54f5aea5c9a69d96728c107a3311dddb53a28217f572d75e28aedbccb55",
+      "fps": 50.0,
+      "frames": 31,
+      "duration": 0.62,
+      "last_sample_time": 0.6,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_running_up_stairs/provenance.json",
+    "validation": "docs/previews/mixamo_running_up_stairs/validation.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/start_climbing_ladder",
+  "name": "Standing To Climb Ladder Quickly",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Ladder",
+  "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Start_Climbing_Ladder.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_start_climbing_ladder/motion.mp4",
+      "video_sha256": "80fbfff527c95652f6c1977e3c3b70cfe401e784453057e5ffdfc1a2d06ad2e4",
+      "fps": 50.0,
+      "frames": 102,
+      "duration": 2.04,
+      "last_sample_time": 2.02,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_start_climbing_ladder/provenance.json",
+    "validation": "docs/previews/mixamo_start_climbing_ladder/validation.json"
+  }
+}

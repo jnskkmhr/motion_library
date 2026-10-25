@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 0.013817563612879754,
+      "max_elbow_flexion_error_deg": 0.06379191877777106,
+      "max_segment_direction_error_deg": 0.059632657853148856,
+      "elbow_limit_frame_fraction": 0.0
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 0.016394910389389408,
+      "max_elbow_flexion_error_deg": 0.28484238185612076,
+      "max_segment_direction_error_deg": 0.17905336598311855,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Stand_To_Roll.fbx",
+  "source_sha256": "7da39bc246f96855a348cc780d94c78b9ddea76b978ae8ef79c7ca98cd982188",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 72,
+  "source_frames": 72,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Stand_To_Roll.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "c9c9a122-b96c-11e4-a802-0aaa78deedf9",
+  "source_description": "Dive Roll From Standing",
+  "category": "Recovery and roll",
+  "display_name": "Dive Roll From Standing",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": false,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

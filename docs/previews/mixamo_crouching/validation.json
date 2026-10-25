@@ -1,0 +1,10 @@
+{
+  "frames": 204,
+  "fps": 50.0,
+  "joint_limit_excess_rad": {},
+  "max_joint_speed_rad_s": 6.256165027618408,
+  "min_foot_corner_world_z_m": -0.050388223750466504,
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "note": "Sampled joint/geometry screening only; no full-body collision or dynamics validation."
+}

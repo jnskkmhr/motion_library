@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/dive_roll_2",
+  "name": "Dive Roll From Standing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Recovery and roll",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Dive_Roll_2.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_dive_roll_2/motion.mp4",
+      "video_sha256": "ba8309f32f4df8c5cf9af99b9f12dc14b8b6b33bc19bd6dc3a03ac024b4f0b4b",
+      "fps": 50.0,
+      "frames": 197,
+      "duration": 3.94,
+      "last_sample_time": 3.92,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_dive_roll_2/provenance.json",
+    "validation": "docs/previews/mixamo_dive_roll_2/validation.json"
+  }
+}

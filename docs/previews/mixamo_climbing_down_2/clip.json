@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_down_2",
+  "name": "Climb Through Fence And Jump Down",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_Down_2.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_down_2/motion.mp4",
+      "video_sha256": "251ea3f572dfd7d64590dbe874bfa901555dc52c8da55d651eecc4467b158514",
+      "fps": 50.0,
+      "frames": 157,
+      "duration": 3.14,
+      "last_sample_time": 3.12,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_down_2/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_down_2/validation.json"
+  }
+}

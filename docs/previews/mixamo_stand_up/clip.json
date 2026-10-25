@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/stand_up",
+  "name": "Standing Up From Seated Position",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Sit and stand",
+  "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Stand_Up.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_stand_up/motion.mp4",
+      "video_sha256": "5a29eab32b44488c60991968962d8eab9de293a04d1efd697238dfa4b5f85f34",
+      "fps": 50.0,
+      "frames": 242,
+      "duration": 4.84,
+      "last_sample_time": 4.82,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_stand_up/provenance.json",
+    "validation": "docs/previews/mixamo_stand_up/validation.json"
+  }
+}

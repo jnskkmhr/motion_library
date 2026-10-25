@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/running_crawl",
+  "name": "Running On All Fours",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crawl and hand support",
+  "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Running_Crawl.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_running_crawl/motion.mp4",
+      "video_sha256": "97b5e80c3433a600bd41a747d9bb65a09cf21fee62a4db750aff0930f17550c0",
+      "fps": 50.0,
+      "frames": 34,
+      "duration": 0.68,
+      "last_sample_time": 0.66,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_running_crawl/provenance.json",
+    "validation": "docs/previews/mixamo_running_crawl/validation.json"
+  }
+}

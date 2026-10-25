@@ -33,22 +33,42 @@ contact feasibility, policy tracking success, or readiness of every clip for tra
   Source frame ranges and the root XY translation are recorded in provenance.
 - All 27 new references passed the sampled joint-limit check. Foot-geometry reports
   are included; this is not a full contact/dynamic validation.
-- Public catalog: 77 clips / 102 NPZ-video pairs plus one video-only preview.
-  Local catalog: 82 clips / 108 NPZ-video pairs.
-  Array/terrain integrity, hashes, video frame counts and FPS passed for all pairs.
+- At that stage, the public catalog contained 76 clips / 102 NPZ-video pairs,
+  and the local catalog 81 clips / 107 pairs. See the navigation update below
+  for current counts.
 - Public and local galleries passed browser checks, including 29 OmniRetarget and
   five LAFAN selections, video loading, source/download links, and mobile layout.
 - Mixamo FBX import uses the uv-locked Blender 4.5 Python 3.11 wheel. A synthetic
   animated skeleton passed the FBX transform/timing round trip and joint-limited
-  G1 IK. The real Three.js r180 Mixamo Samba sample also passes import and exact-asset
-  export: 911 frames at 50 Hz. The paired G1 video was visually inspected.
-  Joint limits pass, but foot sliding and up to 6.9 cm of ground penetration
-  remain; it is explicitly labeled an unvalidated importer demonstration.
-- Browser checks cover the Mixamo tab, video playback, direct clip link, source
-  attribution, hidden public NPZ download, restored ordinary NPZ links, local
-  NPZ access, and mobile layout.
+  G1 IK. The initial unrelated dance preview has been removed from the galleries.
 - Python compilation, scoped Ruff checks, JavaScript syntax, and uv lock checks passed.
 
 LAFAN derivatives, local catalogs, and Mixamo asset directories are ignored by Git.
 No claim is made to reproduce ACP's exact demonstrations, retargeting, contact
 labels, policy rollouts, or training results.
+
+# Navigation collection — 2026-10-25
+
+- Selected and downloaded 82 Mixamo motions from a pinned UniMate dataset revision:
+  stairs, ladders, climbing/slopes, vaults, crawling/hand support, crouching/ducking,
+  jumps/landings, sitting/standing, and recovery/rolls. No conversion jobs failed.
+- All were retargeted to the 29-joint ball-hand G1 and exported with its exact
+  Isaac Lab USD asset. Recordings have 50 Hz timing and match their saved NPZs.
+- Each joint/root trajectory is distinct. All 82 sampled joint-position-limit
+  checks pass. These checks do not validate speed limits, self-collisions, terrain
+  contacts, balance, or dynamic tracking. Ground-contact errors remain.
+- New clips total 221.22 seconds. Individual durations are 0.42–11.42 seconds,
+  below the 60-second cap. No short clips were slowed down or repeated.
+- A real FBX cap check requested one second and produced a 0.98-second 50 Hz
+  export, with truncation recorded in provenance.
+- Public catalog: 158 clips, 102 NPZ/video pairs, 82 video-only previews.
+  Local catalog: 163 clips, 189 NPZ/video pairs. Full array, quaternion, geometry,
+  checksum, video frame-count, and FPS validation passed for both catalogs.
+- Sampled frames were inspected across the collection, with source-human/G1 crawl
+  comparison. The FBX source does not supply obstacle assets; affected previews
+  explicitly say “Obstacle not supplied.” These remain motion candidates for
+  contact/terrain fitting and tracker evaluation, not validated demonstrations.
+- Browser checks passed for all nine category counts and sample videos, direct
+  clip links, search, mobile layout, retained OmniRetarget links, and local Mixamo
+  NPZ downloads. Public previews do not advertise unavailable NPZ downloads.
+- Scoped Ruff formatting/lint checks, JavaScript syntax and diff checks passed.

@@ -1,0 +1,828 @@
+{
+  "repo_id": "Linzhan/Mixamo-Animations-Characters",
+  "revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "max_duration_seconds": 60,
+  "selection": "Whole-body navigation: stairs, ladders, ledges, slopes, vaults, crawl, crouch, jumps, sit/stand and recovery. Excludes dances, weapons, rope-only climbing and static poses. Not ACP exact training data.",
+  "clips": [
+    {
+      "name": "ascending_stairs",
+      "category": "Stairs",
+      "file": "animation/Ascending_Stairs.fbx",
+      "prompt": "Ascending Stairs",
+      "description": "Walking Up A Set Of Stairs",
+      "text": "Walking Up A Set Of Stairs",
+      "frames": "42",
+      "motion_id": "c9ccb1c6-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "descending_stairs",
+      "category": "Stairs",
+      "file": "animation/Descending_Stairs.fbx",
+      "prompt": "Descending Stairs",
+      "description": "Running Down A Set Of Stairs",
+      "text": "Running Down A Set Of Stairs",
+      "frames": "13",
+      "motion_id": "c9cca996-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "descending_stairs_2",
+      "category": "Stairs",
+      "file": "animation/Descending_Stairs_2.fbx",
+      "prompt": "Descending Stairs",
+      "description": "Walking Down A Set Of Stairs",
+      "text": "Walking Down A Set Of Stairs",
+      "frames": "29",
+      "motion_id": "c9ccb106-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "running_up_stairs",
+      "category": "Stairs",
+      "file": "animation/Running_Up_Stairs.fbx",
+      "prompt": "Running Up Stairs",
+      "description": "",
+      "text": "Running Up Stairs",
+      "frames": "19",
+      "motion_id": "c9ccaa5c-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_3",
+      "category": "Ladder",
+      "file": "animation/Climbing_3.fbx",
+      "prompt": "Climbing",
+      "description": "Ladder Climb Two Steps At A Time",
+      "text": "Ladder Climb Two Steps At A Time",
+      "frames": "126",
+      "motion_id": "c9c615dd-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_6",
+      "category": "Ladder",
+      "file": "animation/Climbing_6.fbx",
+      "prompt": "Climbing",
+      "description": "Ladder Climb One Step At A Time",
+      "text": "Ladder Climb One Step At A Time",
+      "frames": "48",
+      "motion_id": "c9c6150e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_ladder",
+      "category": "Ladder",
+      "file": "animation/Climbing_Ladder.fbx",
+      "prompt": "Climbing Ladder",
+      "description": "Climbing Up A Ladder",
+      "text": "Climbing Up A Ladder",
+      "frames": "24",
+      "motion_id": "c9c95e7a-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "start_climbing_ladder",
+      "category": "Ladder",
+      "file": "animation/Start_Climbing_Ladder.fbx",
+      "prompt": "Start Climbing Ladder",
+      "description": "Standing To Climb Ladder Quickly",
+      "text": "Standing To Climb Ladder Quickly",
+      "frames": "96",
+      "motion_id": "c9c8e009-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_to_top",
+      "category": "Ladder",
+      "file": "animation/Climbing_To_Top.fbx",
+      "prompt": "Climbing To Top",
+      "description": "Climbing Up A Ladder To Standing",
+      "text": "Climbing Up A Ladder To Standing",
+      "frames": "121",
+      "motion_id": "c9c9611b-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing",
+      "category": "Climb and slope",
+      "file": "animation/Climbing.fbx",
+      "prompt": "Climbing",
+      "description": "Run To Start Climbing",
+      "text": "Run To Start Climbing",
+      "frames": "116",
+      "motion_id": "c9c8c5e5-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_2",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_2.fbx",
+      "prompt": "Climbing",
+      "description": "Pulling Up To A Ledge",
+      "text": "Pulling Up To A Ledge",
+      "frames": "168",
+      "motion_id": "c9c803b5-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_4",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_4.fbx",
+      "prompt": "Climbing",
+      "description": "Climbing Up A Slope",
+      "text": "Climbing Up A Slope",
+      "frames": "140",
+      "motion_id": "c9c83859-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_5",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_5.fbx",
+      "prompt": "Climbing",
+      "description": "Starting To Climb Onto A Box Or Short Fence",
+      "text": "Starting To Climb Onto A Box Or Short Fence",
+      "frames": "69",
+      "motion_id": "c9c90758-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_down",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_Down.fbx",
+      "prompt": "Climbing Down",
+      "description": "Climbing Down To Standing",
+      "text": "Climbing Down To Standing",
+      "frames": "104",
+      "motion_id": "c9c84593-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_down_2",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_Down_2.fbx",
+      "prompt": "Climbing Down",
+      "description": "Climb Through Fence And Jump Down",
+      "text": "Climb Through Fence And Jump Down",
+      "frames": "95",
+      "motion_id": "c9c8b4dd-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_up_wall",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_Up_Wall.fbx",
+      "prompt": "Climbing Up Wall",
+      "description": "Climbing Up A Wall",
+      "text": "Climbing Up A Wall",
+      "frames": "61",
+      "motion_id": "c9c9b079-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "climbing_down_wall",
+      "category": "Climb and slope",
+      "file": "animation/Climbing_Down_Wall.fbx",
+      "prompt": "Climbing Down Wall",
+      "description": "Climbing Down A Wall",
+      "text": "Climbing Down A Wall",
+      "frames": "61",
+      "motion_id": "c9c9b2b7-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "braced_hang_to_crouch",
+      "category": "Climb and slope",
+      "file": "animation/Braced_Hang_To_Crouch.fbx",
+      "prompt": "Braced Hang To Crouch",
+      "description": "Climb Wall From Braced Hang To Crouch",
+      "text": "Climb Wall From Braced Hang To Crouch",
+      "frames": "35",
+      "motion_id": "c9cc0304-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "sprint_to_wall_climb",
+      "category": "Climb and slope",
+      "file": "animation/Sprint_To_Wall_Climb.fbx",
+      "prompt": "Sprint To Wall Climb",
+      "description": "Sprint To Wall Climb To Crouch Idle",
+      "text": "Sprint To Wall Climb To Crouch Idle",
+      "frames": "55",
+      "motion_id": "c9cc0053-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_3",
+      "category": "Vault",
+      "file": "animation/Jumping_3.fbx",
+      "prompt": "Jumping",
+      "description": "Male Jumping Over An Obstacle With 2 Hands Planted",
+      "text": "Male Jumping Over An Obstacle With 2 Hands Planted",
+      "frames": "161",
+      "motion_id": "c9ca8bbd-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_12",
+      "category": "Vault",
+      "file": "animation/Jumping_12.fbx",
+      "prompt": "Jumping",
+      "description": "Male Jumping Over An Obstacle With 1 Hand Planted",
+      "text": "Male Jumping Over An Obstacle With 1 Hand Planted",
+      "frames": "36",
+      "motion_id": "c9ca8d0f-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "vault_over_box",
+      "category": "Vault",
+      "file": "animation/Vault_Over_Box.fbx",
+      "prompt": "Vault Over Box",
+      "description": "Vault Over Box And Hide",
+      "text": "Vault Over Box And Hide",
+      "frames": "233",
+      "motion_id": "c9c8bc4d-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crawl_backwards",
+      "category": "Crawl and hand support",
+      "file": "animation/Crawl_Backwards.fbx",
+      "prompt": "Crawl Backwards",
+      "description": "Crawling Backwards In Fear",
+      "text": "Crawling Backwards In Fear",
+      "frames": "146",
+      "motion_id": "c9ccc230-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crawl_backwards_in_prone",
+      "category": "Crawl and hand support",
+      "file": "animation/Crawl_Backwards_In_Prone.fbx",
+      "prompt": "Crawl Backwards In Prone",
+      "description": "Crawling Backwards While In A Prone Position",
+      "text": "Crawling Backwards While In A Prone Position",
+      "frames": "35",
+      "motion_id": "c9c962ca-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crawl_forward",
+      "category": "Crawl and hand support",
+      "file": "animation/Crawl_Forward.fbx",
+      "prompt": "Crawl Forward",
+      "description": "Crawling Forward",
+      "text": "Crawling Forward",
+      "frames": "106",
+      "motion_id": "c9c87961-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crawling",
+      "category": "Crawl and hand support",
+      "file": "animation/Crawling.fbx",
+      "prompt": "Crawling",
+      "description": "Crawling Forward On Hands And Knees",
+      "text": "Crawling Forward On Hands And Knees",
+      "frames": "55",
+      "motion_id": "c9c77c34-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crawling_backwards",
+      "category": "Crawl and hand support",
+      "file": "animation/Crawling_Backwards.fbx",
+      "prompt": "Crawling Backwards",
+      "description": "Frantically Crawling Backwards On Stomach",
+      "text": "Frantically Crawling Backwards On Stomach",
+      "frames": "63",
+      "motion_id": "c9c8c51f-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "low_crawl",
+      "category": "Crawl and hand support",
+      "file": "animation/Low_Crawl.fbx",
+      "prompt": "Low Crawl",
+      "description": "Super Low Crawl, Or Crawling Up A Wall",
+      "text": "Super Low Crawl, Or Crawling Up A Wall",
+      "frames": "95",
+      "motion_id": "c9ccc173-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "running_crawl",
+      "category": "Crawl and hand support",
+      "file": "animation/Running_Crawl.fbx",
+      "prompt": "Running Crawl",
+      "description": "Running On All Fours",
+      "text": "Running On All Fours",
+      "frames": "21",
+      "motion_id": "c9cca748-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crouch_to_prone",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_To_Prone.fbx",
+      "prompt": "Crouch To Prone",
+      "description": "Crouching To Laying Prone Transition",
+      "text": "Crouching To Laying Prone Transition",
+      "frames": "103",
+      "motion_id": "c9c87ad9-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crouch_to_stand",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_To_Stand.fbx",
+      "prompt": "Crouch To Stand",
+      "description": "Male Crouch To Stand",
+      "text": "Male Crouch To Stand",
+      "frames": "78",
+      "motion_id": "c9c62952-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crouch_walk",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Walk.fbx",
+      "prompt": "Crouch Walk",
+      "description": "Crouched Against Wall To Crouch Walk",
+      "text": "Crouched Against Wall To Crouch Walk",
+      "frames": "91",
+      "motion_id": "c9c8c75e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crouch_walk_back",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Walk_Back.fbx",
+      "prompt": "Crouch Walk Back",
+      "description": "Walking Backwards While Crouched",
+      "text": "Walking Backwards While Crouched",
+      "frames": "38",
+      "motion_id": "328e4430-480a-49c2-8086-ef5f1b5a1beb"
+    },
+    {
+      "name": "crouch_walk_forward_2",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Walk_Forward_2.fbx",
+      "prompt": "Crouch Walk Forward",
+      "description": "Walking Forward While Crouched",
+      "text": "Walking Forward While Crouched",
+      "frames": "35",
+      "motion_id": "b9fbd249-a554-423c-aa37-baa98223c4dc"
+    },
+    {
+      "name": "crouch_walk_left",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Walk_Left.fbx",
+      "prompt": "Crouch Walk Left",
+      "description": "Walking Left While Crouched",
+      "text": "Walking Left While Crouched",
+      "frames": "36",
+      "motion_id": "14f7890c-4431-4944-95d0-f7c46a1c538b"
+    },
+    {
+      "name": "crouch_walk_right_2",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Walk_Right_2.fbx",
+      "prompt": "Crouch Walk Right",
+      "description": "Walking Right While Crouched",
+      "text": "Walking Right While Crouched",
+      "frames": "39",
+      "motion_id": "b6a59d7d-d02d-48e4-ac30-3edee0d2d9e6"
+    },
+    {
+      "name": "crouched_walking",
+      "category": "Crouch and duck",
+      "file": "animation/Crouched_Walking.fbx",
+      "prompt": "Crouched Walking",
+      "description": "Crouched Walk",
+      "text": "Crouched Walk",
+      "frames": "32",
+      "motion_id": "c9c640fa-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crouching",
+      "category": "Crouch and duck",
+      "file": "animation/Crouching.fbx",
+      "prompt": "Crouching",
+      "description": "Crouching From Standing Position",
+      "text": "Crouching From Standing Position",
+      "frames": "123",
+      "motion_id": "c9c8ecbd-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "ducking_2",
+      "category": "Crouch and duck",
+      "file": "animation/Ducking_2.fbx",
+      "prompt": "Ducking",
+      "description": "Ducking For Cover From Standing Idle",
+      "text": "Ducking For Cover From Standing Idle",
+      "frames": "47",
+      "motion_id": "c9c8de59-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "stand_to_crouch",
+      "category": "Crouch and duck",
+      "file": "animation/Stand_To_Crouch.fbx",
+      "prompt": "Stand To Crouch",
+      "description": "Standing To Crouching Transition",
+      "text": "Standing To Crouching Transition",
+      "frames": "46",
+      "motion_id": "c9c877e6-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "standing_2",
+      "category": "Crouch and duck",
+      "file": "animation/Standing_2.fbx",
+      "prompt": "Standing",
+      "description": "Standing From A Crouch",
+      "text": "Standing From A Crouch",
+      "frames": "104",
+      "motion_id": "c9c8fa8d-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "crouch_turn_left_90_2",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Turn_Left_90_2.fbx",
+      "prompt": "Crouch Turn Left 90",
+      "description": "Turning 90 Degrees Left",
+      "text": "Turning 90 Degrees Left",
+      "frames": "56",
+      "motion_id": "59638101-83cb-4f5b-9ecc-5f3184b1669c"
+    },
+    {
+      "name": "crouch_turn_right_90",
+      "category": "Crouch and duck",
+      "file": "animation/Crouch_Turn_Right_90.fbx",
+      "prompt": "Crouch Turn Right 90",
+      "description": "Turning 90 Degrees Right",
+      "text": "Turning 90 Degrees Right",
+      "frames": "50",
+      "motion_id": "f73f73aa-7b67-43ca-ad1b-f58e6f909e95"
+    },
+    {
+      "name": "big_jump",
+      "category": "Jump and landing",
+      "file": "animation/Big_Jump.fbx",
+      "prompt": "Big Jump",
+      "description": "Big Jump To Roll",
+      "text": "Big Jump To Roll",
+      "frames": "72",
+      "motion_id": "c9caace6-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "box_jump",
+      "category": "Jump and landing",
+      "file": "animation/Box_Jump.fbx",
+      "prompt": "Box Jump",
+      "description": "Jump Up On Box",
+      "text": "Jump Up On Box",
+      "frames": "118",
+      "motion_id": "c9ce819a-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "forward_jump",
+      "category": "Jump and landing",
+      "file": "animation/Forward_Jump.fbx",
+      "prompt": "Forward Jump",
+      "description": "Jumping Forward",
+      "text": "Jumping Forward",
+      "frames": "74",
+      "motion_id": "c9c7282b-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jump_2",
+      "category": "Jump and landing",
+      "file": "animation/Jump_2.fbx",
+      "prompt": "Jump",
+      "description": "Female Forward Running Jump",
+      "text": "Female Forward Running Jump",
+      "frames": "99",
+      "motion_id": "c9ccfe2b-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jump_3",
+      "category": "Jump and landing",
+      "file": "animation/Jump_3.fbx",
+      "prompt": "Jump",
+      "description": "Forward Running Jump",
+      "text": "Forward Running Jump",
+      "frames": "31",
+      "motion_id": "c9ccebcf-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jump_5",
+      "category": "Jump and landing",
+      "file": "animation/Jump_5.fbx",
+      "prompt": "Jump",
+      "description": "Backward Running Jump",
+      "text": "Backward Running Jump",
+      "frames": "29",
+      "motion_id": "c9ccec92-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jump_down_2",
+      "category": "Jump and landing",
+      "file": "animation/Jump_Down_2.fbx",
+      "prompt": "Jump Down",
+      "description": "Jumping Down From 2 Feet Platform With 2 Feet",
+      "text": "Jumping Down From 2 Feet Platform With 2 Feet",
+      "frames": "106",
+      "motion_id": "c9c6695e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping",
+      "category": "Jump and landing",
+      "file": "animation/Jumping.fbx",
+      "prompt": "Jumping",
+      "description": "Male Jumping Onto Platform",
+      "text": "Male Jumping Onto Platform",
+      "frames": "38",
+      "motion_id": "c9c66a19-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_2",
+      "category": "Jump and landing",
+      "file": "animation/Jumping_2.fbx",
+      "prompt": "Jumping",
+      "description": "Male Jumping Down From 2ft High Platform With One Foot",
+      "text": "Male Jumping Down From 2ft High Platform With One Foot",
+      "frames": "73",
+      "motion_id": "c9c66b89-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_5",
+      "category": "Jump and landing",
+      "file": "animation/Jumping_5.fbx",
+      "prompt": "Jumping",
+      "description": "Male Jumping Down From 4 Feet",
+      "text": "Male Jumping Down From 4 Feet",
+      "frames": "80",
+      "motion_id": "c9c64840-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_7",
+      "category": "Jump and landing",
+      "file": "animation/Jumping_7.fbx",
+      "prompt": "Jumping",
+      "description": "Male Jumping Down From 4ft And Crouching On One Hand",
+      "text": "Male Jumping Down From 4ft And Crouching On One Hand",
+      "frames": "67",
+      "motion_id": "c9c667ea-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_11",
+      "category": "Jump and landing",
+      "file": "animation/Jumping_11.fbx",
+      "prompt": "Jumping",
+      "description": "Male Stepping Onto Platform",
+      "text": "Male Stepping Onto Platform",
+      "frames": "42",
+      "motion_id": "c9c66acd-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_13",
+      "category": "Jump and landing",
+      "file": "animation/Jumping_13.fbx",
+      "prompt": "Jumping",
+      "description": "Step Up To Jump Over Object",
+      "text": "Step Up To Jump Over Object",
+      "frames": "87",
+      "motion_id": "c9c849de-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "jumping_down_12",
+      "category": "Jump and landing",
+      "file": "animation/Jumping_Down_12.fbx",
+      "prompt": "Jumping Down",
+      "description": "Jumping Down From Higher Level",
+      "text": "Jumping Down From Higher Level",
+      "frames": "98",
+      "motion_id": "c9c8ca31-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "running_jump",
+      "category": "Jump and landing",
+      "file": "animation/Running_Jump.fbx",
+      "prompt": "Running Jump",
+      "description": "Jumping From A Sprint",
+      "text": "Jumping From A Sprint",
+      "frames": "28",
+      "motion_id": "c9c81bb4-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "running_jump_2",
+      "category": "Jump and landing",
+      "file": "animation/Running_Jump_2.fbx",
+      "prompt": "Running Jump",
+      "description": "Fast Run To Jump Up Onto Higher Level",
+      "text": "Fast Run To Jump Up Onto Higher Level",
+      "frames": "66",
+      "motion_id": "c9c8fc30-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "unarmed_jump",
+      "category": "Jump and landing",
+      "file": "animation/Unarmed_Jump.fbx",
+      "prompt": "Unarmed Jump",
+      "description": "Jumping And Landing In Place",
+      "text": "Jumping And Landing In Place",
+      "frames": "71",
+      "motion_id": "c9ceec50-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "unarmed_jump_running",
+      "category": "Jump and landing",
+      "file": "animation/Unarmed_Jump_Running.fbx",
+      "prompt": "Unarmed Jump Running",
+      "description": "Running Jump And Landing",
+      "text": "Running Jump And Landing",
+      "frames": "43",
+      "motion_id": "c9ceed14-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "standing_jump_running_to_run_forward",
+      "category": "Jump and landing",
+      "file": "animation/Standing_Jump_Running_To_Run_Forward.fbx",
+      "prompt": "Standing Jump Running To Run Forward",
+      "description": "Running Jump To Run Forward",
+      "text": "Running Jump To Run Forward",
+      "frames": "62",
+      "motion_id": "469ad0f4-2f7f-47a1-b12c-203ca355a7f5"
+    },
+    {
+      "name": "standing_jump_running_landing",
+      "category": "Jump and landing",
+      "file": "animation/Standing_Jump_Running_Landing.fbx",
+      "prompt": "Standing Jump Running Landing",
+      "description": "Landing From Running  Jump Into Run Forward",
+      "text": "Landing From Running  Jump Into Run Forward",
+      "frames": "42",
+      "motion_id": "4bc6d762-60d4-438f-b7d1-ae46df74b075"
+    },
+    {
+      "name": "jump_over",
+      "category": "Jump and landing",
+      "file": "animation/Jump_Over.fbx",
+      "prompt": "Jump Over",
+      "description": "Flying Jump Rolling To Run",
+      "text": "Flying Jump Rolling To Run",
+      "frames": "185",
+      "motion_id": "c9caae47-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "stand_to_sit",
+      "category": "Sit and stand",
+      "file": "animation/Stand_To_Sit.fbx",
+      "prompt": "Stand To Sit",
+      "description": "Standing To Sitting Transition",
+      "text": "Standing To Sitting Transition",
+      "frames": "68",
+      "motion_id": "c9ccaece-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "sitting_6",
+      "category": "Sit and stand",
+      "file": "animation/Sitting_6.fbx",
+      "prompt": "Sitting",
+      "description": "Sitting Down Arms Outside Armrests",
+      "text": "Sitting Down Arms Outside Armrests",
+      "frames": "134",
+      "motion_id": "c9c7911a-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "sit_to_stand",
+      "category": "Sit and stand",
+      "file": "animation/Sit_To_Stand.fbx",
+      "prompt": "Sit To Stand",
+      "description": "Sitting To Standing",
+      "text": "Sitting To Standing",
+      "frames": "69",
+      "motion_id": "c9ccabe2-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "stand_up",
+      "category": "Sit and stand",
+      "file": "animation/Stand_Up.fbx",
+      "prompt": "Stand Up",
+      "description": "Standing Up From Seated Position",
+      "text": "Standing Up From Seated Position",
+      "frames": "146",
+      "motion_id": "c9c7937e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "standing_up",
+      "category": "Sit and stand",
+      "file": "animation/Standing_Up.fbx",
+      "prompt": "Standing Up",
+      "description": "Sitting To Standing",
+      "text": "Sitting To Standing",
+      "frames": "183",
+      "motion_id": "c9c8335e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "getting_up",
+      "category": "Recovery and roll",
+      "file": "animation/Getting_Up.fbx",
+      "prompt": "Getting Up",
+      "description": "Getting Up From Being Knocked Down On The Ground",
+      "text": "Getting Up From Being Knocked Down On The Ground",
+      "frames": "82",
+      "motion_id": "c9c90823-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "getting_up_2",
+      "category": "Recovery and roll",
+      "file": "animation/Getting_Up_2.fbx",
+      "prompt": "Getting Up",
+      "description": "Standing From A Lying Prone",
+      "text": "Standing From A Lying Prone",
+      "frames": "229",
+      "motion_id": "c9cd89ad-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "getting_up_3",
+      "category": "Recovery and roll",
+      "file": "animation/Getting_Up_3.fbx",
+      "prompt": "Getting Up",
+      "description": "Getting Up From Back",
+      "text": "Getting Up From Back",
+      "frames": "251",
+      "motion_id": "c9c7276e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "getting_up_4",
+      "category": "Recovery and roll",
+      "file": "animation/Getting_Up_4.fbx",
+      "prompt": "Getting Up",
+      "description": "Getting Up From Stomach",
+      "text": "Getting Up From Stomach",
+      "frames": "259",
+      "motion_id": "c9c71f39-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "stand_up_2",
+      "category": "Recovery and roll",
+      "file": "animation/Stand_Up_2.fbx",
+      "prompt": "Stand Up",
+      "description": "Standing Up From Back",
+      "text": "Standing Up From Back",
+      "frames": "249",
+      "motion_id": "c9c6d314-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "standing_up_3",
+      "category": "Recovery and roll",
+      "file": "animation/Standing_Up_3.fbx",
+      "prompt": "Standing Up",
+      "description": "Standing Up From Lying On Stomach",
+      "text": "Standing Up From Lying On Stomach",
+      "frames": "343",
+      "motion_id": "c9c6dc32-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "stand",
+      "category": "Recovery and roll",
+      "file": "animation/Stand.fbx",
+      "prompt": "Stand",
+      "description": "Standing From Crouched Hands On Ground",
+      "text": "Standing From Crouched Hands On Ground",
+      "frames": "94",
+      "motion_id": "c9c804f0-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "standing",
+      "category": "Recovery and roll",
+      "file": "animation/Standing.fbx",
+      "prompt": "Standing",
+      "description": "Standing Up From A Kneeling Position",
+      "text": "Standing Up From A Kneeling Position",
+      "frames": "84",
+      "motion_id": "c9c8cebb-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "kneeling_down",
+      "category": "Recovery and roll",
+      "file": "animation/Kneeling_Down.fbx",
+      "prompt": "Kneeling Down",
+      "description": "Standing To Kneeling Down",
+      "text": "Standing To Kneeling Down",
+      "frames": "84",
+      "motion_id": "c9c8ac04-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "dive_roll_2",
+      "category": "Recovery and roll",
+      "file": "animation/Dive_Roll_2.fbx",
+      "prompt": "Dive Roll",
+      "description": "Dive Roll From Standing",
+      "text": "Dive Roll From Standing",
+      "frames": "188",
+      "motion_id": "c9c95f5e-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "stand_to_roll",
+      "category": "Recovery and roll",
+      "file": "animation/Stand_To_Roll.fbx",
+      "prompt": "Stand To Roll",
+      "description": "Dive Roll From Standing",
+      "text": "Dive Roll From Standing",
+      "frames": "72",
+      "motion_id": "c9c9a122-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "run_to_rolling",
+      "category": "Recovery and roll",
+      "file": "animation/Run_To_Rolling.fbx",
+      "prompt": "Run To Rolling",
+      "description": "Run Ro Roll Eveade To Run",
+      "text": "Run Ro Roll Eveade To Run",
+      "frames": "104",
+      "motion_id": "c9cac590-b96c-11e4-a802-0aaa78deedf9"
+    },
+    {
+      "name": "edge_slip",
+      "category": "Recovery and roll",
+      "file": "animation/Edge_Slip.fbx",
+      "prompt": "Edge Slip",
+      "description": "Slipping Off An Edge Then Regaining Balance",
+      "text": "Slipping Off An Edge Then Regaining Balance",
+      "frames": "128",
+      "motion_id": "c9cccf35-b96c-11e4-a802-0aaa78deedf9"
+    }
+  ]
+}

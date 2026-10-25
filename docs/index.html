@@ -20,13 +20,15 @@
     These come from a source cited by ACP; its exact clip selection is not public.</p>
     <p><strong>LAFAN:</strong> the download script prepares five local G1 previews: walking, falling/getting up, and jumping.
     Converted files stay local under the source's no-derivatives terms. <a href="https://github.com/jnskkmhr/motion_library/blob/main/data_generator/lafan/README.md">Build local previews ↗</a></p>
-    <p><strong>Mixamo:</strong> select the Mixamo tab to watch the Samba dancing sample retargeted to G1.
-    This public sample comes from Three.js; it is not ACP’s stair, ladder, or sitting data. The video is published; animation arrays stay local.
-    <a href="https://github.com/jnskkmhr/motion_library/blob/main/data_generator/mixamo/README.md">Import instructions ↗</a></p>
+    <p><strong>Mixamo:</strong> navigation motions retargeted to ball-hand G1: stairs, ladders, slopes, climbs,
+    vaults, crawling, crouching, jumps, sitting, and recovery. Select <strong>Mixamo</strong> and filter by motion type.
+    Each clip is under one minute. Videos are public; converted NPZ files stay local.
+    These are source motion candidates, not ACP’s exact training clips. Obstacle geometry is not included in the FBX files.
+    <a href="https://github.com/jnskkmhr/motion_library/blob/main/data_generator/mixamo/README.md">Source and reproduction ↗</a></p>
     <p><a href="https://arxiv.org/html/2610.31608v1">ACP paper, supplementary Table S1 ↗</a></p>
   </details>
   <div class="workspace">
-    <aside><label for="search">Find a motion</label><input id="search" type="search" placeholder="Jump, crawl, climb…"><div class="list-heading"><span>AVAILABLE MOTIONS</span><span id="count"></span></div><div id="motion-list" role="group" aria-label="Choose a motion"></div><p id="empty" hidden>No matching motions.</p></aside>
+    <aside><div id="category-filter"><label for="category">Motion type</label><select id="category"></select></div><label for="search">Find a motion</label><input id="search" type="search" placeholder="Jump, crawl, climb…"><div class="list-heading"><span>AVAILABLE MOTIONS</span><span id="count"></span></div><div id="motion-list" role="group" aria-label="Choose a motion"></div><p id="empty" hidden>No matching motions.</p></aside>
     <section class="viewer" aria-label="Motion preview">
       <div class="view-heading"><div><p id="source-name" class="eyebrow"></p><h2 id="motion-name"></h2></div><span id="status" class="badge"></span></div>
       <div class="screen"><video id="video" controls playsinline preload="metadata" aria-label="Selected motion video"></video><p id="video-error" hidden>Video could not be loaded. Check that the data directory is served alongside docs.</p></div>

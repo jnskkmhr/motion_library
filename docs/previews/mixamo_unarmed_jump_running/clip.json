@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/unarmed_jump_running",
+  "name": "Running Jump And Landing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Jump and landing",
+  "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Unarmed_Jump_Running.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_unarmed_jump_running/motion.mp4",
+      "video_sha256": "d13aa45906258c251978ba4ac0815c11bf4c02d4084a1f90468b9aafbe485a94",
+      "fps": 50.0,
+      "frames": 71,
+      "duration": 1.42,
+      "last_sample_time": 1.4,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_unarmed_jump_running/provenance.json",
+    "validation": "docs/previews/mixamo_unarmed_jump_running/validation.json"
+  }
+}

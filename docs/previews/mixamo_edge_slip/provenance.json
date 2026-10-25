@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 0.06811319761634582,
+      "max_elbow_flexion_error_deg": 2.21986119457762,
+      "max_segment_direction_error_deg": 8.390013843652202,
+      "elbow_limit_frame_fraction": 0.0
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 36.468850767610114,
+      "max_elbow_flexion_error_deg": 68.81111535488913,
+      "max_segment_direction_error_deg": 71.50558130602441,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Edge_Slip.fbx",
+  "source_sha256": "0363f32aa60bdf4406d29d0622cd0046c10f9c4a6e624626221bb96d95434a41",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 75,
+  "source_frames": 75,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Edge_Slip.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "c9cccf35-b96c-11e4-a802-0aaa78deedf9",
+  "source_description": "Slipping Off An Edge Then Regaining Balance",
+  "category": "Recovery and roll",
+  "display_name": "Slipping Off An Edge Then Regaining Balance",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": false,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

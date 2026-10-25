@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/running_jump_2",
+  "name": "Fast Run To Jump Up Onto Higher Level",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Jump and landing",
+  "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Running_Jump_2.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_running_jump_2/motion.mp4",
+      "video_sha256": "0eeaca4488c60d395dfe9c77e9cd28e819dd7644e561e015fe8b10438f5c5746",
+      "fps": 50.0,
+      "frames": 109,
+      "duration": 2.18,
+      "last_sample_time": 2.16,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_running_jump_2/provenance.json",
+    "validation": "docs/previews/mixamo_running_jump_2/validation.json"
+  }
+}

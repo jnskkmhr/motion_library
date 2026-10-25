@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/crouching",
+  "name": "Crouching From Standing Position",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crouch and duck",
+  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouching.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_crouching/motion.mp4",
+      "video_sha256": "d0139ef1e190a7c109669f3762f1a4f5a1d59b55e25d2a4f83ad5fcefc601453",
+      "fps": 50.0,
+      "frames": 204,
+      "duration": 4.08,
+      "last_sample_time": 4.06,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_crouching/provenance.json",
+    "validation": "docs/previews/mixamo_crouching/validation.json"
+  }
+}

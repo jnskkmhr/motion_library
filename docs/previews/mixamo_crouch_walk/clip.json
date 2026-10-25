@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/crouch_walk",
+  "name": "Crouched Against Wall To Crouch Walk",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crouch and duck",
+  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouch_Walk.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_crouch_walk/motion.mp4",
+      "video_sha256": "e9e52e9ffa9450c428ff529f9c9dfe7516366ba1ee2df623f0295a65782cdf6a",
+      "fps": 50.0,
+      "frames": 151,
+      "duration": 3.02,
+      "last_sample_time": 3.0,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_crouch_walk/provenance.json",
+    "validation": "docs/previews/mixamo_crouch_walk/validation.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/jumping_11",
+  "name": "Stepping Onto Platform",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Jump and landing",
+  "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jumping_11.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_jumping_11/motion.mp4",
+      "video_sha256": "7f235a710d91b508e1c7e32747cbb355ab78c797368e6200d9ea674f0109edde",
+      "fps": 50.0,
+      "frames": 69,
+      "duration": 1.38,
+      "last_sample_time": 1.36,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_jumping_11/provenance.json",
+    "validation": "docs/previews/mixamo_jumping_11/validation.json"
+  }
+}

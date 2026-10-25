@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 1.6760951054150701,
+      "max_elbow_flexion_error_deg": 32.89025182173677,
+      "max_segment_direction_error_deg": 16.51927125813702,
+      "elbow_limit_frame_fraction": 0.06986899563318777
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 0.07065307617402425,
+      "max_elbow_flexion_error_deg": 2.1211931081748787,
+      "max_segment_direction_error_deg": 1.7240088027668292,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Getting_Up_2.fbx",
+  "source_sha256": "5bff96faa7d0d92ab5037d1d1e0ad3be7c6322bb54f31c442fc506f15e5b5ace",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 229,
+  "source_frames": 229,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Getting_Up_2.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "c9cd89ad-b96c-11e4-a802-0aaa78deedf9",
+  "source_description": "Standing From A Lying Prone",
+  "category": "Recovery and roll",
+  "display_name": "Standing From A Lying Prone",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": false,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

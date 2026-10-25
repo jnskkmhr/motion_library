@@ -2,8 +2,8 @@
 const clips = window.MOTION_CATALOG.clips;
 const config = window.MOTION_CONFIG;
 const $ = (id) => document.getElementById(id);
-let source = "all", query = "", selected = null, variantIndex = 0;
-const filtered = () => clips.filter(c => (source === "all" || c.source === source) && `${c.name} ${c.id} ${c.source_name}`.toLowerCase().includes(query));
+let source = "all", category = "all", query = "", selected = null, variantIndex = 0;
+const filtered = () => clips.filter(c => (source === "all" || c.source === source) && (category === "all" || c.category === category) && `${c.name} ${c.id} ${c.source_name} ${c.category || ""}`.toLowerCase().includes(query));
 const local = path => "../" + path.split("/").map(encodeURIComponent).join("/");
 const github = path => `${config.repository}/blob/${encodeURIComponent(config.branch)}/${path.split("/").map(encodeURIComponent).join("/")}`;
 function button(text, handler) { const b = document.createElement("button"); b.type = "button"; b.textContent = text; b.onclick = handler; return b; }
@@ -11,9 +11,15 @@ function renderSources() {
   $("sources").replaceChildren();
   const sources = [["all", "All sources"], ...new Map(clips.map(c => [c.source, c.source_name])).entries()];
   for (const [id, label] of sources) {
-    const b = button(label, () => { source = id; renderSources(); renderList(); });
+    const b = button(label, () => { source = id; category = "all"; renderCategories(); renderSources(); renderList(); });
     b.setAttribute("aria-pressed", String(source === id)); $("sources").append(b);
   }
+}
+function renderCategories() {
+  const menu = $("category"); menu.replaceChildren();
+  const categories = ["all", ...new Set(clips.filter(c => source === "all" || c.source === source).map(c => c.category).filter(Boolean))];
+  for (const value of categories) { const option = document.createElement("option"); option.value = value; option.textContent = value === "all" ? "All motion types" : value; menu.append(option); }
+  menu.value = category; $("category-filter").hidden = categories.length <= 1;
 }
 function renderList() {
   const visible = filtered();
@@ -35,11 +41,11 @@ function select(clip, index = 0) {
   const v = clip.variants[index], visible = filtered(), position = visible.findIndex(c => c.id === clip.id);
   $("source-name").textContent = clip.source_name;
   $("motion-name").textContent = clip.name;
-  $("status").textContent = clip.preview_only ? "Video preview" : clip.local_only ? "Local preview" : clip.experimental ? "Experimental" : "Reference motion";
+  $("status").textContent = clip.preview_only ? "Motion candidate" : clip.local_only ? "Local preview" : clip.experimental ? "Experimental" : "Reference motion";
   $("status").className = "badge" + (clip.experimental ? " experimental" : "");
   $("duration").textContent = `${v.duration.toFixed(2)} s`;
   $("fps").textContent = `${v.fps} FPS`;
-  $("terrain").textContent = ({mesh:"Triangle mesh",boxes:"Boxes",ground:"Ground"})[v.terrain];
+  $("terrain").textContent = ({mesh:"Triangle mesh",boxes:"Boxes",ground:"Ground",missing:"Obstacle not supplied"})[v.terrain];
   const upstream = clip.local_only || clip.preview_only;
   $("npz-github").hidden = upstream && !clip.source_url;
   $("npz-github").href = upstream ? (clip.source_url || "#") : github(v.npz);
@@ -68,15 +74,17 @@ function step(delta) {
   const visible = filtered(), index = visible.findIndex(c => c.id === selected?.id) + delta;
   if (index >= 0 && index < visible.length) select(visible[index]);
 }
+$("category").onchange = e => { category = e.target.value; renderList(); };
 $("search").addEventListener("input", e => { query = e.target.value.toLowerCase().trim(); renderList(); });
 $("previous").onclick = () => step(-1); $("next").onclick = () => step(1);
 $("loop").onchange = e => { $("video").loop = e.target.checked; };
 $("video").onerror = () => { $("video-error").hidden = false; };
 document.addEventListener("keydown", e => {
-  if (["INPUT", "TEXTAREA", "VIDEO", "BUTTON"].includes(e.target.tagName) || e.ctrlKey || e.altKey || e.metaKey) return;
+  if (["INPUT", "TEXTAREA", "VIDEO", "BUTTON", "SELECT"].includes(e.target.tagName) || e.ctrlKey || e.altKey || e.metaKey) return;
   if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); step(e.key === "ArrowRight" ? 1 : -1); }
 });
 $("repository").href = config.repository; $("total").textContent = clips.length;
 try { selected = clips.find(c => c.id === decodeURIComponent(location.hash.slice(1))); } catch { selected = null; }
-selected ||= clips.find(c => c.id === "parc/jump_005") || clips[0];
-renderSources(); renderList();
+if (selected?.source === "mixamo") source = "mixamo";
+selected ||= clips.find(c => c.id === "mixamo/crawling") || clips.find(c => c.id === "parc/jump_005") || clips[0];
+renderCategories(); renderSources(); renderList();

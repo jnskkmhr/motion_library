@@ -1,0 +1,45 @@
+{
+  "uniform_scale": 0.6184224799078889,
+  "arm_alignment": {
+    "left": {
+      "mean_elbow_flexion_error_deg": 0.011192404076485547,
+      "max_elbow_flexion_error_deg": 0.08767552155117284,
+      "max_segment_direction_error_deg": 0.06256762479410057,
+      "elbow_limit_frame_fraction": 0.0
+    },
+    "right": {
+      "mean_elbow_flexion_error_deg": 0.013945892647693761,
+      "max_elbow_flexion_error_deg": 0.053979588742953354,
+      "max_segment_direction_error_deg": 0.05040941193855272,
+      "elbow_limit_frame_fraction": 0.0
+    }
+  },
+  "source": "Mixamo local FBX",
+  "source_file": "Running_Up_Stairs.fbx",
+  "source_sha256": "09852a14d586ddf781d6ab947124534f61065524d1b893edf3a4a0c62550af0a",
+  "animation": "Armature|mixamo.com|Layer0",
+  "fps": 30,
+  "frames": 19,
+  "source_frames": 19,
+  "max_duration_seconds": 60.0,
+  "truncated": false,
+  "public_distribution": false,
+  "exact_acp_clip": false,
+  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "source_joint_trajectory_modified": true,
+  "wrists": "Fixed neutral; source wrist motion omitted",
+  "dynamic_tracking_validated": false,
+  "ready_for_training": false,
+  "limitations": "Baseline IK only; verify contact geometry and source bind pose before tracking.",
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Running_Up_Stairs.fbx",
+  "source_repository": "Linzhan/Mixamo-Animations-Characters",
+  "source_revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "source_motion_id": "c9ccaa5c-b96c-11e4-a802-0aaa78deedf9",
+  "source_description": "",
+  "category": "Stairs",
+  "display_name": "Running Up Stairs",
+  "description": "Stairs. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "terrain_missing": true,
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
+}

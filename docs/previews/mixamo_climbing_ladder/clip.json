@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/climbing_ladder",
+  "name": "Climbing Up A Ladder",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Ladder",
+  "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_Ladder.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_climbing_ladder/motion.mp4",
+      "video_sha256": "acf95a64738d8aded9223a089672a370ed9d88647421bfdca5559c21e4504ee6",
+      "fps": 50.0,
+      "frames": 39,
+      "duration": 0.78,
+      "last_sample_time": 0.76,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_ladder/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_ladder/validation.json"
+  }
+}

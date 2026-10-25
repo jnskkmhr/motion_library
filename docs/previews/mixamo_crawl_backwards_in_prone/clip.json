@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/crawl_backwards_in_prone",
+  "name": "Crawling Backwards While In A Prone Position",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crawl and hand support",
+  "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crawl_Backwards_In_Prone.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_crawl_backwards_in_prone/motion.mp4",
+      "video_sha256": "dff233067a0f8f224690ced0b8908f6f953dca5bfe578347dbee5c011fb18f73",
+      "fps": 50.0,
+      "frames": 49,
+      "duration": 0.98,
+      "last_sample_time": 0.96,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_crawl_backwards_in_prone/provenance.json",
+    "validation": "docs/previews/mixamo_crawl_backwards_in_prone/validation.json"
+  }
+}

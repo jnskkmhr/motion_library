@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/vault_over_box",
+  "name": "Vault Over Box And Hide",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Vault",
+  "description": "Vault. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Vault_Over_Box.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_vault_over_box/motion.mp4",
+      "video_sha256": "b5b4437e86eda144c132e98f848d55e12d45347b8daca148439ea3f6a8418545",
+      "fps": 50.0,
+      "frames": 177,
+      "duration": 3.54,
+      "last_sample_time": 3.52,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_vault_over_box/provenance.json",
+    "validation": "docs/previews/mixamo_vault_over_box/validation.json"
+  }
+}

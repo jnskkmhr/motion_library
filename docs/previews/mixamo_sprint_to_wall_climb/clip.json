@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/sprint_to_wall_climb",
+  "name": "Sprint To Wall Climb To Crouch Idle",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Climb and slope",
+  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Sprint_To_Wall_Climb.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_sprint_to_wall_climb/motion.mp4",
+      "video_sha256": "70cc9cf8e894942f5398c67adbb88ee7a0bf61d5501813789a3e0971f1902202",
+      "fps": 50.0,
+      "frames": 91,
+      "duration": 1.82,
+      "last_sample_time": 1.8,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_sprint_to_wall_climb/provenance.json",
+    "validation": "docs/previews/mixamo_sprint_to_wall_climb/validation.json"
+  }
+}

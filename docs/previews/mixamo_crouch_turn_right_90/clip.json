@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/crouch_turn_right_90",
+  "name": "Turning 90 Degrees Right",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Crouch and duck",
+  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouch_Turn_Right_90.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_crouch_turn_right_90/motion.mp4",
+      "video_sha256": "848176bff9069424a98d403811d8e452a94e915b1fe5e2aa63bab312609f30d8",
+      "fps": 50.0,
+      "frames": 82,
+      "duration": 1.64,
+      "last_sample_time": 1.62,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_crouch_turn_right_90/provenance.json",
+    "validation": "docs/previews/mixamo_crouch_turn_right_90/validation.json"
+  }
+}

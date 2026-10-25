@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/standing",
+  "name": "Standing Up From A Kneeling Position",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Recovery and roll",
+  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Standing.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_standing/motion.mp4",
+      "video_sha256": "3ef7b0a9790129e080353ed7be47aec405a5ddaaba8672f9b47694f91c1bb470",
+      "fps": 50.0,
+      "frames": 139,
+      "duration": 2.78,
+      "last_sample_time": 2.76,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "ground"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_standing/provenance.json",
+    "validation": "docs/previews/mixamo_standing/validation.json"
+  }
+}

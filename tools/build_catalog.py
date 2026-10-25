@@ -84,12 +84,29 @@ def main():
             provenance = (
                 json.loads((folder / "provenance.json").read_text()) if (folder / "provenance.json").is_file() else {}
             )
+            category = provenance.get("category", "")
+            if not category:
+                category = {"omniretarget": "Climb and slope", "parc": "Jump and landing"}.get(source, "")
+                if source == "claw":
+                    category = "Crouch and duck" if "crouch" in str(relative) else "Crawl and hand support"
+                if source == "deep_wholebody_parkour":
+                    category = {
+                        "dive_roll": "Recovery and roll",
+                        "jump_sit": "Sit and stand",
+                        "kneel_climb": "Climb and slope",
+                        "roll_vault": "Vault",
+                    }.get(str(relative), "")
+            if provenance.get("terrain_missing"):
+                for variant in variants:
+                    variant["terrain"] = "missing"
             clips.append(
                 {
                     "id": str(folder.relative_to(root / "data")),
                     "source": source,
                     "source_name": label,
-                    "name": name,
+                    "name": provenance.get("display_name", name),
+                    "category": category,
+                    "description": provenance.get("description", ""),
                     "experimental": source == "kimodo",
                     "local_only": source in ("lafan", "mixamo"),
                     "source_url": provenance.get("source_url"),

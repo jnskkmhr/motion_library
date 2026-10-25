@@ -1,0 +1,30 @@
+{
+  "id": "mixamo/sit_to_stand",
+  "name": "Sitting To Standing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Sit and stand",
+  "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "experimental": true,
+  "preview_only": true,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Sit_To_Stand.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "G1 retargeting",
+      "video": "docs/previews/mixamo_sit_to_stand/motion.mp4",
+      "video_sha256": "e4e8452e79dc7656b8b70fa5049d2c0c043f8e7dd02629cb48d80adfeea1b27d",
+      "fps": 50.0,
+      "frames": 114,
+      "duration": 2.28,
+      "last_sample_time": 2.26,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "missing"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_sit_to_stand/provenance.json",
+    "validation": "docs/previews/mixamo_sit_to_stand/validation.json"
+  }
+}
