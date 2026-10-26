@@ -2733,7 +2733,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Stairs",
-      "description": "Stairs. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Stairs. Static stairs terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2741,20 +2741,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_ascending_stairs/motion.mp4",
-          "video_sha256": "4ca8e756fc9c02d9d1685dcd7e9063a624f1896c8308d0994a039e965a77c30a",
+          "video_sha256": "eeb909663ae1cad87d437c5aaaa00368fca6aa10504ac5a925d5084002d32dca",
           "fps": 50.0,
           "frames": 69,
           "duration": 1.38,
           "last_sample_time": 1.36,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_ascending_stairs/provenance.json",
-        "validation": "docs/previews/mixamo_ascending_stairs/validation.json"
+        "validation": "docs/previews/mixamo_ascending_stairs/validation.json",
+        "terrain_fit": "docs/previews/mixamo_ascending_stairs/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_ascending_stairs/terrain_validation.json"
       }
     },
     {
@@ -2763,7 +2765,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2771,20 +2773,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_big_jump/motion.mp4",
-          "video_sha256": "5814ac843fd682ef07e7654b3dcff99531af3c4f05bbe690363f875c2d5c1e29",
+          "video_sha256": "114a0722f497c0ed1b6163fcf283fae636dad25702c13e7ca196338d28b9c156",
           "fps": 50.0,
           "frames": 119,
           "duration": 2.38,
           "last_sample_time": 2.36,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_big_jump/provenance.json",
-        "validation": "docs/previews/mixamo_big_jump/validation.json"
+        "validation": "docs/previews/mixamo_big_jump/validation.json",
+        "terrain_fit": "docs/previews/mixamo_big_jump/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_big_jump/terrain_validation.json"
       }
     },
     {
@@ -2793,7 +2797,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2801,20 +2805,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_box_jump/motion.mp4",
-          "video_sha256": "245d332170856c13799b3662339ae61f8c26137cab51e8ca31234dc3370e7c53",
+          "video_sha256": "98590bfcd9143ed5bb34acaac894926ed22acc3001490c3e2d302d79baffca0f",
           "fps": 50.0,
           "frames": 196,
           "duration": 3.92,
           "last_sample_time": 3.9,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_box_jump/provenance.json",
-        "validation": "docs/previews/mixamo_box_jump/validation.json"
+        "validation": "docs/previews/mixamo_box_jump/validation.json",
+        "terrain_fit": "docs/previews/mixamo_box_jump/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_box_jump/terrain_validation.json"
       }
     },
     {
@@ -2823,7 +2829,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2831,20 +2837,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_braced_hang_to_crouch/motion.mp4",
-          "video_sha256": "24a0249deb9700784701e6e6697ca680860d7f3dc65f5148362a38238ed51f72",
+          "video_sha256": "9f210d49ab21ccf6035a75ec786d451eba300ab634b7d9e786b541495e04807d",
           "fps": 50.0,
           "frames": 57,
           "duration": 1.14,
           "last_sample_time": 1.12,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_braced_hang_to_crouch/provenance.json",
-        "validation": "docs/previews/mixamo_braced_hang_to_crouch/validation.json"
+        "validation": "docs/previews/mixamo_braced_hang_to_crouch/validation.json",
+        "terrain_fit": "docs/previews/mixamo_braced_hang_to_crouch/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_braced_hang_to_crouch/terrain_validation.json"
       }
     },
     {
@@ -2853,7 +2861,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2861,20 +2869,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing/motion.mp4",
-          "video_sha256": "e247584a4285b053e9c0be9e35f004b893cfc6e24ea8341936e6eaed41f2b488",
+          "video_sha256": "90c159697b2c2d7743a2eb52d33eb324c55f5e68278f8a2fdd7216dc23d2cd66",
           "fps": 50.0,
           "frames": 192,
           "duration": 3.84,
           "last_sample_time": 3.82,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing/provenance.json",
-        "validation": "docs/previews/mixamo_climbing/validation.json"
+        "validation": "docs/previews/mixamo_climbing/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing/terrain_validation.json"
       }
     },
     {
@@ -2883,7 +2893,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2891,20 +2901,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_2/motion.mp4",
-          "video_sha256": "5fa8c893a8489d16a901a280afe3e0aaf14e4d200046c8b39e7e454b77046d03",
+          "video_sha256": "f06a31e1039419a84696233b6e7283855ddf44a98115c1f12bcc5dcb3cb32a5e",
           "fps": 50.0,
           "frames": 192,
           "duration": 3.84,
           "last_sample_time": 3.82,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_2/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_2/validation.json"
+        "validation": "docs/previews/mixamo_climbing_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_2/terrain_validation.json"
       }
     },
     {
@@ -2913,7 +2925,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Ladder",
-      "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Ladder. Static ladder terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2921,20 +2933,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_3/motion.mp4",
-          "video_sha256": "5dee0772b9c6b583752eee790ab6fa81aede73895c5d21beb0576bd7e19a54e1",
+          "video_sha256": "48cfc388388daab726c70c1d35efefad6a288bc79c91df443d1914dc911e6683",
           "fps": 50.0,
           "frames": 149,
           "duration": 2.98,
           "last_sample_time": 2.96,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_3/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_3/validation.json"
+        "validation": "docs/previews/mixamo_climbing_3/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_3/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_3/terrain_validation.json"
       }
     },
     {
@@ -2943,7 +2957,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static ramp terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2951,20 +2965,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_4/motion.mp4",
-          "video_sha256": "da54cdb006021a52b4e5595f29bfc3ec971cdbe847d670b4dccbed399d9efcaf",
+          "video_sha256": "e9e03b243fa8ee7c883aae144113ba76324e886f3f589030265c0d80834d41f0",
           "fps": 50.0,
           "frames": 232,
           "duration": 4.64,
           "last_sample_time": 4.62,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_4/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_4/validation.json"
+        "validation": "docs/previews/mixamo_climbing_4/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_4/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_4/terrain_validation.json"
       }
     },
     {
@@ -2973,7 +2989,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -2981,20 +2997,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_5/motion.mp4",
-          "video_sha256": "fcbfc67a8a0f5769bb7bd0ad25b0618bfc4c6f540914e65df460636f8c087a93",
+          "video_sha256": "a65ae3489eba753c22c68fcd221db3adeb66824da8869d166aa7904092c24ae8",
           "fps": 50.0,
           "frames": 114,
           "duration": 2.28,
           "last_sample_time": 2.26,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_5/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_5/validation.json"
+        "validation": "docs/previews/mixamo_climbing_5/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_5/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_5/terrain_validation.json"
       }
     },
     {
@@ -3003,7 +3021,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Ladder",
-      "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Ladder. Static ladder terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3011,20 +3029,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_6/motion.mp4",
-          "video_sha256": "f54ccd7c13e13f1db12a7b545fb041e79e4fd50f5fde9fe46acb266218e6fcde",
+          "video_sha256": "2cdf4106f58b3da2d03ea4acfeec11af62d04d53ed6d004736223f02b38d6f17",
           "fps": 50.0,
           "frames": 79,
           "duration": 1.58,
           "last_sample_time": 1.56,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_6/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_6/validation.json"
+        "validation": "docs/previews/mixamo_climbing_6/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_6/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_6/terrain_validation.json"
       }
     },
     {
@@ -3033,7 +3053,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3041,20 +3061,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_down/motion.mp4",
-          "video_sha256": "2336f46f54a429e227442e5f644bedd841a58b5ed665e0894561afc8e8a9a750",
+          "video_sha256": "5950864ddb2f9ceee7bfa46dd37531f337227caec45b1b919b074dc4ee76d81d",
           "fps": 50.0,
           "frames": 172,
           "duration": 3.44,
           "last_sample_time": 3.42,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_down/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_down/validation.json"
+        "validation": "docs/previews/mixamo_climbing_down/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_down/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_down/terrain_validation.json"
       }
     },
     {
@@ -3063,7 +3085,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static vault terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3071,20 +3093,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_down_2/motion.mp4",
-          "video_sha256": "251ea3f572dfd7d64590dbe874bfa901555dc52c8da55d651eecc4467b158514",
+          "video_sha256": "79c8f07a382e11b596efd3edaf73875d765da3f8e57c5dcb8876af302d832251",
           "fps": 50.0,
           "frames": 157,
           "duration": 3.14,
           "last_sample_time": 3.12,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_down_2/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_down_2/validation.json"
+        "validation": "docs/previews/mixamo_climbing_down_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_down_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_down_2/terrain_validation.json"
       }
     },
     {
@@ -3093,7 +3117,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static wall terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3101,20 +3125,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_down_wall/motion.mp4",
-          "video_sha256": "f377496f1454fb462b29b7aabf4185b801011b470c8cbb03438181bddc0d3fa0",
+          "video_sha256": "b22ce9bd3c1447d76b7f00e74e6c560e2bed9bef43b0fbae6af7f96277ee23eb",
           "fps": 50.0,
           "frames": 101,
           "duration": 2.02,
           "last_sample_time": 2.0,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_down_wall/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_down_wall/validation.json"
+        "validation": "docs/previews/mixamo_climbing_down_wall/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_down_wall/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_down_wall/terrain_validation.json"
       }
     },
     {
@@ -3123,7 +3149,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Ladder",
-      "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Ladder. Static ladder terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3131,20 +3157,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_ladder/motion.mp4",
-          "video_sha256": "acf95a64738d8aded9223a089672a370ed9d88647421bfdca5559c21e4504ee6",
+          "video_sha256": "04dbd5c973e33da1a547ac737519b19cb1b7e423963935320ec163ebd62db2e7",
           "fps": 50.0,
           "frames": 39,
           "duration": 0.78,
           "last_sample_time": 0.76,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_ladder/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_ladder/validation.json"
+        "validation": "docs/previews/mixamo_climbing_ladder/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_ladder/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_ladder/terrain_validation.json"
       }
     },
     {
@@ -3153,7 +3181,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Ladder",
-      "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Ladder. Static ladder terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3161,20 +3189,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_to_top/motion.mp4",
-          "video_sha256": "203119b8cc8ebc8403610968cbe9465714db61006223545923c6855fd7f56c54",
+          "video_sha256": "5d4c9d22e3c7c2fea931c34b9e76cda1fe8b358808dce7fb5875de8418839f64",
           "fps": 50.0,
           "frames": 201,
           "duration": 4.02,
           "last_sample_time": 4.0,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_to_top/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_to_top/validation.json"
+        "validation": "docs/previews/mixamo_climbing_to_top/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_to_top/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_to_top/terrain_validation.json"
       }
     },
     {
@@ -3183,7 +3213,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static wall terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3191,20 +3221,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_climbing_up_wall/motion.mp4",
-          "video_sha256": "dd20bcf4b5d3816b1d6f3f53934a902dc72de4b26ca82489a1817aea3c4483d4",
+          "video_sha256": "55073276d380c18d0695f4bade834f908e1106058d2710405b7c72c86a4a5ce4",
           "fps": 50.0,
           "frames": 101,
           "duration": 2.02,
           "last_sample_time": 2.0,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_climbing_up_wall/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_up_wall/validation.json"
+        "validation": "docs/previews/mixamo_climbing_up_wall/validation.json",
+        "terrain_fit": "docs/previews/mixamo_climbing_up_wall/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_climbing_up_wall/terrain_validation.json"
       }
     },
     {
@@ -3213,7 +3245,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3221,20 +3253,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crawl_backwards/motion.mp4",
-          "video_sha256": "96ce72101e7236b08d8f4f06d91ead6c643b792c3acfc6e6f6d78235c5b4ce9e",
+          "video_sha256": "6162e8a9c0ddafeb798e1d911eacfd10bf196319fafe359f37f609999fa32f90",
           "fps": 50.0,
           "frames": 199,
           "duration": 3.98,
           "last_sample_time": 3.96,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crawl_backwards/provenance.json",
-        "validation": "docs/previews/mixamo_crawl_backwards/validation.json"
+        "validation": "docs/previews/mixamo_crawl_backwards/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crawl_backwards/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crawl_backwards/terrain_validation.json"
       }
     },
     {
@@ -3243,7 +3277,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3251,20 +3285,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crawl_backwards_in_prone/motion.mp4",
-          "video_sha256": "dff233067a0f8f224690ced0b8908f6f953dca5bfe578347dbee5c011fb18f73",
+          "video_sha256": "87764b977cc7bd4fe9cd98f34fd800cd82d403770a3a4bf444343441511c4df8",
           "fps": 50.0,
           "frames": 49,
           "duration": 0.98,
           "last_sample_time": 0.96,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crawl_backwards_in_prone/provenance.json",
-        "validation": "docs/previews/mixamo_crawl_backwards_in_prone/validation.json"
+        "validation": "docs/previews/mixamo_crawl_backwards_in_prone/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crawl_backwards_in_prone/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crawl_backwards_in_prone/terrain_validation.json"
       }
     },
     {
@@ -3273,7 +3309,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3281,20 +3317,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crawl_forward/motion.mp4",
-          "video_sha256": "79259fa23bc32bb16e5cecc44d15e57b5a8907970c6d00f24d565cfc7d564b30",
+          "video_sha256": "317bbe0392df659a7c6d527d3178a689e2a8f6c8918208931855cae38d2f8f63",
           "fps": 50.0,
           "frames": 131,
           "duration": 2.62,
           "last_sample_time": 2.6,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crawl_forward/provenance.json",
-        "validation": "docs/previews/mixamo_crawl_forward/validation.json"
+        "validation": "docs/previews/mixamo_crawl_forward/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crawl_forward/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crawl_forward/terrain_validation.json"
       }
     },
     {
@@ -3303,7 +3341,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3311,20 +3349,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crawling/motion.mp4",
-          "video_sha256": "25bc15b82e84ae77f9a0b45eebcbe4e525b38a2248d8fad17623bd44d7547a67",
+          "video_sha256": "d57835ba5f8307b0db4344123599873cbfdd1fab3be00b38d7c82fa69100a57c",
           "fps": 50.0,
           "frames": 91,
           "duration": 1.82,
           "last_sample_time": 1.8,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crawling/provenance.json",
-        "validation": "docs/previews/mixamo_crawling/validation.json"
+        "validation": "docs/previews/mixamo_crawling/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crawling/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crawling/terrain_validation.json"
       }
     },
     {
@@ -3333,7 +3373,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3341,20 +3381,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crawling_backwards/motion.mp4",
-          "video_sha256": "0ff975ee83208ccc158cd52755c827d687bb510e4d1411fbbd4b5fed7b30390a",
+          "video_sha256": "2d07aff427cf04a0290427803d59fd7eec8d7ff8b65b757a3b31425548029e91",
           "fps": 50.0,
           "frames": 104,
           "duration": 2.08,
           "last_sample_time": 2.06,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crawling_backwards/provenance.json",
-        "validation": "docs/previews/mixamo_crawling_backwards/validation.json"
+        "validation": "docs/previews/mixamo_crawling_backwards/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crawling_backwards/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crawling_backwards/terrain_validation.json"
       }
     },
     {
@@ -3363,7 +3405,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3371,20 +3413,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_to_prone/motion.mp4",
-          "video_sha256": "b65d18d23769c78f674cbbbc0f16af61668bdea2e49f746c08291e42abe3fd93",
+          "video_sha256": "13705c6c3beda92f220eedb4d348dabc6078e1cbe33b72342ff3ddcfec865fc8",
           "fps": 50.0,
           "frames": 91,
           "duration": 1.82,
           "last_sample_time": 1.8,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_to_prone/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_to_prone/validation.json"
+        "validation": "docs/previews/mixamo_crouch_to_prone/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_to_prone/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_to_prone/terrain_validation.json"
       }
     },
     {
@@ -3393,7 +3437,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3401,20 +3445,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_to_stand/motion.mp4",
-          "video_sha256": "ade6f4bf77cb330e5564d296fa731efaa4abbec66c884f20c8ce6771187db2a9",
+          "video_sha256": "3f727257a0ec3912ee6276d10a01ca5d25292442b0e66d636fa56d3eb3c1fc48",
           "fps": 50.0,
           "frames": 129,
           "duration": 2.58,
           "last_sample_time": 2.56,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_to_stand/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_to_stand/validation.json"
+        "validation": "docs/previews/mixamo_crouch_to_stand/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_to_stand/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_to_stand/terrain_validation.json"
       }
     },
     {
@@ -3423,7 +3469,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3431,20 +3477,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_turn_left_90_2/motion.mp4",
-          "video_sha256": "1b5f0272f46e093890b7c9d1eb4b5cd80fd10c54a84b31b8de9acb7f4a5fd17b",
+          "video_sha256": "e9e9d64c2357c52cf2df6e56e69693f60fea0836262c810adbe1c48acfe8e1f0",
           "fps": 50.0,
           "frames": 92,
           "duration": 1.84,
           "last_sample_time": 1.82,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_turn_left_90_2/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_turn_left_90_2/validation.json"
+        "validation": "docs/previews/mixamo_crouch_turn_left_90_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_turn_left_90_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_turn_left_90_2/terrain_validation.json"
       }
     },
     {
@@ -3453,7 +3501,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3461,20 +3509,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_turn_right_90/motion.mp4",
-          "video_sha256": "848176bff9069424a98d403811d8e452a94e915b1fe5e2aa63bab312609f30d8",
+          "video_sha256": "320f9efbe23dde268e2048a2f69f183185d504679530b944aa90f08dc97f9b54",
           "fps": 50.0,
           "frames": 82,
           "duration": 1.64,
           "last_sample_time": 1.62,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_turn_right_90/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_turn_right_90/validation.json"
+        "validation": "docs/previews/mixamo_crouch_turn_right_90/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_turn_right_90/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_turn_right_90/terrain_validation.json"
       }
     },
     {
@@ -3483,7 +3533,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3491,20 +3541,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_walk/motion.mp4",
-          "video_sha256": "e9e52e9ffa9450c428ff529f9c9dfe7516366ba1ee2df623f0295a65782cdf6a",
+          "video_sha256": "19cad5d36842de61c35b9b27d17703f50c8967e5baeb1a341a179237ed076347",
           "fps": 50.0,
           "frames": 151,
           "duration": 3.02,
           "last_sample_time": 3.0,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_walk/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_walk/validation.json"
+        "validation": "docs/previews/mixamo_crouch_walk/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_walk/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_walk/terrain_validation.json"
       }
     },
     {
@@ -3513,7 +3565,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3521,20 +3573,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_walk_back/motion.mp4",
-          "video_sha256": "0567788c8b2ace1f051b13a55079e21a31c792418f64aba546cd150ef724da78",
+          "video_sha256": "5b43a0e7a505f0cc1f8a7ee772cc51b6eef027fd3e6eab6e1a9b8fccd1616a5b",
           "fps": 50.0,
           "frames": 62,
           "duration": 1.24,
           "last_sample_time": 1.22,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_walk_back/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_walk_back/validation.json"
+        "validation": "docs/previews/mixamo_crouch_walk_back/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_walk_back/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_walk_back/terrain_validation.json"
       }
     },
     {
@@ -3543,7 +3597,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3551,20 +3605,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_walk_forward_2/motion.mp4",
-          "video_sha256": "e9d0cb39a3109ab6eb49dfceae4625c53d4956e65aeaa03e2bd7a45c798a752e",
+          "video_sha256": "06efd06df2d32c392e893163989f8b25fed1ccd2b854eecbee9e689c9861a58c",
           "fps": 50.0,
           "frames": 57,
           "duration": 1.14,
           "last_sample_time": 1.12,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_walk_forward_2/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_walk_forward_2/validation.json"
+        "validation": "docs/previews/mixamo_crouch_walk_forward_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_walk_forward_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_walk_forward_2/terrain_validation.json"
       }
     },
     {
@@ -3573,7 +3629,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3581,20 +3637,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_walk_left/motion.mp4",
-          "video_sha256": "426089294607326c052a1e2b3c034e15d9da0e258b4cddcc222a4f1103204b86",
+          "video_sha256": "431b0122fe66d8e7964791b69d8f427053c864e41a552aac132c3b427101054d",
           "fps": 50.0,
           "frames": 59,
           "duration": 1.18,
           "last_sample_time": 1.16,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_walk_left/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_walk_left/validation.json"
+        "validation": "docs/previews/mixamo_crouch_walk_left/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_walk_left/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_walk_left/terrain_validation.json"
       }
     },
     {
@@ -3603,7 +3661,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3611,20 +3669,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouch_walk_right_2/motion.mp4",
-          "video_sha256": "c4ad0e5b45c217661a58d2820d9691742024a8c8b778a0291d68a77bba58bda9",
+          "video_sha256": "b92c22eaa8ead293040e9bbb4def0ba007823d5886938eddd6fda87aa4f55a70",
           "fps": 50.0,
           "frames": 64,
           "duration": 1.28,
           "last_sample_time": 1.26,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouch_walk_right_2/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_walk_right_2/validation.json"
+        "validation": "docs/previews/mixamo_crouch_walk_right_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouch_walk_right_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouch_walk_right_2/terrain_validation.json"
       }
     },
     {
@@ -3633,7 +3693,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3641,20 +3701,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouched_walking/motion.mp4",
-          "video_sha256": "4f4eff93797f1718327038e04493eec1ba39fa6dbc9711f8ab47c5c175b0020f",
+          "video_sha256": "45e257306bb1ad82f403b89be9638e67942ac6bf96dca38044be7112e4579998",
           "fps": 50.0,
           "frames": 52,
           "duration": 1.04,
           "last_sample_time": 1.02,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouched_walking/provenance.json",
-        "validation": "docs/previews/mixamo_crouched_walking/validation.json"
+        "validation": "docs/previews/mixamo_crouched_walking/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouched_walking/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouched_walking/terrain_validation.json"
       }
     },
     {
@@ -3663,7 +3725,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3671,20 +3733,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_crouching/motion.mp4",
-          "video_sha256": "d0139ef1e190a7c109669f3762f1a4f5a1d59b55e25d2a4f83ad5fcefc601453",
+          "video_sha256": "072cdef6efb3d030fc04e7450dad7c58dfe86982843fe20d29fb6333f7bbcaaf",
           "fps": 50.0,
           "frames": 204,
           "duration": 4.08,
           "last_sample_time": 4.06,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_crouching/provenance.json",
-        "validation": "docs/previews/mixamo_crouching/validation.json"
+        "validation": "docs/previews/mixamo_crouching/validation.json",
+        "terrain_fit": "docs/previews/mixamo_crouching/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_crouching/terrain_validation.json"
       }
     },
     {
@@ -3693,7 +3757,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Stairs",
-      "description": "Stairs. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Stairs. Static stairs terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3701,20 +3765,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_descending_stairs/motion.mp4",
-          "video_sha256": "97b191c9b4d98e4e1aabd02c675fd581fbd7356d4c027a8db51a13ba4afca050",
+          "video_sha256": "fc9f3cea346a7f365930a30ad2e3055686d26d44c3441d628b89f61a7f405ee9",
           "fps": 50.0,
           "frames": 21,
           "duration": 0.42,
           "last_sample_time": 0.4,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_descending_stairs/provenance.json",
-        "validation": "docs/previews/mixamo_descending_stairs/validation.json"
+        "validation": "docs/previews/mixamo_descending_stairs/validation.json",
+        "terrain_fit": "docs/previews/mixamo_descending_stairs/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_descending_stairs/terrain_validation.json"
       }
     },
     {
@@ -3723,7 +3789,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Stairs",
-      "description": "Stairs. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Stairs. Static stairs terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3731,20 +3797,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_descending_stairs_2/motion.mp4",
-          "video_sha256": "575a1fa576cb9814bde6c4d6976e3dfceee9c4bee778f10db88d3ab5b8319534",
+          "video_sha256": "d0493d95bed381dca4b3525b4912b47ad1d0cae6ff7e4adf3f67a7edfe9d7fbc",
           "fps": 50.0,
           "frames": 47,
           "duration": 0.94,
           "last_sample_time": 0.92,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_descending_stairs_2/provenance.json",
-        "validation": "docs/previews/mixamo_descending_stairs_2/validation.json"
+        "validation": "docs/previews/mixamo_descending_stairs_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_descending_stairs_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_descending_stairs_2/terrain_validation.json"
       }
     },
     {
@@ -3753,7 +3821,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3761,20 +3829,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_dive_roll_2/motion.mp4",
-          "video_sha256": "ba8309f32f4df8c5cf9af99b9f12dc14b8b6b33bc19bd6dc3a03ac024b4f0b4b",
+          "video_sha256": "07de11424b5cce85414a107ead23dcceb990a96f6c72b74c5ee9f8c98ff048ac",
           "fps": 50.0,
           "frames": 197,
           "duration": 3.94,
           "last_sample_time": 3.92,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_dive_roll_2/provenance.json",
-        "validation": "docs/previews/mixamo_dive_roll_2/validation.json"
+        "validation": "docs/previews/mixamo_dive_roll_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_dive_roll_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_dive_roll_2/terrain_validation.json"
       }
     },
     {
@@ -3783,7 +3853,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3791,20 +3861,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_ducking_2/motion.mp4",
-          "video_sha256": "52bfe8c248a338ab323d4ce0ba0db4798b33bec316916c952168e82d1a987bf0",
+          "video_sha256": "7c77003f6f6379ec5650d8e953286a01e9379adbc13f2210f16b323630de6fe9",
           "fps": 50.0,
           "frames": 77,
           "duration": 1.54,
           "last_sample_time": 1.52,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_ducking_2/provenance.json",
-        "validation": "docs/previews/mixamo_ducking_2/validation.json"
+        "validation": "docs/previews/mixamo_ducking_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_ducking_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_ducking_2/terrain_validation.json"
       }
     },
     {
@@ -3813,7 +3885,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3821,20 +3893,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_edge_slip/motion.mp4",
-          "video_sha256": "e5beb08f83b22a5f2358581eca80ff78b1fe15d63800a6a4375fa84fbf275b6b",
+          "video_sha256": "ce9f62c5235dffbf25a1b9fece58df0d22ee436e4b75095700a74150baf3401d",
           "fps": 50.0,
           "frames": 124,
           "duration": 2.48,
           "last_sample_time": 2.46,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_edge_slip/provenance.json",
-        "validation": "docs/previews/mixamo_edge_slip/validation.json"
+        "validation": "docs/previews/mixamo_edge_slip/validation.json",
+        "terrain_fit": "docs/previews/mixamo_edge_slip/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_edge_slip/terrain_validation.json"
       }
     },
     {
@@ -3843,7 +3917,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3851,20 +3925,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_forward_jump/motion.mp4",
-          "video_sha256": "3a2ed0fb0397865a7bd94b837302d9ecb3fad9d664a158db77ad0c5ce04da34a",
+          "video_sha256": "88ec2e3661671c27b5318df1af681c70f43a06974f68771dbcbaf69f9866ff39",
           "fps": 50.0,
           "frames": 122,
           "duration": 2.44,
           "last_sample_time": 2.42,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_forward_jump/provenance.json",
-        "validation": "docs/previews/mixamo_forward_jump/validation.json"
+        "validation": "docs/previews/mixamo_forward_jump/validation.json",
+        "terrain_fit": "docs/previews/mixamo_forward_jump/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_forward_jump/terrain_validation.json"
       }
     },
     {
@@ -3873,7 +3949,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3881,20 +3957,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_getting_up/motion.mp4",
-          "video_sha256": "8c571fe6c851b7d1993dcbb894d417460e541bac550fdcc2766ca01652d28e33",
+          "video_sha256": "ee49052ca82684828c6a2b5b6353feefddf1a40ff06abde63014548fdf09509e",
           "fps": 50.0,
           "frames": 136,
           "duration": 2.72,
           "last_sample_time": 2.7,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_getting_up/provenance.json",
-        "validation": "docs/previews/mixamo_getting_up/validation.json"
+        "validation": "docs/previews/mixamo_getting_up/validation.json",
+        "terrain_fit": "docs/previews/mixamo_getting_up/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_getting_up/terrain_validation.json"
       }
     },
     {
@@ -3903,7 +3981,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3911,20 +3989,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_getting_up_2/motion.mp4",
-          "video_sha256": "5ecbd00e6866f196bd1352b5032866b9aa143382e2f539433a3b3aa1fe7f60fe",
+          "video_sha256": "45855fe94fdf27685e21051e9d4bb79da5b3d38dda31d490ff0a09d4f8ba6448",
           "fps": 50.0,
           "frames": 381,
           "duration": 7.62,
           "last_sample_time": 7.6,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_getting_up_2/provenance.json",
-        "validation": "docs/previews/mixamo_getting_up_2/validation.json"
+        "validation": "docs/previews/mixamo_getting_up_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_getting_up_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_getting_up_2/terrain_validation.json"
       }
     },
     {
@@ -3933,7 +4013,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3941,20 +4021,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_getting_up_3/motion.mp4",
-          "video_sha256": "58456b82d6797ad30261dad71ce3c0d9ee534355258b6c77e7bd2f42634c4c71",
+          "video_sha256": "3624cf037b7a7e8a8121794d3025335e140a6a1a9fe3de0751a563e79617b2af",
           "fps": 50.0,
           "frames": 417,
           "duration": 8.34,
           "last_sample_time": 8.32,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_getting_up_3/provenance.json",
-        "validation": "docs/previews/mixamo_getting_up_3/validation.json"
+        "validation": "docs/previews/mixamo_getting_up_3/validation.json",
+        "terrain_fit": "docs/previews/mixamo_getting_up_3/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_getting_up_3/terrain_validation.json"
       }
     },
     {
@@ -3963,7 +4045,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -3971,20 +4053,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_getting_up_4/motion.mp4",
-          "video_sha256": "0793e07b8e8e68aedb90b21977f4ae8b8ed1e9d6c77d11d80785a89c869b6ce7",
+          "video_sha256": "f2151f6b5cb7c5f65e05c6e902aa0201438cf7d61ef922d612eaf32622f4688a",
           "fps": 50.0,
           "frames": 431,
           "duration": 8.62,
           "last_sample_time": 8.6,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_getting_up_4/provenance.json",
-        "validation": "docs/previews/mixamo_getting_up_4/validation.json"
+        "validation": "docs/previews/mixamo_getting_up_4/validation.json",
+        "terrain_fit": "docs/previews/mixamo_getting_up_4/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_getting_up_4/terrain_validation.json"
       }
     },
     {
@@ -3993,7 +4077,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4001,20 +4085,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jump_2/motion.mp4",
-          "video_sha256": "dc470df119623c0017839477be72b736dafb93c2b32f039273f881ff5f0a4f31",
+          "video_sha256": "3a118e4aecfd59703ee31aea746fbe728090e76e34e8ce4f054d0900c31b121a",
           "fps": 50.0,
           "frames": 44,
           "duration": 0.88,
           "last_sample_time": 0.86,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jump_2/provenance.json",
-        "validation": "docs/previews/mixamo_jump_2/validation.json"
+        "validation": "docs/previews/mixamo_jump_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jump_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jump_2/terrain_validation.json"
       }
     },
     {
@@ -4023,7 +4109,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4031,20 +4117,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jump_3/motion.mp4",
-          "video_sha256": "133ca6aa40908441fb4d8d7c59fa4c1877e0dfd419466e5f32850b289b88cf68",
+          "video_sha256": "9461a46cc49ae993091e56faf4472c46d6d6de2ff56ef463fd394bae1dbcb0c6",
           "fps": 50.0,
           "frames": 51,
           "duration": 1.02,
           "last_sample_time": 1.0,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jump_3/provenance.json",
-        "validation": "docs/previews/mixamo_jump_3/validation.json"
+        "validation": "docs/previews/mixamo_jump_3/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jump_3/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jump_3/terrain_validation.json"
       }
     },
     {
@@ -4053,7 +4141,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4061,20 +4149,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jump_5/motion.mp4",
-          "video_sha256": "f0379b0705c5c80f9afe04036ff5fba5de50b6d5500838309b7abc48926c0b08",
+          "video_sha256": "e448ef0fa37c2965d2094fb54cdc510351f63a53c111394ab2c03cd564d47986",
           "fps": 50.0,
           "frames": 47,
           "duration": 0.94,
           "last_sample_time": 0.92,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jump_5/provenance.json",
-        "validation": "docs/previews/mixamo_jump_5/validation.json"
+        "validation": "docs/previews/mixamo_jump_5/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jump_5/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jump_5/terrain_validation.json"
       }
     },
     {
@@ -4083,7 +4173,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4091,20 +4181,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jump_down_2/motion.mp4",
-          "video_sha256": "b05b85a3db5e3d65a1fd2c6dafe94d7630826b8000ff85d7b2302310e87d051c",
+          "video_sha256": "2fa8dfc262ed7f9291a7825134210712c371dd884a9484c6c1caa79f5d9dd8ca",
           "fps": 50.0,
           "frames": 176,
           "duration": 3.52,
           "last_sample_time": 3.5,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jump_down_2/provenance.json",
-        "validation": "docs/previews/mixamo_jump_down_2/validation.json"
+        "validation": "docs/previews/mixamo_jump_down_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jump_down_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jump_down_2/terrain_validation.json"
       }
     },
     {
@@ -4113,7 +4205,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4121,20 +4213,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jump_over/motion.mp4",
-          "video_sha256": "fbd9724322d53502dde278d185e54d00d821ba964d761681c82272ca79bea118",
+          "video_sha256": "f787a1cb231e2d5f31ef2159c398cacd23890452e5b4c426a81757e549ea7be2",
           "fps": 50.0,
           "frames": 114,
           "duration": 2.28,
           "last_sample_time": 2.26,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jump_over/provenance.json",
-        "validation": "docs/previews/mixamo_jump_over/validation.json"
+        "validation": "docs/previews/mixamo_jump_over/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jump_over/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jump_over/terrain_validation.json"
       }
     },
     {
@@ -4143,7 +4237,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4151,20 +4245,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping/motion.mp4",
-          "video_sha256": "8ac8ae3aede15b364983df4a9b19a3232358c4107729eaed3c08e511ce2ba75f",
+          "video_sha256": "b589ecae4c391612bc3b984af5e5bdec0799217209caf1f73421bf2b72b98417",
           "fps": 50.0,
           "frames": 62,
           "duration": 1.24,
           "last_sample_time": 1.22,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping/provenance.json",
-        "validation": "docs/previews/mixamo_jumping/validation.json"
+        "validation": "docs/previews/mixamo_jumping/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping/terrain_validation.json"
       }
     },
     {
@@ -4173,7 +4269,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4181,20 +4277,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_11/motion.mp4",
-          "video_sha256": "7f235a710d91b508e1c7e32747cbb355ab78c797368e6200d9ea674f0109edde",
+          "video_sha256": "be5b251323050794d60dfa32dad29826996e2980f623b75d06315d0e4ea516d3",
           "fps": 50.0,
           "frames": 69,
           "duration": 1.38,
           "last_sample_time": 1.36,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_11/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_11/validation.json"
+        "validation": "docs/previews/mixamo_jumping_11/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_11/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_11/terrain_validation.json"
       }
     },
     {
@@ -4203,7 +4301,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Vault",
-      "description": "Vault. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Vault. Static vault terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4211,20 +4309,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_12/motion.mp4",
-          "video_sha256": "4588738627c13c90eb9f8b24280f141fb51ac51f3eeab5ddc8b0eb206fba18e0",
+          "video_sha256": "1ce7578e1e3e703472f0ac696e1fbe7f8e01943604b14b772c50996181e6f5e9",
           "fps": 50.0,
           "frames": 59,
           "duration": 1.18,
           "last_sample_time": 1.16,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_12/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_12/validation.json"
+        "validation": "docs/previews/mixamo_jumping_12/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_12/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_12/terrain_validation.json"
       }
     },
     {
@@ -4233,7 +4333,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4241,20 +4341,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_13/motion.mp4",
-          "video_sha256": "eb09365d67d6e182de6d1b2a42732da5cbdb5ae6cbe4c7320ee8eb96703730ce",
+          "video_sha256": "f3afa88b2a7c5d23acdbe5a5059dc785107aab509bf2902bbc78a110bb250f90",
           "fps": 50.0,
           "frames": 144,
           "duration": 2.88,
           "last_sample_time": 2.86,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_13/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_13/validation.json"
+        "validation": "docs/previews/mixamo_jumping_13/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_13/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_13/terrain_validation.json"
       }
     },
     {
@@ -4263,7 +4365,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4271,20 +4373,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_2/motion.mp4",
-          "video_sha256": "03b655c98ab1aed4755f42b248c4661df7340258497609dc5b4a45ae6a3eb5ed",
+          "video_sha256": "d658146c5464b18ede2a2fc315cbaee324aaabc05644278b5e0e4ad2644e88e2",
           "fps": 50.0,
           "frames": 121,
           "duration": 2.42,
           "last_sample_time": 2.4,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_2/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_2/validation.json"
+        "validation": "docs/previews/mixamo_jumping_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_2/terrain_validation.json"
       }
     },
     {
@@ -4293,7 +4397,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Vault",
-      "description": "Vault. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Vault. Static vault terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4301,20 +4405,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_3/motion.mp4",
-          "video_sha256": "86154bd92b86e8f8f9b6eceab09fa6e29c1ed9ceb1b2c444f642fb12eb407f2b",
+          "video_sha256": "5e64e8556ca96dfbc9931c29c5c2a2a3bcb091058fd3df72edb9a4583291d80c",
           "fps": 50.0,
           "frames": 61,
           "duration": 1.22,
           "last_sample_time": 1.2,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_3/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_3/validation.json"
+        "validation": "docs/previews/mixamo_jumping_3/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_3/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_3/terrain_validation.json"
       }
     },
     {
@@ -4323,7 +4429,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4331,20 +4437,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_5/motion.mp4",
-          "video_sha256": "eaf7d603b8f9da44f6d2e7a7f564bc50997e53909e90f76cbef8cc219f50b1bd",
+          "video_sha256": "0f0a5b4b7a8cc87ea11fd627c0b7b0eb22e5a733dd7f7916b8979900596463b3",
           "fps": 50.0,
           "frames": 132,
           "duration": 2.64,
           "last_sample_time": 2.62,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_5/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_5/validation.json"
+        "validation": "docs/previews/mixamo_jumping_5/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_5/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_5/terrain_validation.json"
       }
     },
     {
@@ -4353,7 +4461,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4361,20 +4469,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_7/motion.mp4",
-          "video_sha256": "038e9bda9089e5c0624f4277c9e6623c68f7f5e460d54659ceeb51cb776cefcf",
+          "video_sha256": "924dbe610e9e77ac78bf2dfe6c9203f5c50593445970c86316ed3aa7636afa9e",
           "fps": 50.0,
           "frames": 111,
           "duration": 2.22,
           "last_sample_time": 2.2,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_7/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_7/validation.json"
+        "validation": "docs/previews/mixamo_jumping_7/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_7/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_7/terrain_validation.json"
       }
     },
     {
@@ -4383,7 +4493,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4391,20 +4501,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_jumping_down_12/motion.mp4",
-          "video_sha256": "fa2f799c1caa8985a86f69d047b4ad90b35356f40635bbc5471ce8f67ca7ab3c",
+          "video_sha256": "0a5e4d2dda067661ce2b62b1783b37dd8158e5367a5070a5eaed6a83eef2984d",
           "fps": 50.0,
           "frames": 162,
           "duration": 3.24,
           "last_sample_time": 3.22,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_jumping_down_12/provenance.json",
-        "validation": "docs/previews/mixamo_jumping_down_12/validation.json"
+        "validation": "docs/previews/mixamo_jumping_down_12/validation.json",
+        "terrain_fit": "docs/previews/mixamo_jumping_down_12/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_jumping_down_12/terrain_validation.json"
       }
     },
     {
@@ -4413,7 +4525,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4421,20 +4533,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_kneeling_down/motion.mp4",
-          "video_sha256": "97a489a95b6aff22b54a8a71aa39107a622a150d4284ec27af62cd4ae22d8a5d",
+          "video_sha256": "688e0ad61268c2dc1415375e2af66628211c3044762d624bdbe4daeb3e656549",
           "fps": 50.0,
           "frames": 139,
           "duration": 2.78,
           "last_sample_time": 2.76,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_kneeling_down/provenance.json",
-        "validation": "docs/previews/mixamo_kneeling_down/validation.json"
+        "validation": "docs/previews/mixamo_kneeling_down/validation.json",
+        "terrain_fit": "docs/previews/mixamo_kneeling_down/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_kneeling_down/terrain_validation.json"
       }
     },
     {
@@ -4443,7 +4557,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4451,20 +4565,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_low_crawl/motion.mp4",
-          "video_sha256": "829301f8dc941715e20d9022de400cffb273a8989b5764e927ebf961a05334c7",
+          "video_sha256": "d5ec3f0c6ccc12d1286b8322f28cbcc41d151b58cb3de9a3f10b15d0bf194126",
           "fps": 50.0,
           "frames": 117,
           "duration": 2.34,
           "last_sample_time": 2.32,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_low_crawl/provenance.json",
-        "validation": "docs/previews/mixamo_low_crawl/validation.json"
+        "validation": "docs/previews/mixamo_low_crawl/validation.json",
+        "terrain_fit": "docs/previews/mixamo_low_crawl/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_low_crawl/terrain_validation.json"
       }
     },
     {
@@ -4473,7 +4589,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4481,20 +4597,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_run_to_rolling/motion.mp4",
-          "video_sha256": "996c4fdacb4461f710b4adec0fc1ca07adb279dafce100150698a34b51fe7c79",
+          "video_sha256": "4eaaab9ea485618c106d31a84b2ed94b0de52344e6ccbd3367b78440c2866d09",
           "fps": 50.0,
           "frames": 122,
           "duration": 2.44,
           "last_sample_time": 2.42,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_run_to_rolling/provenance.json",
-        "validation": "docs/previews/mixamo_run_to_rolling/validation.json"
+        "validation": "docs/previews/mixamo_run_to_rolling/validation.json",
+        "terrain_fit": "docs/previews/mixamo_run_to_rolling/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_run_to_rolling/terrain_validation.json"
       }
     },
     {
@@ -4503,7 +4621,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crawl and hand support",
-      "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4511,20 +4629,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_running_crawl/motion.mp4",
-          "video_sha256": "97b5e80c3433a600bd41a747d9bb65a09cf21fee62a4db750aff0930f17550c0",
+          "video_sha256": "5296800e7de9e11e46cd0dcdfeff7edd6ed28679ff171e6ecee45b2c69c00c5a",
           "fps": 50.0,
           "frames": 34,
           "duration": 0.68,
           "last_sample_time": 0.66,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_running_crawl/provenance.json",
-        "validation": "docs/previews/mixamo_running_crawl/validation.json"
+        "validation": "docs/previews/mixamo_running_crawl/validation.json",
+        "terrain_fit": "docs/previews/mixamo_running_crawl/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_running_crawl/terrain_validation.json"
       }
     },
     {
@@ -4533,7 +4653,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4541,20 +4661,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_running_jump/motion.mp4",
-          "video_sha256": "5720cf6e870585ce36b595a989da99141cb9488ce0a17b74c0bb8aa22e182105",
+          "video_sha256": "a1222af1608e8485148a0dfefdd71db44e2c0c5d3132885e202a223365368a68",
           "fps": 50.0,
           "frames": 46,
           "duration": 0.92,
           "last_sample_time": 0.9,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_running_jump/provenance.json",
-        "validation": "docs/previews/mixamo_running_jump/validation.json"
+        "validation": "docs/previews/mixamo_running_jump/validation.json",
+        "terrain_fit": "docs/previews/mixamo_running_jump/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_running_jump/terrain_validation.json"
       }
     },
     {
@@ -4563,7 +4685,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4571,20 +4693,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_running_jump_2/motion.mp4",
-          "video_sha256": "0eeaca4488c60d395dfe9c77e9cd28e819dd7644e561e015fe8b10438f5c5746",
+          "video_sha256": "ce23b3fe1b299a96b0c7c4875a0cefe78a5f01429ed94135401a4ac4f9fddf81",
           "fps": 50.0,
           "frames": 109,
           "duration": 2.18,
           "last_sample_time": 2.16,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_running_jump_2/provenance.json",
-        "validation": "docs/previews/mixamo_running_jump_2/validation.json"
+        "validation": "docs/previews/mixamo_running_jump_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_running_jump_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_running_jump_2/terrain_validation.json"
       }
     },
     {
@@ -4593,7 +4717,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Stairs",
-      "description": "Stairs. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Stairs. Static stairs terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4601,20 +4725,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_running_up_stairs/motion.mp4",
-          "video_sha256": "a176d54f5aea5c9a69d96728c107a3311dddb53a28217f572d75e28aedbccb55",
+          "video_sha256": "4ef6d358b1767a245d9d90485b6fea9bd33327fd83fc584054ff80dd445c864b",
           "fps": 50.0,
           "frames": 31,
           "duration": 0.62,
           "last_sample_time": 0.6,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_running_up_stairs/provenance.json",
-        "validation": "docs/previews/mixamo_running_up_stairs/validation.json"
+        "validation": "docs/previews/mixamo_running_up_stairs/validation.json",
+        "terrain_fit": "docs/previews/mixamo_running_up_stairs/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_running_up_stairs/terrain_validation.json"
       }
     },
     {
@@ -4623,7 +4749,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Sit and stand",
-      "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Sit and stand. Static seat terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4631,20 +4757,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_sit_to_stand/motion.mp4",
-          "video_sha256": "e4e8452e79dc7656b8b70fa5049d2c0c043f8e7dd02629cb48d80adfeea1b27d",
+          "video_sha256": "6555355ee017ce131f2994822fbccdf60c96ecd6a121218d332f354a87352b94",
           "fps": 50.0,
           "frames": 114,
           "duration": 2.28,
           "last_sample_time": 2.26,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_sit_to_stand/provenance.json",
-        "validation": "docs/previews/mixamo_sit_to_stand/validation.json"
+        "validation": "docs/previews/mixamo_sit_to_stand/validation.json",
+        "terrain_fit": "docs/previews/mixamo_sit_to_stand/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_sit_to_stand/terrain_validation.json"
       }
     },
     {
@@ -4653,7 +4781,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Sit and stand",
-      "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Sit and stand. Static seat terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4661,20 +4789,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_sitting_6/motion.mp4",
-          "video_sha256": "97ff4b5569ad058c926c178ed0d30537b6982fb19201b256c1050bb20521ef77",
+          "video_sha256": "b4319c67a28d69fc202a837ff1825059e0aa8430998094ed9e480161cd888095",
           "fps": 50.0,
           "frames": 222,
           "duration": 4.44,
           "last_sample_time": 4.42,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_sitting_6/provenance.json",
-        "validation": "docs/previews/mixamo_sitting_6/validation.json"
+        "validation": "docs/previews/mixamo_sitting_6/validation.json",
+        "terrain_fit": "docs/previews/mixamo_sitting_6/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_sitting_6/terrain_validation.json"
       }
     },
     {
@@ -4683,7 +4813,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Climb and slope",
-      "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4691,20 +4821,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_sprint_to_wall_climb/motion.mp4",
-          "video_sha256": "70cc9cf8e894942f5398c67adbb88ee7a0bf61d5501813789a3e0971f1902202",
+          "video_sha256": "9531a4f9ee0592472935c15da9662b598f53c974ffb2ca73e1edc8c7640848ec",
           "fps": 50.0,
           "frames": 91,
           "duration": 1.82,
           "last_sample_time": 1.8,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_sprint_to_wall_climb/provenance.json",
-        "validation": "docs/previews/mixamo_sprint_to_wall_climb/validation.json"
+        "validation": "docs/previews/mixamo_sprint_to_wall_climb/validation.json",
+        "terrain_fit": "docs/previews/mixamo_sprint_to_wall_climb/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_sprint_to_wall_climb/terrain_validation.json"
       }
     },
     {
@@ -4713,7 +4845,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4721,20 +4853,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_stand/motion.mp4",
-          "video_sha256": "dea91045d702e3d7a53c444d90791327b5118c9ef554159c16fa7664f6beb474",
+          "video_sha256": "5022686f8d7cfc03889d367564ac198f79267985f977d000a87bbff0b0c3a28f",
           "fps": 50.0,
           "frames": 156,
           "duration": 3.12,
           "last_sample_time": 3.1,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_stand/provenance.json",
-        "validation": "docs/previews/mixamo_stand/validation.json"
+        "validation": "docs/previews/mixamo_stand/validation.json",
+        "terrain_fit": "docs/previews/mixamo_stand/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_stand/terrain_validation.json"
       }
     },
     {
@@ -4743,7 +4877,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4751,20 +4885,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_stand_to_crouch/motion.mp4",
-          "video_sha256": "74e877be7e0872893e338cd345bb5f9fc9776ea4fdfa729dd8fb89b81a1d5053",
+          "video_sha256": "e8ee0b4e70495f3eeb65fc5423e73122550553d3438cc380870df89544143fd9",
           "fps": 50.0,
           "frames": 76,
           "duration": 1.52,
           "last_sample_time": 1.5,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_stand_to_crouch/provenance.json",
-        "validation": "docs/previews/mixamo_stand_to_crouch/validation.json"
+        "validation": "docs/previews/mixamo_stand_to_crouch/validation.json",
+        "terrain_fit": "docs/previews/mixamo_stand_to_crouch/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_stand_to_crouch/terrain_validation.json"
       }
     },
     {
@@ -4773,7 +4909,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4781,20 +4917,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_stand_to_roll/motion.mp4",
-          "video_sha256": "325f40b1a1e3d335dc413faeea156657fff73b47ee26cf4cc3a9d91e64a1fc7a",
+          "video_sha256": "417164a375bf3917ce64128e86299c84a10cc29bd47613fdefb21e7dbacfa662",
           "fps": 50.0,
           "frames": 119,
           "duration": 2.38,
           "last_sample_time": 2.36,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_stand_to_roll/provenance.json",
-        "validation": "docs/previews/mixamo_stand_to_roll/validation.json"
+        "validation": "docs/previews/mixamo_stand_to_roll/validation.json",
+        "terrain_fit": "docs/previews/mixamo_stand_to_roll/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_stand_to_roll/terrain_validation.json"
       }
     },
     {
@@ -4803,7 +4941,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Sit and stand",
-      "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Sit and stand. Static seat terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4811,20 +4949,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_stand_to_sit/motion.mp4",
-          "video_sha256": "bf198fca478101d9de2c01aaf9455cc3d36390831595347f9ff80e0483cc2d65",
+          "video_sha256": "4ce5ad0f8072f3893eefbb4aa827fdd9d3cd82d2ec51f724a6ee66127dd17e92",
           "fps": 50.0,
           "frames": 112,
           "duration": 2.24,
           "last_sample_time": 2.22,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_stand_to_sit/provenance.json",
-        "validation": "docs/previews/mixamo_stand_to_sit/validation.json"
+        "validation": "docs/previews/mixamo_stand_to_sit/validation.json",
+        "terrain_fit": "docs/previews/mixamo_stand_to_sit/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_stand_to_sit/terrain_validation.json"
       }
     },
     {
@@ -4833,7 +4973,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Sit and stand",
-      "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Sit and stand. Static seat terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4841,20 +4981,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_stand_up/motion.mp4",
-          "video_sha256": "5a29eab32b44488c60991968962d8eab9de293a04d1efd697238dfa4b5f85f34",
+          "video_sha256": "4f8c2dd7bc75cbe623c1b4a3f1015c7abe445abecc506409a11cf77b1946e693",
           "fps": 50.0,
           "frames": 242,
           "duration": 4.84,
           "last_sample_time": 4.82,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_stand_up/provenance.json",
-        "validation": "docs/previews/mixamo_stand_up/validation.json"
+        "validation": "docs/previews/mixamo_stand_up/validation.json",
+        "terrain_fit": "docs/previews/mixamo_stand_up/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_stand_up/terrain_validation.json"
       }
     },
     {
@@ -4863,7 +5005,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4871,20 +5013,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_stand_up_2/motion.mp4",
-          "video_sha256": "f0130175391a2b9c903be93452f08136b89aa76c518b65faa8975befcfabfb58",
+          "video_sha256": "9bbd9a04082c27869fba19563e99e08b4239fa348463d6d5cf3831780e62fe04",
           "fps": 50.0,
           "frames": 414,
           "duration": 8.28,
           "last_sample_time": 8.26,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_stand_up_2/provenance.json",
-        "validation": "docs/previews/mixamo_stand_up_2/validation.json"
+        "validation": "docs/previews/mixamo_stand_up_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_stand_up_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_stand_up_2/terrain_validation.json"
       }
     },
     {
@@ -4893,7 +5037,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4901,20 +5045,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_standing/motion.mp4",
-          "video_sha256": "3ef7b0a9790129e080353ed7be47aec405a5ddaaba8672f9b47694f91c1bb470",
+          "video_sha256": "e787a230d7406e18fcac3882927046c4b8eee1b1e9e820eb5641bbc18a501956",
           "fps": 50.0,
           "frames": 139,
           "duration": 2.78,
           "last_sample_time": 2.76,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_standing/provenance.json",
-        "validation": "docs/previews/mixamo_standing/validation.json"
+        "validation": "docs/previews/mixamo_standing/validation.json",
+        "terrain_fit": "docs/previews/mixamo_standing/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_standing/terrain_validation.json"
       }
     },
     {
@@ -4923,7 +5069,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Crouch and duck",
-      "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Crouch and duck. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4931,20 +5077,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_standing_2/motion.mp4",
-          "video_sha256": "2e391f0c4ff16cc4f2a1041534869c08aca828162254fbdcbfc1eb9ca7024149",
+          "video_sha256": "07216f3ad4df1841723f052e0e1c14d34dd514f4e4b20eb5374859dd575d86fe",
           "fps": 50.0,
           "frames": 172,
           "duration": 3.44,
           "last_sample_time": 3.42,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_standing_2/provenance.json",
-        "validation": "docs/previews/mixamo_standing_2/validation.json"
+        "validation": "docs/previews/mixamo_standing_2/validation.json",
+        "terrain_fit": "docs/previews/mixamo_standing_2/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_standing_2/terrain_validation.json"
       }
     },
     {
@@ -4953,7 +5101,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4961,20 +5109,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_standing_jump_running_landing/motion.mp4",
-          "video_sha256": "3e5f38b0780c6d39f629086f38817dc249f347d89b1e2583f6ae4b34b1936c14",
+          "video_sha256": "f5ae39c57224defdc9e75cf666127656da7534b984a4059b23e7c01b48f764d2",
           "fps": 50.0,
           "frames": 69,
           "duration": 1.38,
           "last_sample_time": 1.36,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_standing_jump_running_landing/provenance.json",
-        "validation": "docs/previews/mixamo_standing_jump_running_landing/validation.json"
+        "validation": "docs/previews/mixamo_standing_jump_running_landing/validation.json",
+        "terrain_fit": "docs/previews/mixamo_standing_jump_running_landing/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_standing_jump_running_landing/terrain_validation.json"
       }
     },
     {
@@ -4983,7 +5133,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -4991,20 +5141,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_standing_jump_running_to_run_forward/motion.mp4",
-          "video_sha256": "6b5e7973cecc6f21c4c82b9a07cfcf3fe7598e0cdd2c6ebce0ea44f76c5da75f",
+          "video_sha256": "4e0174ed661879872885c2070dd7e8d78e1611b4f099a0cfb69f5ba7efaf0ff4",
           "fps": 50.0,
           "frames": 102,
           "duration": 2.04,
           "last_sample_time": 2.02,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_standing_jump_running_to_run_forward/provenance.json",
-        "validation": "docs/previews/mixamo_standing_jump_running_to_run_forward/validation.json"
+        "validation": "docs/previews/mixamo_standing_jump_running_to_run_forward/validation.json",
+        "terrain_fit": "docs/previews/mixamo_standing_jump_running_to_run_forward/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_standing_jump_running_to_run_forward/terrain_validation.json"
       }
     },
     {
@@ -5013,7 +5165,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Sit and stand",
-      "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Sit and stand. Static seat terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -5021,20 +5173,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_standing_up/motion.mp4",
-          "video_sha256": "5dc506f4dbabe4f37173cfc5eb9312f946b7752a1a0020c5e58534d2d2dea298",
+          "video_sha256": "9e914b3af288d11f8f379ce2a9e224ab46da23544ed13a7b33b708c8c71c43c7",
           "fps": 50.0,
           "frames": 304,
           "duration": 6.08,
           "last_sample_time": 6.06,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_standing_up/provenance.json",
-        "validation": "docs/previews/mixamo_standing_up/validation.json"
+        "validation": "docs/previews/mixamo_standing_up/validation.json",
+        "terrain_fit": "docs/previews/mixamo_standing_up/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_standing_up/terrain_validation.json"
       }
     },
     {
@@ -5043,7 +5197,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Recovery and roll",
-      "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -5051,20 +5205,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_standing_up_3/motion.mp4",
-          "video_sha256": "26f06c00515520514a3b8b476d52d971e5b9fe066421f64350ce89ca013375f8",
+          "video_sha256": "7bb37945c9e31cf043fccc0a68288b0dbe96be61552c8238ce3d5ad9621f6457",
           "fps": 50.0,
           "frames": 571,
           "duration": 11.42,
           "last_sample_time": 11.4,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_standing_up_3/provenance.json",
-        "validation": "docs/previews/mixamo_standing_up_3/validation.json"
+        "validation": "docs/previews/mixamo_standing_up_3/validation.json",
+        "terrain_fit": "docs/previews/mixamo_standing_up_3/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_standing_up_3/terrain_validation.json"
       }
     },
     {
@@ -5073,7 +5229,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Ladder",
-      "description": "Ladder. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Ladder. Static ladder terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -5081,20 +5237,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_start_climbing_ladder/motion.mp4",
-          "video_sha256": "80fbfff527c95652f6c1977e3c3b70cfe401e784453057e5ffdfc1a2d06ad2e4",
+          "video_sha256": "fe6f9a28b8e86a75411f13cb50b64823ef4e3cc4baaedeac6f5250fab840d9d3",
           "fps": 50.0,
           "frames": 102,
           "duration": 2.04,
           "last_sample_time": 2.02,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_start_climbing_ladder/provenance.json",
-        "validation": "docs/previews/mixamo_start_climbing_ladder/validation.json"
+        "validation": "docs/previews/mixamo_start_climbing_ladder/validation.json",
+        "terrain_fit": "docs/previews/mixamo_start_climbing_ladder/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_start_climbing_ladder/terrain_validation.json"
       }
     },
     {
@@ -5103,7 +5261,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -5111,20 +5269,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_unarmed_jump/motion.mp4",
-          "video_sha256": "a07e3de38a70a4b8bb32c9d975497307f29f499517527d76ed0558d5493d0959",
+          "video_sha256": "bebaf42e64c415b7c4446e1b31fed7a0960b8ca1ce46fdfaa62908821871350b",
           "fps": 50.0,
           "frames": 117,
           "duration": 2.34,
           "last_sample_time": 2.32,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_unarmed_jump/provenance.json",
-        "validation": "docs/previews/mixamo_unarmed_jump/validation.json"
+        "validation": "docs/previews/mixamo_unarmed_jump/validation.json",
+        "terrain_fit": "docs/previews/mixamo_unarmed_jump/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_unarmed_jump/terrain_validation.json"
       }
     },
     {
@@ -5133,7 +5293,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Jump and landing",
-      "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -5141,20 +5301,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_unarmed_jump_running/motion.mp4",
-          "video_sha256": "d13aa45906258c251978ba4ac0815c11bf4c02d4084a1f90468b9aafbe485a94",
+          "video_sha256": "2665fa1d0563d94582f8ef0f7c859c4a175e4ae8412a978fadd6c9381e63e14b",
           "fps": 50.0,
           "frames": 71,
           "duration": 1.42,
           "last_sample_time": 1.4,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "ground"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_unarmed_jump_running/provenance.json",
-        "validation": "docs/previews/mixamo_unarmed_jump_running/validation.json"
+        "validation": "docs/previews/mixamo_unarmed_jump_running/validation.json",
+        "terrain_fit": "docs/previews/mixamo_unarmed_jump_running/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_unarmed_jump_running/terrain_validation.json"
       }
     },
     {
@@ -5163,7 +5325,7 @@ window.MOTION_CATALOG = {
       "source": "mixamo",
       "source_name": "Mixamo",
       "category": "Vault",
-      "description": "Vault. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+      "description": "Vault. Static vault terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
       "preview_only": true,
       "local_only": false,
@@ -5171,20 +5333,22 @@ window.MOTION_CATALOG = {
       "poster": null,
       "variants": [
         {
-          "name": "G1 retargeting",
+          "name": "Motion + terrain",
           "video": "docs/previews/mixamo_vault_over_box/motion.mp4",
-          "video_sha256": "b5b4437e86eda144c132e98f848d55e12d45347b8daca148439ea3f6a8418545",
+          "video_sha256": "15dd1e3e5d2edb963fbb6ebb50f841b40e35ff04e582eef5a7cbc03655fde3f7",
           "fps": 50.0,
           "frames": 177,
           "duration": 3.54,
           "last_sample_time": 3.52,
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-          "terrain": "missing"
+          "terrain": "boxes"
         }
       ],
       "reports": {
         "provenance": "docs/previews/mixamo_vault_over_box/provenance.json",
-        "validation": "docs/previews/mixamo_vault_over_box/validation.json"
+        "validation": "docs/previews/mixamo_vault_over_box/validation.json",
+        "terrain_fit": "docs/previews/mixamo_vault_over_box/terrain_fit.json",
+        "terrain_validation": "docs/previews/mixamo_vault_over_box/terrain_validation.json"
       }
     }
   ]

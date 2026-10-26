@@ -55,7 +55,7 @@ function select(clip, index = 0) {
   $("clip-description").textContent = clip.description || "";
   $("clip-description").hidden = !clip.description;
   $("npz-download").download = `${clip.id.replaceAll("/", "_")}_${index === 0 ? "motion" : "generated"}.npz`;
-  const report = clip.reports.validation || clip.reports.source_validation || clip.reports.provenance;
+  const report = clip.reports.terrain_validation || clip.reports.terrain_fit || clip.reports.validation || clip.reports.source_validation || clip.reports.provenance;
   $("report").hidden = !report; if (report) $("report").href = clip.local_only ? local(report) : github(report);
   $("video-error").hidden = true;
   $("video").pause(); $("video").src = local(v.video);

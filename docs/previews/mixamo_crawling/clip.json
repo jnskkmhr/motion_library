@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Crawl and hand support",
-  "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_crawling/motion.mp4",
-      "video_sha256": "25bc15b82e84ae77f9a0b45eebcbe4e525b38a2248d8fad17623bd44d7547a67",
+      "video_sha256": "d57835ba5f8307b0db4344123599873cbfdd1fab3be00b38d7c82fa69100a57c",
       "fps": 50.0,
       "frames": 91,
       "duration": 1.82,
       "last_sample_time": 1.8,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "ground"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_crawling/provenance.json",
-    "validation": "docs/previews/mixamo_crawling/validation.json"
+    "validation": "docs/previews/mixamo_crawling/validation.json",
+    "terrain_fit": "docs/previews/mixamo_crawling/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_crawling/terrain_validation.json"
   }
 }

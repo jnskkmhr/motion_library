@@ -25,7 +25,7 @@
   "truncated": false,
   "public_distribution": false,
   "exact_acp_clip": false,
-  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "terrain_source": "static geometry fitted to the target G1 reference; not supplied by Mixamo",
   "source_joint_trajectory_modified": true,
   "wrists": "Fixed neutral; source wrist motion omitted",
   "dynamic_tracking_validated": false,
@@ -38,8 +38,11 @@
   "source_description": "Frantically Crawling Backwards On Stomach",
   "category": "Crawl and hand support",
   "display_name": "Frantically Crawling Backwards On Stomach",
-  "description": "Crawl and hand support. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Crawl and hand support. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "terrain_missing": false,
   "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-  "public_video_only": true
+  "public_video_only": true,
+  "terrain_kind": "passage",
+  "terrain_box_count": 6,
+  "motion_sha256": "581e14d8512cbca757238dfb018da05a8c1ecca94287bb0bf4f12ecd548fddde"
 }

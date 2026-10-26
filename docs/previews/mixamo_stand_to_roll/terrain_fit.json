@@ -1,0 +1,18 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "ground",
+  "terrain_roles": [
+    "ground_slab"
+  ],
+  "terrain_box_count": 1,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.43590833284575103,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 119,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "de759ab3bea18b6f535c6391ff2e23cd3ff5e345e2026933431bc8ae44d22d29",
+  "motion_sha256": "d76b7e608095de179f0d372e6b5ae591ea405e7651c106857356717b320a6cc2"
+}

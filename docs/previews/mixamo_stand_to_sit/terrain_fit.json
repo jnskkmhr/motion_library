@@ -1,0 +1,25 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "seat",
+  "terrain_roles": [
+    "seat",
+    "ground_slab"
+  ],
+  "terrain_box_count": 2,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.06928279035019977,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 112,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "d89a42e492453bb3cf7b10fae3fb9dd7216daff51464709af0c480da824afa2e",
+  "motion_sha256": "53cd2146c9446bbdedf3282f836b5382cb72b6da694d6478757ac3c319578843",
+  "estimated_support_point": [
+    0.4332828519856109,
+    -0.06642342365236388,
+    0.44681584575593475
+  ],
+  "support_point_to_box_top_gap_m": 0.068404284910139
+}

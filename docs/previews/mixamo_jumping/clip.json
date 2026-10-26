@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Jump and landing",
-  "description": "Jump and landing. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Jump and landing. Static jump terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_jumping/motion.mp4",
-      "video_sha256": "8ac8ae3aede15b364983df4a9b19a3232358c4107729eaed3c08e511ce2ba75f",
+      "video_sha256": "b589ecae4c391612bc3b984af5e5bdec0799217209caf1f73421bf2b72b98417",
       "fps": 50.0,
       "frames": 62,
       "duration": 1.24,
       "last_sample_time": 1.22,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "missing"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_jumping/provenance.json",
-    "validation": "docs/previews/mixamo_jumping/validation.json"
+    "validation": "docs/previews/mixamo_jumping/validation.json",
+    "terrain_fit": "docs/previews/mixamo_jumping/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_jumping/terrain_validation.json"
   }
 }

@@ -65,10 +65,37 @@ labels, policy rollouts, or training results.
   Local catalog: 163 clips, 189 NPZ/video pairs. Full array, quaternion, geometry,
   checksum, video frame-count, and FPS validation passed for both catalogs.
 - Sampled frames were inspected across the collection, with source-human/G1 crawl
-  comparison. The FBX source does not supply obstacle assets; affected previews
-  explicitly say “Obstacle not supplied.” These remain motion candidates for
-  contact/terrain fitting and tracker evaluation, not validated demonstrations.
+  comparison. The initial release lacked obstacle assets. The paired-terrain update
+  below replaces those previews and adds terrain to every final Mixamo NPZ.
 - Browser checks passed for all nine category counts and sample videos, direct
   clip links, search, mobile layout, retained OmniRetarget links, and local Mixamo
   NPZ downloads. Public previews do not advertise unavailable NPZ downloads.
 - Scoped Ruff formatting/lint checks, JavaScript syntax and diff checks passed.
+
+# Mixamo paired terrain — 2026-10-25
+
+- Rebuilt all 82 Mixamo references with 372 static terrain boxes. Each final NPZ
+  follows the existing `terrain_position`, `terrain_dimension` (full sizes),
+  `terrain_quat` (xyzw), `terrain_id`, and `ground_height` convention. The existing
+  Isaac Lab player renders those saved boxes without a Mixamo-specific loader.
+- Original motion arrays and timing are bit-for-bit unchanged from `motion_raw.npz`.
+  All 82 videos were regenerated from the paired NPZs; public and local recordings
+  match, and frame counts/FPS agree with the saved references.
+- All 11,061 saved poses were checked against the ball-hand G1 MJCF collision
+  shapes, each terrain box, and the ground plane. Maximum measured robot–terrain
+  penetration was 0 mm. Common named body positions agree with the exported USD
+  reference within the 2 mm check tolerance; omitted fixed MJCF bodies are listed
+  explicitly in each report.
+- Each clip includes fitting provenance, the final NPZ hash, and an all-frame
+  terrain collision report. Geometry is fitted to the G1 reference, not supplied
+  by Mixamo. Conservative clearance can leave support gaps. The fitted ladder
+  rungs and side rails may be nonuniform. No supporting contact, self-collision,
+  contact force, balance, or dynamic tracking result is claimed.
+- Inspected representative frames of stairs, ladders, vaults, crawling, jumping,
+  sitting, and recovery. The gallery exposes terrain reports and labels the
+  rebuilt recordings “Motion + terrain.”
+- Full public/local catalog validation passed (158 public clips, including 82
+  video-only previews; 163 local clips / 189 NPZ-video pairs). Browser checks
+  passed for file opening, a local HTTP server, terrain/report labels, playback,
+  category/search filters, mobile layout, and local Mixamo NPZ download links.
+- Ruff formatting/lint, JavaScript syntax, uv lock, and diff checks passed.

@@ -8,7 +8,7 @@ Kimodo for vaulting; and AME policy rollouts for sparse terrain.
 | --- | --- | --- |
 | OmniRetarget | 22 more G1 clips; all 29 published climbing clips now present | Same source dataset; exact ACP selection unknown |
 | LAFAN | Five locally built G1 previews; pinned downloader/converter | Public Unitree retargeting, not ACP's own retargeting |
-| Mixamo | 82 selected navigation clips, G1 retargeting and rendered previews | Includes stairs, ladders and sitting; exact ACP selection and source terrain remain unavailable |
+| Mixamo | 82 selected navigation clips, G1 retargeting and rendered previews | Includes fitted terrain and matching videos for stairs, ladders, sitting, and other navigation motions; exact ACP selection and original source terrain remain unavailable |
 
 The default gallery indexes publishable bundled data. `--include-local` creates
 `docs/local.html`, `docs/local-catalog.js`, and `data/catalog.local.json`, including

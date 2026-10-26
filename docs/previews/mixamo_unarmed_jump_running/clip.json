@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Jump and landing",
-  "description": "Jump and landing. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_unarmed_jump_running/motion.mp4",
-      "video_sha256": "d13aa45906258c251978ba4ac0815c11bf4c02d4084a1f90468b9aafbe485a94",
+      "video_sha256": "2665fa1d0563d94582f8ef0f7c859c4a175e4ae8412a978fadd6c9381e63e14b",
       "fps": 50.0,
       "frames": 71,
       "duration": 1.42,
       "last_sample_time": 1.4,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "ground"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_unarmed_jump_running/provenance.json",
-    "validation": "docs/previews/mixamo_unarmed_jump_running/validation.json"
+    "validation": "docs/previews/mixamo_unarmed_jump_running/validation.json",
+    "terrain_fit": "docs/previews/mixamo_unarmed_jump_running/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_unarmed_jump_running/terrain_validation.json"
   }
 }

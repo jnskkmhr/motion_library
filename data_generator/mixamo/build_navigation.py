@@ -1,7 +1,7 @@
 """Download selected navigation motions, retarget to G1, and build video previews.
 
-Motion arrays remain local. Public previews retain source identities and explicitly
-report absent obstacle geometry; they are not validated tracking references.
+Motion arrays remain local. Every final NPZ includes fitted static terrain, and
+its video is rendered from that same NPZ. Dynamic tracking remains unvalidated.
 """
 
 import argparse
@@ -26,7 +26,7 @@ def build(item, manifest, args):
     logs = ROOT / "outputs/mixamo_navigation_logs" / name
     logs.mkdir(parents=True, exist_ok=True)
     request = {
-        "item": item,
+        "item": {key: value for key, value in item.items() if key != "terrain_kind"},
         "revision": manifest["revision"],
         "max_duration": manifest["max_duration_seconds"],
         "mjcf_sha256": hashlib.sha256(args.mjcf.read_bytes()).hexdigest(),
@@ -77,20 +77,52 @@ def build(item, manifest, args):
             ],
             logs / "export.log",
         )
-    if not (dest / "motion.npz").exists():
+    # Fit in an isolated staging folder. Promote NPZ and video together only
+    # after fitting, collision checks, rendering, and timing checks succeed.
+    final_dest = dest
+    dest = ROOT / "outputs/mixamo_terrain_build" / name
+    dest.mkdir(parents=True, exist_ok=True)
+    terrain_request = {
+        "kind": item["terrain_kind"],
+        "raw_sha256": hashlib.sha256((final_dest / "motion_raw.npz").read_bytes()).hexdigest(),
+        "fitter_sha256": hashlib.sha256(Path(__file__).with_name("fit_terrain.py").read_bytes()).hexdigest(),
+    }
+    terrain_marker = dest / "terrain_request.json"
+    if not terrain_marker.exists() or json.loads(terrain_marker.read_text()) != terrain_request:
+        (dest / "motion.mp4").unlink(missing_ok=True)
         run(
             [
-                args.library_python,
-                ROOT / "tools/normalize_terrain.py",
+                args.isaaclab_python,
+                "-m",
+                "data_generator.mixamo.fit_terrain",
                 "--input",
-                dest / "motion_raw.npz",
+                final_dest / "motion_raw.npz",
                 "--output",
                 dest / "motion.npz",
-                "--ground_height",
-                "0",
+                "--kind",
+                item["terrain_kind"],
             ],
-            logs / "normalize.log",
+            logs / "terrain_fit.log",
         )
+        shutil.copy2(dest / "motion.json", dest / "terrain_fit.json")
+        terrain_marker.write_text(json.dumps(terrain_request, indent=2) + "\n")
+    run(
+        [
+            args.library_python,
+            "-m",
+            "data_generator.mixamo.validate_terrain",
+            "--motion",
+            dest / "motion.npz",
+            "--mjcf",
+            args.mjcf,
+            "--output",
+            dest / "terrain_validation.json",
+        ],
+        logs / "terrain_validation.log",
+    )
+    collision = json.loads((dest / "terrain_validation.json").read_text())
+    if not collision["robot_terrain_clear_within_2mm"]:
+        raise ValueError(f"Terrain intersects G1: {name}: {collision['worst_penetration']}")
     run(
         [
             args.library_python,
@@ -161,20 +193,13 @@ def build(item, manifest, args):
     title = item["description"] or item["prompt"]
     for prefix in ("Male ", "Female "):
         title = title.removeprefix(prefix)
-    terrain_missing = item["category"] in ("Stairs", "Ladder", "Climb and slope", "Vault", "Sit and stand") or any(
-        word in title.lower() for word in ("platform", "higher level", "box", "obstacle", "railing")
-    )
     source_url = f"https://huggingface.co/datasets/{manifest['repo_id']}/blob/{manifest['revision']}/{item['file']}"
+    fit_report = json.loads((dest / "terrain_fit.json").read_text())
     description = (
-        f"{item['category']}. "
-        + (
-            "Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. "
-            if terrain_missing
-            else "Ground plane assumed at Z=0; contacts have not been fitted. "
-        )
-        + "Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally."
+        f"{item['category']}. Static {item['terrain_kind']} terrain fitted to this G1 reference and stored in the NPZ. "
+        "Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated."
     )
-    provenance = json.loads((dest / "provenance.json").read_text())
+    provenance = json.loads((final_dest / "provenance.json").read_text())
     provenance.update(
         source_url=source_url,
         source_repository=manifest["repo_id"],
@@ -184,14 +209,33 @@ def build(item, manifest, args):
         category=item["category"],
         display_name=title,
         description=description,
-        terrain_missing=terrain_missing,
+        terrain_missing=False,
+        terrain_source="static geometry fitted to the target G1 reference; not supplied by Mixamo",
+        terrain_kind=item["terrain_kind"],
+        terrain_box_count=fit_report["terrain_box_count"],
+        motion_sha256=fit_report["motion_sha256"],
         target_robot="UNITREE_G1_29DOF_BALL_HAND_CFG",
         public_video_only=True,
     )
     (dest / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    archive = ROOT / "outputs/mixamo_before_terrain" / name
+    if not archive.exists():
+        archive.mkdir(parents=True)
+        for filename in ("motion.npz", "motion.mp4", "provenance.json", "validation.json"):
+            if (final_dest / filename).exists():
+                shutil.copy2(final_dest / filename, archive / filename)
+    for filename in (
+        "motion.npz",
+        "motion.mp4",
+        "provenance.json",
+        "validation.json",
+        "terrain_fit.json",
+        "terrain_validation.json",
+    ):
+        shutil.copy2(dest / filename, final_dest / filename)
     preview = ROOT / "docs/previews" / f"mixamo_{name}"
     preview.mkdir(parents=True, exist_ok=True)
-    for filename in ("motion.mp4", "provenance.json", "validation.json"):
+    for filename in ("motion.mp4", "provenance.json", "validation.json", "terrain_fit.json", "terrain_validation.json"):
         shutil.copy2(dest / filename, preview / filename)
     relative = str(preview.relative_to(ROOT))
     clip = {
@@ -208,7 +252,7 @@ def build(item, manifest, args):
         "poster": None,
         "variants": [
             {
-                "name": "G1 retargeting",
+                "name": "Motion + terrain",
                 "video": f"{relative}/motion.mp4",
                 "video_sha256": hashlib.sha256((preview / "motion.mp4").read_bytes()).hexdigest(),
                 "fps": fps,
@@ -216,10 +260,12 @@ def build(item, manifest, args):
                 "duration": frames / fps,
                 "last_sample_time": (frames - 1) / fps,
                 "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-                "terrain": "missing" if terrain_missing else "ground",
+                "terrain": "boxes",
             }
         ],
-        "reports": {key: f"{relative}/{key}.json" for key in ("provenance", "validation")},
+        "reports": {
+            key: f"{relative}/{key}.json" for key in ("provenance", "validation", "terrain_fit", "terrain_validation")
+        },
     }
     (preview / "clip.json").write_text(json.dumps(clip, indent=2) + "\n")
     return {"name": name, "category": item["category"], "duration": frames / fps}

@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Sit and stand",
-  "description": "Sit and stand. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Sit and stand. Static seat terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_standing_up/motion.mp4",
-      "video_sha256": "5dc506f4dbabe4f37173cfc5eb9312f946b7752a1a0020c5e58534d2d2dea298",
+      "video_sha256": "9e914b3af288d11f8f379ce2a9e224ab46da23544ed13a7b33b708c8c71c43c7",
       "fps": 50.0,
       "frames": 304,
       "duration": 6.08,
       "last_sample_time": 6.06,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "missing"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_standing_up/provenance.json",
-    "validation": "docs/previews/mixamo_standing_up/validation.json"
+    "validation": "docs/previews/mixamo_standing_up/validation.json",
+    "terrain_fit": "docs/previews/mixamo_standing_up/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_standing_up/terrain_validation.json"
   }
 }

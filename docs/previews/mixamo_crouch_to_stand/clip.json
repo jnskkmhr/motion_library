@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Crouch and duck",
-  "description": "Crouch and duck. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Crouch and duck. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_crouch_to_stand/motion.mp4",
-      "video_sha256": "ade6f4bf77cb330e5564d296fa731efaa4abbec66c884f20c8ce6771187db2a9",
+      "video_sha256": "3f727257a0ec3912ee6276d10a01ca5d25292442b0e66d636fa56d3eb3c1fc48",
       "fps": 50.0,
       "frames": 129,
       "duration": 2.58,
       "last_sample_time": 2.56,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "ground"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_crouch_to_stand/provenance.json",
-    "validation": "docs/previews/mixamo_crouch_to_stand/validation.json"
+    "validation": "docs/previews/mixamo_crouch_to_stand/validation.json",
+    "terrain_fit": "docs/previews/mixamo_crouch_to_stand/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_crouch_to_stand/terrain_validation.json"
   }
 }

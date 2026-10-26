@@ -45,14 +45,17 @@ uv run python tools/validate_library.py --catalog data/catalog.local.json
 ```
 
 `--limit 6` runs a small initial batch. `--resume` retains outputs only when the
-source request, retargeter, duration cap and robot MJCF match. `--workers` controls
+source request, retargeter, duration cap and robot MJCF match. Terrain fitting is
+repeated when the raw motion, selected terrain kind, or fitting code changes; its
+previous video is then invalidated. `--workers` controls
 concurrent conversion/render processes (default 2). Individual failures are
 reported in `outputs/mixamo_navigation_summary.json`; per-stage logs are in
 `outputs/mixamo_navigation_logs/`. A failed batch returns a nonzero exit status.
 
 The pipeline downloads only selected FBXs, runs G1 retargeting, exports body states
-using the exact Isaac Lab ball-hand USD asset, screens joint limits and foot
-geometry, and records a full 50 Hz video. Joint interpolation uses PCHIP to avoid
+using the exact Isaac Lab ball-hand USD asset, fits static terrain, checks robot–terrain
+penetration at every saved frame, screens joint limits and foot geometry, and
+records a full 50 Hz video from the paired NPZ. Joint interpolation uses PCHIP to avoid
 overshooting source joint limits. The recording frame count must match its NPZ.
 
 ## Inspect the results
@@ -61,7 +64,7 @@ overshooting source joint limits. The recording frame count must match its NPZ.
 - Local website: open `docs/local.html` for converted NPZ download links.
 - Local data: `data/mixamo/<name>/motion.npz`, `motion.mp4`, and provenance/reports.
 - Public files: `docs/previews/mixamo_<name>/` contains the rendered video,
-  provenance, geometric report, and gallery metadata.
+  provenance, terrain fitting/collision reports, geometric report, and gallery metadata.
 
 The public website contains videos, not source FBXs or converted animation arrays.
 The [Adobe terms](https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html) remain
@@ -75,13 +78,40 @@ and ankles. Separate arm fitting matches upper-arm and forearm directions using
 the actual G1 link geometry. Wrists remain neutral. Initial root XY is shifted to
 zero; source motion timing and root displacement are retained after scaling.
 
-**The FBXs do not contain the stairs, ladder, ledge, slope, obstacle, or seat.**
-Those previews explicitly say “Obstacle not supplied.” Their plane at Z=0 is only
-a viewing reference. Crawls, rolls, and get-ups also need contact fitting; source
-floor height and human limb proportions do not guarantee valid G1 contacts.
-Foot sliding, ground penetration, joint-limit saturation, and self-collision may
-remain. Passing array, timing, and joint-limit checks is not dynamic validation.
-These candidates need terrain fitting and tracker evaluation before training use.
+## Paired terrain: the existing motion-library convention
+
+Every final `motion.npz` includes `terrain_position` (box centers),
+`terrain_dimension` (full box sizes), `terrain_quat` (xyzw), `terrain_id`, and
+`ground_height`. Positions are in meters in the same world frame as the saved G1
+body states. The existing Isaac Lab player spawns these boxes directly. There is
+no separate Mixamo terrain format, and no motion arrays or timestamps are changed.
+
+The source FBX does not supply obstacle assets. `fit_terrain.py` follows the shared
+CLAW/terrain fitters: it transforms the actual G1 USD geometry bounds through the
+reference motion and fits static boxes around the swept robot geometry. Each
+manifest entry explicitly selects its terrain type:
+
+- Stairs use low-speed foot intervals and foot-edge clearance.
+- Ramps use a tilted box beneath the stance-foot samples.
+- Climbs, vaults, and sitting use support boxes near elevated feet, hands, or pelvis.
+- Ladders use rungs and connected side rails. Rung offsets avoid the swept robot;
+  these can form a nonuniform climbing frame rather than a regular straight ladder.
+- Crawls and ducking use a low roof and posts, following the CLAW overhead example.
+- Traveling jumps use takeoff/landing platforms when an airborne interval permits
+  a gap. In-place jumps use one platform. The floor below a gap is lowered.
+- Ground transitions and recovery use a bounded ground slab.
+
+`terrain_fit.json` records dimensions, fitting decisions, estimated contact gaps,
+and the final NPZ hash. `terrain_validation.json` checks all saved poses using the
+ball-hand G1 MJCF collision shapes against the plane and every terrain box; the
+build rejects penetration greater than 2 mm. It also compares common named body
+positions against the USD-exported reference. The build stages new files and
+promotes the NPZ and its video only after these checks and video timing checks pass.
+
+These are kinematic candidates. Collision clearance does not establish supporting
+contact: feet, hands, or pelvis can remain above the fitted surface. Sliding,
+self-collision, balance, force feasibility, and dynamic tracking still need
+validation before selecting clips for tracker training.
 
 ## Import another FBX
 

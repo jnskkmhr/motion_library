@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Climb and slope",
-  "description": "Climb and slope. Source obstacle geometry is unavailable; the preview shows motion over a reference plane only. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Climb and slope. Static wall terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_climbing_down_wall/motion.mp4",
-      "video_sha256": "f377496f1454fb462b29b7aabf4185b801011b470c8cbb03438181bddc0d3fa0",
+      "video_sha256": "b22ce9bd3c1447d76b7f00e74e6c560e2bed9bef43b0fbae6af7f96277ee23eb",
       "fps": 50.0,
       "frames": 101,
       "duration": 2.02,
       "last_sample_time": 2.0,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "missing"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_climbing_down_wall/provenance.json",
-    "validation": "docs/previews/mixamo_climbing_down_wall/validation.json"
+    "validation": "docs/previews/mixamo_climbing_down_wall/validation.json",
+    "terrain_fit": "docs/previews/mixamo_climbing_down_wall/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_climbing_down_wall/terrain_validation.json"
   }
 }

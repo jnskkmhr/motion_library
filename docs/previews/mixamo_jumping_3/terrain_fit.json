@@ -1,0 +1,25 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "vault",
+  "terrain_roles": [
+    "vault_box",
+    "ground_slab"
+  ],
+  "terrain_box_count": 2,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.3204892222364931,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 61,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "3fb9940bfc7cec77a25df35862b352f68451be7c377cea6642618310f0ce876b",
+  "motion_sha256": "276c19f8c552dce00058709e43026e0d571f2a2b227b604d3a9afa64f312ccb9",
+  "estimated_support_point": [
+    0.6930215736124044,
+    0.40906535134694966,
+    0.9233471911250575
+  ],
+  "support_point_to_box_top_gap_m": 0.03019817532039082
+}

@@ -4,7 +4,7 @@
   "source": "mixamo",
   "source_name": "Mixamo",
   "category": "Recovery and roll",
-  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
   "preview_only": true,
   "local_only": false,
@@ -12,19 +12,21 @@
   "poster": null,
   "variants": [
     {
-      "name": "G1 retargeting",
+      "name": "Motion + terrain",
       "video": "docs/previews/mixamo_stand_up_2/motion.mp4",
-      "video_sha256": "f0130175391a2b9c903be93452f08136b89aa76c518b65faa8975befcfabfb58",
+      "video_sha256": "9bbd9a04082c27869fba19563e99e08b4239fa348463d6d5cf3831780e62fe04",
       "fps": 50.0,
       "frames": 414,
       "duration": 8.28,
       "last_sample_time": 8.26,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "ground"
+      "terrain": "boxes"
     }
   ],
   "reports": {
     "provenance": "docs/previews/mixamo_stand_up_2/provenance.json",
-    "validation": "docs/previews/mixamo_stand_up_2/validation.json"
+    "validation": "docs/previews/mixamo_stand_up_2/validation.json",
+    "terrain_fit": "docs/previews/mixamo_stand_up_2/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_stand_up_2/terrain_validation.json"
   }
 }

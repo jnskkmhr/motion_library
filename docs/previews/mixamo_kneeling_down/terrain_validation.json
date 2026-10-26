@@ -1,0 +1,64 @@
+{
+  "motion_file": "motion.npz",
+  "frames_checked": 139,
+  "collision_geometry": "all enabled G1 MJCF collision shapes, ground plane, and every NPZ terrain box",
+  "max_mjcf_to_saved_usd_body_position_error_m": 6.367816522653668e-07,
+  "compared_body_names": [
+    "pelvis",
+    "left_hip_pitch_link",
+    "left_hip_roll_link",
+    "left_hip_yaw_link",
+    "left_knee_link",
+    "left_ankle_pitch_link",
+    "left_ankle_roll_link",
+    "right_hip_pitch_link",
+    "right_hip_roll_link",
+    "right_hip_yaw_link",
+    "right_knee_link",
+    "right_ankle_pitch_link",
+    "right_ankle_roll_link",
+    "waist_yaw_link",
+    "waist_roll_link",
+    "torso_link",
+    "left_shoulder_pitch_link",
+    "left_shoulder_roll_link",
+    "left_shoulder_yaw_link",
+    "left_elbow_link",
+    "left_wrist_roll_link",
+    "left_wrist_pitch_link",
+    "left_wrist_yaw_link",
+    "left_rubber_hand",
+    "right_shoulder_pitch_link",
+    "right_shoulder_roll_link",
+    "right_shoulder_yaw_link",
+    "right_elbow_link",
+    "right_wrist_roll_link",
+    "right_wrist_pitch_link",
+    "right_wrist_yaw_link",
+    "right_rubber_hand"
+  ],
+  "usd_fixed_bodies_absent_from_mjcf": [
+    "pelvis_contour_link",
+    "head_link",
+    "logo_link"
+  ],
+  "max_robot_terrain_penetration_m": -0.0,
+  "worst_penetration": {
+    "signed_distance_m": 0.0,
+    "frame": null,
+    "robot_geom": null,
+    "terrain_geom": null
+  },
+  "terrain_minimum_signed_gaps_m": {
+    "floor": 0.013330419067851283,
+    "paired_box_0": 0.01333041906785129
+  },
+  "terrain_frames_with_penetration_over_2mm": {
+    "floor": 0,
+    "paired_box_0": 0
+  },
+  "robot_terrain_clear_within_2mm": true,
+  "dynamic_tracking_validated": false,
+  "support_contact_validated": false,
+  "limitations": "Kinematic collision checks only; no self-collision, contact forces, balance, torque or tracking-policy test."
+}

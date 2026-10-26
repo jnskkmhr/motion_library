@@ -12,7 +12,8 @@
       "description": "Walking Up A Set Of Stairs",
       "text": "Walking Up A Set Of Stairs",
       "frames": "42",
-      "motion_id": "c9ccb1c6-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccb1c6-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "stairs"
     },
     {
       "name": "descending_stairs",
@@ -22,7 +23,8 @@
       "description": "Running Down A Set Of Stairs",
       "text": "Running Down A Set Of Stairs",
       "frames": "13",
-      "motion_id": "c9cca996-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cca996-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "stairs"
     },
     {
       "name": "descending_stairs_2",
@@ -32,7 +34,8 @@
       "description": "Walking Down A Set Of Stairs",
       "text": "Walking Down A Set Of Stairs",
       "frames": "29",
-      "motion_id": "c9ccb106-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccb106-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "stairs"
     },
     {
       "name": "running_up_stairs",
@@ -42,7 +45,8 @@
       "description": "",
       "text": "Running Up Stairs",
       "frames": "19",
-      "motion_id": "c9ccaa5c-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccaa5c-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "stairs"
     },
     {
       "name": "climbing_3",
@@ -52,7 +56,8 @@
       "description": "Ladder Climb Two Steps At A Time",
       "text": "Ladder Climb Two Steps At A Time",
       "frames": "126",
-      "motion_id": "c9c615dd-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c615dd-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ladder"
     },
     {
       "name": "climbing_6",
@@ -62,7 +67,8 @@
       "description": "Ladder Climb One Step At A Time",
       "text": "Ladder Climb One Step At A Time",
       "frames": "48",
-      "motion_id": "c9c6150e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c6150e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ladder"
     },
     {
       "name": "climbing_ladder",
@@ -72,7 +78,8 @@
       "description": "Climbing Up A Ladder",
       "text": "Climbing Up A Ladder",
       "frames": "24",
-      "motion_id": "c9c95e7a-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c95e7a-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ladder"
     },
     {
       "name": "start_climbing_ladder",
@@ -82,7 +89,8 @@
       "description": "Standing To Climb Ladder Quickly",
       "text": "Standing To Climb Ladder Quickly",
       "frames": "96",
-      "motion_id": "c9c8e009-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8e009-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ladder"
     },
     {
       "name": "climbing_to_top",
@@ -92,7 +100,8 @@
       "description": "Climbing Up A Ladder To Standing",
       "text": "Climbing Up A Ladder To Standing",
       "frames": "121",
-      "motion_id": "c9c9611b-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c9611b-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ladder"
     },
     {
       "name": "climbing",
@@ -102,7 +111,8 @@
       "description": "Run To Start Climbing",
       "text": "Run To Start Climbing",
       "frames": "116",
-      "motion_id": "c9c8c5e5-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8c5e5-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "climbing_2",
@@ -112,7 +122,8 @@
       "description": "Pulling Up To A Ledge",
       "text": "Pulling Up To A Ledge",
       "frames": "168",
-      "motion_id": "c9c803b5-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c803b5-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "climbing_4",
@@ -122,7 +133,8 @@
       "description": "Climbing Up A Slope",
       "text": "Climbing Up A Slope",
       "frames": "140",
-      "motion_id": "c9c83859-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c83859-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ramp"
     },
     {
       "name": "climbing_5",
@@ -132,7 +144,8 @@
       "description": "Starting To Climb Onto A Box Or Short Fence",
       "text": "Starting To Climb Onto A Box Or Short Fence",
       "frames": "69",
-      "motion_id": "c9c90758-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c90758-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "climbing_down",
@@ -142,7 +155,8 @@
       "description": "Climbing Down To Standing",
       "text": "Climbing Down To Standing",
       "frames": "104",
-      "motion_id": "c9c84593-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c84593-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "climbing_down_2",
@@ -152,7 +166,8 @@
       "description": "Climb Through Fence And Jump Down",
       "text": "Climb Through Fence And Jump Down",
       "frames": "95",
-      "motion_id": "c9c8b4dd-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8b4dd-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "vault"
     },
     {
       "name": "climbing_up_wall",
@@ -162,7 +177,8 @@
       "description": "Climbing Up A Wall",
       "text": "Climbing Up A Wall",
       "frames": "61",
-      "motion_id": "c9c9b079-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c9b079-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "wall"
     },
     {
       "name": "climbing_down_wall",
@@ -172,7 +188,8 @@
       "description": "Climbing Down A Wall",
       "text": "Climbing Down A Wall",
       "frames": "61",
-      "motion_id": "c9c9b2b7-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c9b2b7-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "wall"
     },
     {
       "name": "braced_hang_to_crouch",
@@ -182,7 +199,8 @@
       "description": "Climb Wall From Braced Hang To Crouch",
       "text": "Climb Wall From Braced Hang To Crouch",
       "frames": "35",
-      "motion_id": "c9cc0304-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cc0304-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "sprint_to_wall_climb",
@@ -192,7 +210,8 @@
       "description": "Sprint To Wall Climb To Crouch Idle",
       "text": "Sprint To Wall Climb To Crouch Idle",
       "frames": "55",
-      "motion_id": "c9cc0053-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cc0053-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "jumping_3",
@@ -202,7 +221,8 @@
       "description": "Male Jumping Over An Obstacle With 2 Hands Planted",
       "text": "Male Jumping Over An Obstacle With 2 Hands Planted",
       "frames": "161",
-      "motion_id": "c9ca8bbd-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ca8bbd-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "vault"
     },
     {
       "name": "jumping_12",
@@ -212,7 +232,8 @@
       "description": "Male Jumping Over An Obstacle With 1 Hand Planted",
       "text": "Male Jumping Over An Obstacle With 1 Hand Planted",
       "frames": "36",
-      "motion_id": "c9ca8d0f-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ca8d0f-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "vault"
     },
     {
       "name": "vault_over_box",
@@ -222,7 +243,8 @@
       "description": "Vault Over Box And Hide",
       "text": "Vault Over Box And Hide",
       "frames": "233",
-      "motion_id": "c9c8bc4d-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8bc4d-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "vault"
     },
     {
       "name": "crawl_backwards",
@@ -232,7 +254,8 @@
       "description": "Crawling Backwards In Fear",
       "text": "Crawling Backwards In Fear",
       "frames": "146",
-      "motion_id": "c9ccc230-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccc230-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crawl_backwards_in_prone",
@@ -242,7 +265,8 @@
       "description": "Crawling Backwards While In A Prone Position",
       "text": "Crawling Backwards While In A Prone Position",
       "frames": "35",
-      "motion_id": "c9c962ca-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c962ca-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crawl_forward",
@@ -252,7 +276,8 @@
       "description": "Crawling Forward",
       "text": "Crawling Forward",
       "frames": "106",
-      "motion_id": "c9c87961-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c87961-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crawling",
@@ -262,7 +287,8 @@
       "description": "Crawling Forward On Hands And Knees",
       "text": "Crawling Forward On Hands And Knees",
       "frames": "55",
-      "motion_id": "c9c77c34-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c77c34-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crawling_backwards",
@@ -272,7 +298,8 @@
       "description": "Frantically Crawling Backwards On Stomach",
       "text": "Frantically Crawling Backwards On Stomach",
       "frames": "63",
-      "motion_id": "c9c8c51f-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8c51f-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "low_crawl",
@@ -282,7 +309,8 @@
       "description": "Super Low Crawl, Or Crawling Up A Wall",
       "text": "Super Low Crawl, Or Crawling Up A Wall",
       "frames": "95",
-      "motion_id": "c9ccc173-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccc173-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "running_crawl",
@@ -292,7 +320,8 @@
       "description": "Running On All Fours",
       "text": "Running On All Fours",
       "frames": "21",
-      "motion_id": "c9cca748-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cca748-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouch_to_prone",
@@ -302,7 +331,8 @@
       "description": "Crouching To Laying Prone Transition",
       "text": "Crouching To Laying Prone Transition",
       "frames": "103",
-      "motion_id": "c9c87ad9-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c87ad9-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "crouch_to_stand",
@@ -312,7 +342,8 @@
       "description": "Male Crouch To Stand",
       "text": "Male Crouch To Stand",
       "frames": "78",
-      "motion_id": "c9c62952-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c62952-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "crouch_walk",
@@ -322,7 +353,8 @@
       "description": "Crouched Against Wall To Crouch Walk",
       "text": "Crouched Against Wall To Crouch Walk",
       "frames": "91",
-      "motion_id": "c9c8c75e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8c75e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouch_walk_back",
@@ -332,7 +364,8 @@
       "description": "Walking Backwards While Crouched",
       "text": "Walking Backwards While Crouched",
       "frames": "38",
-      "motion_id": "328e4430-480a-49c2-8086-ef5f1b5a1beb"
+      "motion_id": "328e4430-480a-49c2-8086-ef5f1b5a1beb",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouch_walk_forward_2",
@@ -342,7 +375,8 @@
       "description": "Walking Forward While Crouched",
       "text": "Walking Forward While Crouched",
       "frames": "35",
-      "motion_id": "b9fbd249-a554-423c-aa37-baa98223c4dc"
+      "motion_id": "b9fbd249-a554-423c-aa37-baa98223c4dc",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouch_walk_left",
@@ -352,7 +386,8 @@
       "description": "Walking Left While Crouched",
       "text": "Walking Left While Crouched",
       "frames": "36",
-      "motion_id": "14f7890c-4431-4944-95d0-f7c46a1c538b"
+      "motion_id": "14f7890c-4431-4944-95d0-f7c46a1c538b",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouch_walk_right_2",
@@ -362,7 +397,8 @@
       "description": "Walking Right While Crouched",
       "text": "Walking Right While Crouched",
       "frames": "39",
-      "motion_id": "b6a59d7d-d02d-48e4-ac30-3edee0d2d9e6"
+      "motion_id": "b6a59d7d-d02d-48e4-ac30-3edee0d2d9e6",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouched_walking",
@@ -372,7 +408,8 @@
       "description": "Crouched Walk",
       "text": "Crouched Walk",
       "frames": "32",
-      "motion_id": "c9c640fa-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c640fa-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouching",
@@ -382,7 +419,8 @@
       "description": "Crouching From Standing Position",
       "text": "Crouching From Standing Position",
       "frames": "123",
-      "motion_id": "c9c8ecbd-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8ecbd-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "ducking_2",
@@ -392,7 +430,8 @@
       "description": "Ducking For Cover From Standing Idle",
       "text": "Ducking For Cover From Standing Idle",
       "frames": "47",
-      "motion_id": "c9c8de59-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8de59-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "passage"
     },
     {
       "name": "stand_to_crouch",
@@ -402,7 +441,8 @@
       "description": "Standing To Crouching Transition",
       "text": "Standing To Crouching Transition",
       "frames": "46",
-      "motion_id": "c9c877e6-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c877e6-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "standing_2",
@@ -412,7 +452,8 @@
       "description": "Standing From A Crouch",
       "text": "Standing From A Crouch",
       "frames": "104",
-      "motion_id": "c9c8fa8d-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8fa8d-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "crouch_turn_left_90_2",
@@ -422,7 +463,8 @@
       "description": "Turning 90 Degrees Left",
       "text": "Turning 90 Degrees Left",
       "frames": "56",
-      "motion_id": "59638101-83cb-4f5b-9ecc-5f3184b1669c"
+      "motion_id": "59638101-83cb-4f5b-9ecc-5f3184b1669c",
+      "terrain_kind": "passage"
     },
     {
       "name": "crouch_turn_right_90",
@@ -432,7 +474,8 @@
       "description": "Turning 90 Degrees Right",
       "text": "Turning 90 Degrees Right",
       "frames": "50",
-      "motion_id": "f73f73aa-7b67-43ca-ad1b-f58e6f909e95"
+      "motion_id": "f73f73aa-7b67-43ca-ad1b-f58e6f909e95",
+      "terrain_kind": "passage"
     },
     {
       "name": "big_jump",
@@ -442,7 +485,8 @@
       "description": "Big Jump To Roll",
       "text": "Big Jump To Roll",
       "frames": "72",
-      "motion_id": "c9caace6-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9caace6-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "box_jump",
@@ -452,7 +496,8 @@
       "description": "Jump Up On Box",
       "text": "Jump Up On Box",
       "frames": "118",
-      "motion_id": "c9ce819a-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ce819a-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "forward_jump",
@@ -462,7 +507,8 @@
       "description": "Jumping Forward",
       "text": "Jumping Forward",
       "frames": "74",
-      "motion_id": "c9c7282b-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c7282b-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "jump_2",
@@ -472,7 +518,8 @@
       "description": "Female Forward Running Jump",
       "text": "Female Forward Running Jump",
       "frames": "99",
-      "motion_id": "c9ccfe2b-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccfe2b-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "jump_3",
@@ -482,7 +529,8 @@
       "description": "Forward Running Jump",
       "text": "Forward Running Jump",
       "frames": "31",
-      "motion_id": "c9ccebcf-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccebcf-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "jump_5",
@@ -492,7 +540,8 @@
       "description": "Backward Running Jump",
       "text": "Backward Running Jump",
       "frames": "29",
-      "motion_id": "c9ccec92-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccec92-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "jump_down_2",
@@ -502,7 +551,8 @@
       "description": "Jumping Down From 2 Feet Platform With 2 Feet",
       "text": "Jumping Down From 2 Feet Platform With 2 Feet",
       "frames": "106",
-      "motion_id": "c9c6695e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c6695e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "jumping",
@@ -512,7 +562,8 @@
       "description": "Male Jumping Onto Platform",
       "text": "Male Jumping Onto Platform",
       "frames": "38",
-      "motion_id": "c9c66a19-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c66a19-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "jumping_2",
@@ -522,7 +573,8 @@
       "description": "Male Jumping Down From 2ft High Platform With One Foot",
       "text": "Male Jumping Down From 2ft High Platform With One Foot",
       "frames": "73",
-      "motion_id": "c9c66b89-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c66b89-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "jumping_5",
@@ -532,7 +584,8 @@
       "description": "Male Jumping Down From 4 Feet",
       "text": "Male Jumping Down From 4 Feet",
       "frames": "80",
-      "motion_id": "c9c64840-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c64840-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "jumping_7",
@@ -542,7 +595,8 @@
       "description": "Male Jumping Down From 4ft And Crouching On One Hand",
       "text": "Male Jumping Down From 4ft And Crouching On One Hand",
       "frames": "67",
-      "motion_id": "c9c667ea-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c667ea-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "jumping_11",
@@ -552,7 +606,8 @@
       "description": "Male Stepping Onto Platform",
       "text": "Male Stepping Onto Platform",
       "frames": "42",
-      "motion_id": "c9c66acd-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c66acd-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "jumping_13",
@@ -562,7 +617,8 @@
       "description": "Step Up To Jump Over Object",
       "text": "Step Up To Jump Over Object",
       "frames": "87",
-      "motion_id": "c9c849de-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c849de-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "climb"
     },
     {
       "name": "jumping_down_12",
@@ -572,7 +628,8 @@
       "description": "Jumping Down From Higher Level",
       "text": "Jumping Down From Higher Level",
       "frames": "98",
-      "motion_id": "c9c8ca31-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8ca31-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "running_jump",
@@ -582,7 +639,8 @@
       "description": "Jumping From A Sprint",
       "text": "Jumping From A Sprint",
       "frames": "28",
-      "motion_id": "c9c81bb4-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c81bb4-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "running_jump_2",
@@ -592,7 +650,8 @@
       "description": "Fast Run To Jump Up Onto Higher Level",
       "text": "Fast Run To Jump Up Onto Higher Level",
       "frames": "66",
-      "motion_id": "c9c8fc30-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8fc30-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "unarmed_jump",
@@ -602,7 +661,8 @@
       "description": "Jumping And Landing In Place",
       "text": "Jumping And Landing In Place",
       "frames": "71",
-      "motion_id": "c9ceec50-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ceec50-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     },
     {
       "name": "unarmed_jump_running",
@@ -612,7 +672,8 @@
       "description": "Running Jump And Landing",
       "text": "Running Jump And Landing",
       "frames": "43",
-      "motion_id": "c9ceed14-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ceed14-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "standing_jump_running_to_run_forward",
@@ -622,7 +683,8 @@
       "description": "Running Jump To Run Forward",
       "text": "Running Jump To Run Forward",
       "frames": "62",
-      "motion_id": "469ad0f4-2f7f-47a1-b12c-203ca355a7f5"
+      "motion_id": "469ad0f4-2f7f-47a1-b12c-203ca355a7f5",
+      "terrain_kind": "gap"
     },
     {
       "name": "standing_jump_running_landing",
@@ -632,7 +694,8 @@
       "description": "Landing From Running  Jump Into Run Forward",
       "text": "Landing From Running  Jump Into Run Forward",
       "frames": "42",
-      "motion_id": "4bc6d762-60d4-438f-b7d1-ae46df74b075"
+      "motion_id": "4bc6d762-60d4-438f-b7d1-ae46df74b075",
+      "terrain_kind": "jump"
     },
     {
       "name": "jump_over",
@@ -642,7 +705,8 @@
       "description": "Flying Jump Rolling To Run",
       "text": "Flying Jump Rolling To Run",
       "frames": "185",
-      "motion_id": "c9caae47-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9caae47-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "gap"
     },
     {
       "name": "stand_to_sit",
@@ -652,7 +716,8 @@
       "description": "Standing To Sitting Transition",
       "text": "Standing To Sitting Transition",
       "frames": "68",
-      "motion_id": "c9ccaece-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccaece-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "seat"
     },
     {
       "name": "sitting_6",
@@ -662,7 +727,8 @@
       "description": "Sitting Down Arms Outside Armrests",
       "text": "Sitting Down Arms Outside Armrests",
       "frames": "134",
-      "motion_id": "c9c7911a-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c7911a-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "seat"
     },
     {
       "name": "sit_to_stand",
@@ -672,7 +738,8 @@
       "description": "Sitting To Standing",
       "text": "Sitting To Standing",
       "frames": "69",
-      "motion_id": "c9ccabe2-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9ccabe2-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "seat"
     },
     {
       "name": "stand_up",
@@ -682,7 +749,8 @@
       "description": "Standing Up From Seated Position",
       "text": "Standing Up From Seated Position",
       "frames": "146",
-      "motion_id": "c9c7937e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c7937e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "seat"
     },
     {
       "name": "standing_up",
@@ -692,7 +760,8 @@
       "description": "Sitting To Standing",
       "text": "Sitting To Standing",
       "frames": "183",
-      "motion_id": "c9c8335e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8335e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "seat"
     },
     {
       "name": "getting_up",
@@ -702,7 +771,8 @@
       "description": "Getting Up From Being Knocked Down On The Ground",
       "text": "Getting Up From Being Knocked Down On The Ground",
       "frames": "82",
-      "motion_id": "c9c90823-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c90823-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "getting_up_2",
@@ -712,7 +782,8 @@
       "description": "Standing From A Lying Prone",
       "text": "Standing From A Lying Prone",
       "frames": "229",
-      "motion_id": "c9cd89ad-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cd89ad-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "getting_up_3",
@@ -722,7 +793,8 @@
       "description": "Getting Up From Back",
       "text": "Getting Up From Back",
       "frames": "251",
-      "motion_id": "c9c7276e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c7276e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "getting_up_4",
@@ -732,7 +804,8 @@
       "description": "Getting Up From Stomach",
       "text": "Getting Up From Stomach",
       "frames": "259",
-      "motion_id": "c9c71f39-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c71f39-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "stand_up_2",
@@ -742,7 +815,8 @@
       "description": "Standing Up From Back",
       "text": "Standing Up From Back",
       "frames": "249",
-      "motion_id": "c9c6d314-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c6d314-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "standing_up_3",
@@ -752,7 +826,8 @@
       "description": "Standing Up From Lying On Stomach",
       "text": "Standing Up From Lying On Stomach",
       "frames": "343",
-      "motion_id": "c9c6dc32-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c6dc32-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "stand",
@@ -762,7 +837,8 @@
       "description": "Standing From Crouched Hands On Ground",
       "text": "Standing From Crouched Hands On Ground",
       "frames": "94",
-      "motion_id": "c9c804f0-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c804f0-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "standing",
@@ -772,7 +848,8 @@
       "description": "Standing Up From A Kneeling Position",
       "text": "Standing Up From A Kneeling Position",
       "frames": "84",
-      "motion_id": "c9c8cebb-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8cebb-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "kneeling_down",
@@ -782,7 +859,8 @@
       "description": "Standing To Kneeling Down",
       "text": "Standing To Kneeling Down",
       "frames": "84",
-      "motion_id": "c9c8ac04-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c8ac04-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "dive_roll_2",
@@ -792,7 +870,8 @@
       "description": "Dive Roll From Standing",
       "text": "Dive Roll From Standing",
       "frames": "188",
-      "motion_id": "c9c95f5e-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c95f5e-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "stand_to_roll",
@@ -802,7 +881,8 @@
       "description": "Dive Roll From Standing",
       "text": "Dive Roll From Standing",
       "frames": "72",
-      "motion_id": "c9c9a122-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9c9a122-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "run_to_rolling",
@@ -812,7 +892,8 @@
       "description": "Run Ro Roll Eveade To Run",
       "text": "Run Ro Roll Eveade To Run",
       "frames": "104",
-      "motion_id": "c9cac590-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cac590-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "ground"
     },
     {
       "name": "edge_slip",
@@ -822,7 +903,8 @@
       "description": "Slipping Off An Edge Then Regaining Balance",
       "text": "Slipping Off An Edge Then Regaining Balance",
       "frames": "128",
-      "motion_id": "c9cccf35-b96c-11e4-a802-0aaa78deedf9"
+      "motion_id": "c9cccf35-b96c-11e4-a802-0aaa78deedf9",
+      "terrain_kind": "jump"
     }
   ]
 }

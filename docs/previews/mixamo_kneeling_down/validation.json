@@ -6,5 +6,7 @@
   "min_foot_corner_world_z_m": -0.06263156439317744,
   "dynamic_tracking_validated": false,
   "ready_for_training": false,
-  "note": "Sampled joint/geometry screening only; no full-body collision or dynamics validation."
+  "note": "Sampled joint/geometry screening only; no full-body collision or dynamics validation.",
+  "max_foot_corner_depth_below_box_top_m": 0.0,
+  "depth_definition": "Local box-Z depth at corners whose XY lies inside the box footprint; not minimum collision penetration."
 }

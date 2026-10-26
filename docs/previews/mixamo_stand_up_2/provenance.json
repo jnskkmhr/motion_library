@@ -25,7 +25,7 @@
   "truncated": false,
   "public_distribution": false,
   "exact_acp_clip": false,
-  "terrain_source": "Assumed ground Z=0; obstacle geometry not recovered",
+  "terrain_source": "static geometry fitted to the target G1 reference; not supplied by Mixamo",
   "source_joint_trajectory_modified": true,
   "wrists": "Fixed neutral; source wrist motion omitted",
   "dynamic_tracking_validated": false,
@@ -38,8 +38,11 @@
   "source_description": "Standing Up From Back",
   "category": "Recovery and roll",
   "display_name": "Standing Up From Back",
-  "description": "Recovery and roll. Ground plane assumed at Z=0; contacts have not been fitted. Kinematic G1 retargeting; not validated for tracking. Converted NPZ available locally.",
+  "description": "Recovery and roll. Static ground terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "terrain_missing": false,
   "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-  "public_video_only": true
+  "public_video_only": true,
+  "terrain_kind": "ground",
+  "terrain_box_count": 1,
+  "motion_sha256": "4bd85d1ef29b0b3f0a49a6a1df9d1a803df0912161bc07488dc985c0eb817f1a"
 }

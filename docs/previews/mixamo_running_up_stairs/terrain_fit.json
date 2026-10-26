@@ -1,0 +1,40 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "stairs",
+  "terrain_roles": [
+    "stair_tread",
+    "stair_tread",
+    "ground_slab"
+  ],
+  "terrain_box_count": 3,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.015040514601761668,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 31,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "897e7f032473f85b618b8ca283c901ed55dd1c1af8592824daa6ff85e7dac815",
+  "motion_sha256": "378178add0a01433c643a7e330310729fbe496d75d7b70fd86c14eedac368066",
+  "estimated_foot_support_intervals": [
+    {
+      "foot": 0,
+      "start": 9,
+      "stop": 15,
+      "x": 0.062437336243522885,
+      "min_z": 0.11382319141092352
+    },
+    {
+      "foot": 1,
+      "start": 23,
+      "stop": 31,
+      "x": 0.26818311639614356,
+      "min_z": 0.22765664679362638
+    }
+  ],
+  "fitted_stair_top_heights_m": [
+    0.10543921907560044
+  ],
+  "support_speed_threshold_m_s": 0.3
+}

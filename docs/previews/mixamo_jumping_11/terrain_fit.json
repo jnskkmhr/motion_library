@@ -1,0 +1,20 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "jump",
+  "terrain_roles": [
+    "start_platform",
+    "finish_platform",
+    "ground_slab"
+  ],
+  "terrain_box_count": 3,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.05668359418355827,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 69,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "25d709e6ddfac40c5f511d5d6d80e0b4f8988ba67d5ded29b6125f00542fd427",
+  "motion_sha256": "9446143f7f95221f0a8532b8fd6966fc09c736c09be7eb779c56eba543b5961d"
+}
