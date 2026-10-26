@@ -15,7 +15,7 @@
   "contact_forces_measured": false,
   "ready_for_training": false,
   "source_motion_sha256": "bef1a828776f16766fefbe3c6b840aac809e85a4469ac61cbe38c12c98d0c2c5",
-  "motion_sha256": "15ef8308ed86081932a97e9ee72d84437a76a2102838c8bb0c19537145e40aef",
+  "motion_sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae",
   "estimated_support_point": [
     0.2734248801605065,
     0.607162451369727,

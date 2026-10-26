@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "status": "retained_kinematic_candidate",
+  "motion_sha256": "fa49517a86d8789e2823acbb05ba44e2a985d49b67244f2a50649f06366b7a81",
+  "measurements": {
+    "name": "running_jump",
+    "kind": "gap",
+    "foot_start": 0.02953057884853627,
+    "foot_end": 0.026735900825796022,
+    "hand_min": 0.564423822302027,
+    "joint_speed": 23.733333587646484,
+    "fit_gap": 0,
+    "max_nearest_foot_gap": 0.7048441358178041,
+    "height": 0.9084593034229597,
+    "has_gap": true
+  },
+  "review": "Visible obstacle interaction retained after terrain/support-gap screening. Contact forces, balance and dynamic tracking remain unvalidated."
+}

@@ -27,6 +27,7 @@
     "provenance": "docs/previews/mixamo_jump_3/provenance.json",
     "validation": "docs/previews/mixamo_jump_3/validation.json",
     "terrain_fit": "docs/previews/mixamo_jump_3/terrain_fit.json",
-    "terrain_validation": "docs/previews/mixamo_jump_3/terrain_validation.json"
+    "terrain_validation": "docs/previews/mixamo_jump_3/terrain_validation.json",
+    "quality_review": "docs/previews/mixamo_jump_3/quality_review.json"
   }
 }

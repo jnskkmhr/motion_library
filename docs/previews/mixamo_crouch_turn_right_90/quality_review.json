@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "status": "retained_kinematic_candidate",
+  "motion_sha256": "87b36e902d80ddd9b8ae94799a9954633fa1fa5ff98176bf55e812ba6bbe1a7a",
+  "measurements": {
+    "name": "crouch_turn_right_90",
+    "kind": "passage",
+    "foot_start": 0.02027557597492452,
+    "foot_end": 0.008159516961326926,
+    "hand_min": 0.13562487370382342,
+    "joint_speed": 6.693062782287598,
+    "fit_gap": 0,
+    "max_nearest_foot_gap": 0.07801757032320564,
+    "height": 1.3929942921989602,
+    "has_gap": false
+  },
+  "review": "Visible obstacle interaction retained after terrain/support-gap screening. Contact forces, balance and dynamic tracking remain unvalidated."
+}

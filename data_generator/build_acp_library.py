@@ -28,8 +28,8 @@ def main():
     p.add_argument(
         "--output_root",
         type=Path,
-        default=ROOT / "data",
-        help="Destination root; use a new folder to reproduce bundled clips",
+        default=ROOT / "outputs/acp_candidates",
+        help="Candidate output root; review motion/terrain before promoting final pairs to data/",
     )
     args = p.parse_args()
     if not args.isaaclab_python.is_file() or not args.mjcf.is_file():

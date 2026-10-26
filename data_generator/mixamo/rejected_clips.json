@@ -1,0 +1,2236 @@
+{
+  "date": "2026-10-26",
+  "clips": [
+    {
+      "id": "mixamo/ascending_stairs",
+      "source": {
+        "name": "ascending_stairs",
+        "category": "Stairs",
+        "file": "animation/Ascending_Stairs.fbx",
+        "prompt": "Ascending Stairs",
+        "description": "Walking Up A Set Of Stairs",
+        "text": "Walking Up A Set Of Stairs",
+        "frames": "42",
+        "motion_id": "c9ccb1c6-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "stairs"
+      },
+      "reasons": [
+        "Stair fit does not reproduce source support heights: near-flat treads or unsupported endpoint.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "ascending_stairs",
+        "kind": "stairs",
+        "foot_start": 0.024518815442254982,
+        "foot_end": 0.15599757988131793,
+        "hand_min": 0.5256812310496022,
+        "joint_speed": 9.826330184936523,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.15663006472611107,
+        "height": 0.1189050087786862,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/big_jump",
+      "source": {
+        "name": "big_jump",
+        "category": "Jump and landing",
+        "file": "animation/Big_Jump.fbx",
+        "prompt": "Big Jump",
+        "description": "Big Jump To Roll",
+        "text": "Big Jump To Roll",
+        "frames": "72",
+        "motion_id": "c9caace6-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "gap"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "big_jump",
+        "kind": "gap",
+        "foot_start": 0.22229550339774717,
+        "foot_end": 0.14245983347024904,
+        "hand_min": 0.41393885398088665,
+        "joint_speed": 22.287748336791992,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 1.9592231708663794,
+        "height": 0.9377063012254633,
+        "has_gap": true
+      }
+    },
+    {
+      "id": "mixamo/box_jump",
+      "source": {
+        "name": "box_jump",
+        "category": "Jump and landing",
+        "file": "animation/Box_Jump.fbx",
+        "prompt": "Box Jump",
+        "description": "Jump Up On Box",
+        "text": "Jump Up On Box",
+        "frames": "118",
+        "motion_id": "c9ce819a-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground."
+      ],
+      "measurements": {
+        "name": "box_jump",
+        "kind": "jump",
+        "foot_start": 0.047464294331464166,
+        "foot_end": 0.04741168506772206,
+        "hand_min": 0.5161185820052511,
+        "joint_speed": 16.390371322631836,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.331354036224656,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/braced_hang_to_crouch",
+      "source": {
+        "name": "braced_hang_to_crouch",
+        "category": "Climb and slope",
+        "file": "animation/Braced_Hang_To_Crouch.fbx",
+        "prompt": "Braced Hang To Crouch",
+        "description": "Climb Wall From Braced Hang To Crouch",
+        "text": "Climb Wall From Braced Hang To Crouch",
+        "frames": "35",
+        "motion_id": "c9cc0304-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "climb"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "braced_hang_to_crouch",
+        "kind": "climb",
+        "foot_start": 0.06791076337419985,
+        "foot_end": 0.3507843018050025,
+        "hand_min": 0.025851902607501247,
+        "joint_speed": 21.600000381469727,
+        "fit_gap": 0.08098964821531984,
+        "max_nearest_foot_gap": 0.5358144759355083,
+        "height": 1.3040326263973236,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing",
+      "source": {
+        "name": "climbing",
+        "category": "Climb and slope",
+        "file": "animation/Climbing.fbx",
+        "prompt": "Climbing",
+        "description": "Run To Start Climbing",
+        "text": "Run To Start Climbing",
+        "frames": "116",
+        "motion_id": "c9c8c5e5-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "climb"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "climbing",
+        "kind": "climb",
+        "foot_start": 0.3165500168194886,
+        "foot_end": 0.019959313142424606,
+        "hand_min": 0.28353012489716223,
+        "joint_speed": 21.65021514892578,
+        "fit_gap": 0.005716527726002174,
+        "max_nearest_foot_gap": 0.4366979997128626,
+        "height": 1.183665875356204,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_2",
+      "source": {
+        "name": "climbing_2",
+        "category": "Climb and slope",
+        "file": "animation/Climbing_2.fbx",
+        "prompt": "Climbing",
+        "description": "Pulling Up To A Ledge",
+        "text": "Pulling Up To A Ledge",
+        "frames": "168",
+        "motion_id": "c9c803b5-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "climb"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Estimated support point remains over 0.05 m above its support surface.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "climbing_2",
+        "kind": "climb",
+        "foot_start": 0.022287937661558573,
+        "foot_end": 1.4739224711373629,
+        "hand_min": 1.4427230459540548,
+        "joint_speed": 11.992691993713379,
+        "fit_gap": 0.5125172384978416,
+        "max_nearest_foot_gap": 1.5463589535732458,
+        "height": 0.053807259133163005,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_3",
+      "source": {
+        "name": "climbing_3",
+        "category": "Ladder",
+        "file": "animation/Climbing_3.fbx",
+        "prompt": "Climbing",
+        "description": "Ladder Climb Two Steps At A Time",
+        "text": "Ladder Climb Two Steps At A Time",
+        "frames": "126",
+        "motion_id": "c9c615dd-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ladder"
+      },
+      "reasons": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_3",
+        "kind": "ladder",
+        "foot_start": 0.07380705534677606,
+        "foot_end": 0.08146054586576182,
+        "hand_min": 0.027323993072111245,
+        "joint_speed": 9.490269660949707,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.1317985996799899,
+        "height": 2.1175946715583325,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_4",
+      "source": {
+        "name": "climbing_4",
+        "category": "Climb and slope",
+        "file": "animation/Climbing_4.fbx",
+        "prompt": "Climbing",
+        "description": "Climbing Up A Slope",
+        "text": "Climbing Up A Slope",
+        "frames": "140",
+        "motion_id": "c9c83859-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ramp"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_4",
+        "kind": "ramp",
+        "foot_start": 0.10475471395331536,
+        "foot_end": 0.2313721706870951,
+        "hand_min": 0.49373452526172196,
+        "joint_speed": 11.096708297729492,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.24456829261857627,
+        "height": 0.2966599354865657,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_6",
+      "source": {
+        "name": "climbing_6",
+        "category": "Ladder",
+        "file": "animation/Climbing_6.fbx",
+        "prompt": "Climbing",
+        "description": "Ladder Climb One Step At A Time",
+        "text": "Ladder Climb One Step At A Time",
+        "frames": "48",
+        "motion_id": "c9c6150e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ladder"
+      },
+      "reasons": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_6",
+        "kind": "ladder",
+        "foot_start": 0.062393809161045144,
+        "foot_end": 0.09275868550698262,
+        "hand_min": 0.019541630435002587,
+        "joint_speed": 6.675342082977295,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.09957975701555367,
+        "height": 1.5804424787056501,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_down",
+      "source": {
+        "name": "climbing_down",
+        "category": "Climb and slope",
+        "file": "animation/Climbing_Down.fbx",
+        "prompt": "Climbing Down",
+        "description": "Climbing Down To Standing",
+        "text": "Climbing Down To Standing",
+        "frames": "104",
+        "motion_id": "c9c84593-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "climb"
+      },
+      "reasons": [
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "climbing_down",
+        "kind": "climb",
+        "foot_start": 0.05141560590139343,
+        "foot_end": 0.007519414895653581,
+        "hand_min": 0.3574886441607764,
+        "joint_speed": 13.091852188110352,
+        "fit_gap": 0.037265617009325736,
+        "max_nearest_foot_gap": 0.1352909254934771,
+        "height": 0.42958009612896714,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_down_2",
+      "source": {
+        "name": "climbing_down_2",
+        "category": "Climb and slope",
+        "file": "animation/Climbing_Down_2.fbx",
+        "prompt": "Climbing Down",
+        "description": "Climb Through Fence And Jump Down",
+        "text": "Climb Through Fence And Jump Down",
+        "frames": "95",
+        "motion_id": "c9c8b4dd-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "vault"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_down_2",
+        "kind": "vault",
+        "foot_start": 0.6123515463682495,
+        "foot_end": 0.013134059552032909,
+        "hand_min": 0.025151513358879322,
+        "joint_speed": 23.062257766723633,
+        "fit_gap": 0.046607604557287186,
+        "max_nearest_foot_gap": 0.7527761239043049,
+        "height": 1.0804443312708414,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_down_wall",
+      "source": {
+        "name": "climbing_down_wall",
+        "category": "Climb and slope",
+        "file": "animation/Climbing_Down_Wall.fbx",
+        "prompt": "Climbing Down Wall",
+        "description": "Climbing Down A Wall",
+        "text": "Climbing Down A Wall",
+        "frames": "61",
+        "motion_id": "c9c9b2b7-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "wall"
+      },
+      "reasons": [
+        "Flat panel has no footholds or graspable support for this climbing action.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_down_wall",
+        "kind": "wall",
+        "foot_start": 0.11671453639280704,
+        "foot_end": 0.03956108120792223,
+        "hand_min": 0.03238770862630353,
+        "joint_speed": 19.135906219482422,
+        "fit_gap": 0.0323877086263035,
+        "max_nearest_foot_gap": 0.2334532398697523,
+        "height": 2.395312329716965,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_ladder",
+      "source": {
+        "name": "climbing_ladder",
+        "category": "Ladder",
+        "file": "animation/Climbing_Ladder.fbx",
+        "prompt": "Climbing Ladder",
+        "description": "Climbing Up A Ladder",
+        "text": "Climbing Up A Ladder",
+        "frames": "24",
+        "motion_id": "c9c95e7a-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ladder"
+      },
+      "reasons": [
+        "Distorted nonuniform ladder; hand/foot support not established."
+      ],
+      "measurements": {
+        "name": "climbing_ladder",
+        "kind": "ladder",
+        "foot_start": 0.024512176208085133,
+        "foot_end": 0.03157811814083206,
+        "hand_min": 0.036540220531308766,
+        "joint_speed": 8.19395637512207,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.059139023160129894,
+        "height": 1.9587021844105914,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_to_top",
+      "source": {
+        "name": "climbing_to_top",
+        "category": "Ladder",
+        "file": "animation/Climbing_To_Top.fbx",
+        "prompt": "Climbing To Top",
+        "description": "Climbing Up A Ladder To Standing",
+        "text": "Climbing Up A Ladder To Standing",
+        "frames": "121",
+        "motion_id": "c9c9611b-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ladder"
+      },
+      "reasons": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_to_top",
+        "kind": "ladder",
+        "foot_start": 0.034601588970199465,
+        "foot_end": 0.2764972889584598,
+        "hand_min": 0.04293638880902708,
+        "joint_speed": 13.223409652709961,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.2766351066917973,
+        "height": 1.9793166490685024,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/climbing_up_wall",
+      "source": {
+        "name": "climbing_up_wall",
+        "category": "Climb and slope",
+        "file": "animation/Climbing_Up_Wall.fbx",
+        "prompt": "Climbing Up Wall",
+        "description": "Climbing Up A Wall",
+        "text": "Climbing Up A Wall",
+        "frames": "61",
+        "motion_id": "c9c9b079-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "wall"
+      },
+      "reasons": [
+        "Flat panel has no footholds or graspable support for this climbing action.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "climbing_up_wall",
+        "kind": "wall",
+        "foot_start": 0.051207242218518634,
+        "foot_end": 0.10822280214942356,
+        "hand_min": 0.04451200351615956,
+        "joint_speed": 16.45729637145996,
+        "fit_gap": 0.044512003516159505,
+        "max_nearest_foot_gap": 0.24134321223364869,
+        "height": 2.4094982012748267,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crawl_backwards",
+      "source": {
+        "name": "crawl_backwards",
+        "category": "Crawl and hand support",
+        "file": "animation/Crawl_Backwards.fbx",
+        "prompt": "Crawl Backwards",
+        "description": "Crawling Backwards In Fear",
+        "text": "Crawling Backwards In Fear",
+        "frames": "146",
+        "motion_id": "c9ccc230-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "crawl_backwards",
+        "kind": "passage",
+        "foot_start": 0.022054521105286634,
+        "foot_end": 0.2563894702187942,
+        "hand_min": 0.03065061236395373,
+        "joint_speed": 13.430688858032227,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.26085096326313495,
+        "height": 1.1217989150025436,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.26085107120853246,
+        "median_robot_ground_gap_m": 0.12123570884343163
+      }
+    },
+    {
+      "id": "mixamo/crawl_backwards_in_prone",
+      "source": {
+        "name": "crawl_backwards_in_prone",
+        "category": "Crawl and hand support",
+        "file": "animation/Crawl_Backwards_In_Prone.fbx",
+        "prompt": "Crawl Backwards In Prone",
+        "description": "Crawling Backwards While In A Prone Position",
+        "text": "Crawling Backwards While In A Prone Position",
+        "frames": "35",
+        "motion_id": "c9c962ca-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "crawl_backwards_in_prone",
+        "kind": "passage",
+        "foot_start": 0.1923925143558249,
+        "foot_end": 0.195825568423972,
+        "hand_min": 0.12216171328661779,
+        "joint_speed": 9.016122817993164,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.22714193733223256,
+        "height": 0.6218981738243602,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.14832464493974412,
+        "median_robot_ground_gap_m": 0.1071541831715905
+      }
+    },
+    {
+      "id": "mixamo/crawl_forward",
+      "source": {
+        "name": "crawl_forward",
+        "category": "Crawl and hand support",
+        "file": "animation/Crawl_Forward.fbx",
+        "prompt": "Crawl Forward",
+        "description": "Crawling Forward",
+        "text": "Crawling Forward",
+        "frames": "106",
+        "motion_id": "c9c87961-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "crawl_forward",
+        "kind": "passage",
+        "foot_start": 0.23572266128535377,
+        "foot_end": 0.18627794632885938,
+        "hand_min": 0.03681661896938133,
+        "joint_speed": 4.641794681549072,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.2893033349671401,
+        "height": 0.678957048995385,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.1379414454842102,
+        "median_robot_ground_gap_m": 0.0952301614284349
+      }
+    },
+    {
+      "id": "mixamo/crawling",
+      "source": {
+        "name": "crawling",
+        "category": "Crawl and hand support",
+        "file": "animation/Crawling.fbx",
+        "prompt": "Crawling",
+        "description": "Crawling Forward On Hands And Knees",
+        "text": "Crawling Forward On Hands And Knees",
+        "frames": "55",
+        "motion_id": "c9c77c34-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "crawling",
+        "kind": "passage",
+        "foot_start": 0.1621474634602885,
+        "foot_end": 0.10690892026068152,
+        "hand_min": 0.020613596960632898,
+        "joint_speed": 4.757493019104004,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.22204049371479992,
+        "height": 0.8665146596234293,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.1099695188893057,
+        "median_robot_ground_gap_m": 0.08143912368693138
+      }
+    },
+    {
+      "id": "mixamo/crawling_backwards",
+      "source": {
+        "name": "crawling_backwards",
+        "category": "Crawl and hand support",
+        "file": "animation/Crawling_Backwards.fbx",
+        "prompt": "Crawling Backwards",
+        "description": "Frantically Crawling Backwards On Stomach",
+        "text": "Frantically Crawling Backwards On Stomach",
+        "frames": "63",
+        "motion_id": "c9c8c51f-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "crawling_backwards",
+        "kind": "passage",
+        "foot_start": 0.20330859910290458,
+        "foot_end": 0.32236530268080976,
+        "hand_min": 0.027941511723449004,
+        "joint_speed": 19.330963134765625,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.32529409563077805,
+        "height": 0.6968259477383134,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.20513938887214098,
+        "median_robot_ground_gap_m": 0.1206737743604233
+      }
+    },
+    {
+      "id": "mixamo/crouch_to_prone",
+      "source": {
+        "name": "crouch_to_prone",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_To_Prone.fbx",
+        "prompt": "Crouch To Prone",
+        "description": "Crouching To Laying Prone Transition",
+        "text": "Crouching To Laying Prone Transition",
+        "frames": "103",
+        "motion_id": "c9c87ad9-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "crouch_to_prone",
+        "kind": "ground",
+        "foot_start": 0.006962126064552612,
+        "foot_end": 0.265178604904882,
+        "hand_min": 0.15696345771089049,
+        "joint_speed": 8.391215324401855,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.28530627652791707,
+        "height": 1.3877787807814457e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouch_to_stand",
+      "source": {
+        "name": "crouch_to_stand",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_To_Stand.fbx",
+        "prompt": "Crouch To Stand",
+        "description": "Male Crouch To Stand",
+        "text": "Male Crouch To Stand",
+        "frames": "78",
+        "motion_id": "c9c62952-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection."
+      ],
+      "measurements": {
+        "name": "crouch_to_stand",
+        "kind": "ground",
+        "foot_start": 0.009307642469944616,
+        "foot_end": 0.05293599136098556,
+        "hand_min": 0.3360314026144747,
+        "joint_speed": 2.7889885902404785,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.05307875136929602,
+        "height": 1.3877787807814457e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouch_turn_left_90_2",
+      "source": {
+        "name": "crouch_turn_left_90_2",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_Turn_Left_90_2.fbx",
+        "prompt": "Crouch Turn Left 90",
+        "description": "Turning 90 Degrees Left",
+        "text": "Turning 90 Degrees Left",
+        "frames": "56",
+        "motion_id": "59638101-83cb-4f5b-9ecc-5f3184b1669c",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "crouch_turn_left_90_2",
+        "kind": "passage",
+        "foot_start": 0.0069124923291852824,
+        "foot_end": 0.04228754262023257,
+        "hand_min": 0.15316898101022175,
+        "joint_speed": 8.474638938903809,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.08692210183393778,
+        "height": 1.3473399356549014,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouch_walk",
+      "source": {
+        "name": "crouch_walk",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_Walk.fbx",
+        "prompt": "Crouch Walk",
+        "description": "Crouched Against Wall To Crouch Walk",
+        "text": "Crouched Against Wall To Crouch Walk",
+        "frames": "91",
+        "motion_id": "c9c8c75e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "crouch_walk",
+        "kind": "passage",
+        "foot_start": 0.11606771479481784,
+        "foot_end": 0.017537487877808816,
+        "hand_min": 0.18698489984248606,
+        "joint_speed": 9.399617195129395,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.11851848885170968,
+        "height": 1.3506670449033482,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouch_walk_back",
+      "source": {
+        "name": "crouch_walk_back",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_Walk_Back.fbx",
+        "prompt": "Crouch Walk Back",
+        "description": "Walking Backwards While Crouched",
+        "text": "Walking Backwards While Crouched",
+        "frames": "38",
+        "motion_id": "328e4430-480a-49c2-8086-ef5f1b5a1beb",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "crouch_walk_back",
+        "kind": "passage",
+        "foot_start": 0.04623681212820796,
+        "foot_end": 0.11740897754193194,
+        "hand_min": 0.1577282074943821,
+        "joint_speed": 7.042673587799072,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.12587914450392004,
+        "height": 1.3681880417371068,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouch_walk_forward_2",
+      "source": {
+        "name": "crouch_walk_forward_2",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_Walk_Forward_2.fbx",
+        "prompt": "Crouch Walk Forward",
+        "description": "Walking Forward While Crouched",
+        "text": "Walking Forward While Crouched",
+        "frames": "35",
+        "motion_id": "b9fbd249-a554-423c-aa37-baa98223c4dc",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "crouch_walk_forward_2",
+        "kind": "passage",
+        "foot_start": 0.152035591738615,
+        "foot_end": 0.04496844025975638,
+        "hand_min": 0.19149112292418075,
+        "joint_speed": 12.519606590270996,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.1662345097896851,
+        "height": 1.4056758698765799,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouch_walk_left",
+      "source": {
+        "name": "crouch_walk_left",
+        "category": "Crouch and duck",
+        "file": "animation/Crouch_Walk_Left.fbx",
+        "prompt": "Crouch Walk Left",
+        "description": "Walking Left While Crouched",
+        "text": "Walking Left While Crouched",
+        "frames": "36",
+        "motion_id": "14f7890c-4431-4944-95d0-f7c46a1c538b",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "crouch_walk_left",
+        "kind": "passage",
+        "foot_start": 0.05177368176141303,
+        "foot_end": 0.06283892945995354,
+        "hand_min": 0.13443469950694548,
+        "joint_speed": 11.049429893493652,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.09379794026377916,
+        "height": 1.3341226311853107,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouched_walking",
+      "source": {
+        "name": "crouched_walking",
+        "category": "Crouch and duck",
+        "file": "animation/Crouched_Walking.fbx",
+        "prompt": "Crouched Walking",
+        "description": "Crouched Walk",
+        "text": "Crouched Walk",
+        "frames": "32",
+        "motion_id": "c9c640fa-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "crouched_walking",
+        "kind": "passage",
+        "foot_start": 0.12622004751917265,
+        "foot_end": 0.02234371779065747,
+        "hand_min": 0.15687482411989917,
+        "joint_speed": 8.028287887573242,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.13626426390587823,
+        "height": 1.4412683498463115,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/crouching",
+      "source": {
+        "name": "crouching",
+        "category": "Crouch and duck",
+        "file": "animation/Crouching.fbx",
+        "prompt": "Crouching",
+        "description": "Crouching From Standing Position",
+        "text": "Crouching From Standing Position",
+        "frames": "123",
+        "motion_id": "c9c8ecbd-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection."
+      ],
+      "measurements": {
+        "name": "crouching",
+        "kind": "ground",
+        "foot_start": 0.04953048674261559,
+        "foot_end": 0.013235249958527207,
+        "hand_min": 0.26842305597876553,
+        "joint_speed": 6.256165027618408,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.05016304229436949,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/descending_stairs",
+      "source": {
+        "name": "descending_stairs",
+        "category": "Stairs",
+        "file": "animation/Descending_Stairs.fbx",
+        "prompt": "Descending Stairs",
+        "description": "Running Down A Set Of Stairs",
+        "text": "Running Down A Set Of Stairs",
+        "frames": "13",
+        "motion_id": "c9cca996-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "stairs"
+      },
+      "reasons": [
+        "Stair fit does not reproduce source support heights: near-flat treads or unsupported endpoint."
+      ],
+      "measurements": {
+        "name": "descending_stairs",
+        "kind": "stairs",
+        "foot_start": 0.06281922449148787,
+        "foot_end": 0.022669458898348732,
+        "hand_min": 0.39363635371094147,
+        "joint_speed": 14.631325721740723,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.07685094629179999,
+        "height": 0.02331441633744849,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/descending_stairs_2",
+      "source": {
+        "name": "descending_stairs_2",
+        "category": "Stairs",
+        "file": "animation/Descending_Stairs_2.fbx",
+        "prompt": "Descending Stairs",
+        "description": "Walking Down A Set Of Stairs",
+        "text": "Walking Down A Set Of Stairs",
+        "frames": "29",
+        "motion_id": "c9ccb106-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "stairs"
+      },
+      "reasons": [
+        "Stair fit does not reproduce source support heights: near-flat treads or unsupported endpoint."
+      ],
+      "measurements": {
+        "name": "descending_stairs_2",
+        "kind": "stairs",
+        "foot_start": 0.06773510300061515,
+        "foot_end": 0.016761967377688453,
+        "hand_min": 0.3318542786707766,
+        "joint_speed": 6.59293794631958,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.0695839402175265,
+        "height": 0.029017831610887584,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/dive_roll_2",
+      "source": {
+        "name": "dive_roll_2",
+        "category": "Recovery and roll",
+        "file": "animation/Dive_Roll_2.fbx",
+        "prompt": "Dive Roll",
+        "description": "Dive Roll From Standing",
+        "text": "Dive Roll From Standing",
+        "frames": "188",
+        "motion_id": "c9c95f5e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "dive_roll_2",
+        "kind": "ground",
+        "foot_start": 0.36462089537573483,
+        "foot_end": 0.16216004806086157,
+        "hand_min": 0.2362298819958987,
+        "joint_speed": 21.35810089111328,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 1.2158400369045685,
+        "height": 5.551115123125783e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/edge_slip",
+      "source": {
+        "name": "edge_slip",
+        "category": "Recovery and roll",
+        "file": "animation/Edge_Slip.fbx",
+        "prompt": "Edge Slip",
+        "description": "Slipping Off An Edge Then Regaining Balance",
+        "text": "Slipping Off An Edge Then Regaining Balance",
+        "frames": "128",
+        "motion_id": "c9cccf35-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "edge_slip",
+        "kind": "jump",
+        "foot_start": 0.10458466951780276,
+        "foot_end": 0.038750490498344316,
+        "hand_min": 0.34637648923845454,
+        "joint_speed": 21.48602867126465,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.12568336661934743,
+        "height": 0.4016086185159222,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/forward_jump",
+      "source": {
+        "name": "forward_jump",
+        "category": "Jump and landing",
+        "file": "animation/Forward_Jump.fbx",
+        "prompt": "Forward Jump",
+        "description": "Jumping Forward",
+        "text": "Jumping Forward",
+        "frames": "74",
+        "motion_id": "c9c7282b-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "gap"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "No traversed terrain gap fitted.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "forward_jump",
+        "kind": "gap",
+        "foot_start": 0.11191415460433402,
+        "foot_end": 0.020038674822040192,
+        "hand_min": 0.5391026623612001,
+        "joint_speed": 13.246667861938477,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.1503713867708827,
+        "height": 0.0032636300583122613,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/getting_up",
+      "source": {
+        "name": "getting_up",
+        "category": "Recovery and roll",
+        "file": "animation/Getting_Up.fbx",
+        "prompt": "Getting Up",
+        "description": "Getting Up From Being Knocked Down On The Ground",
+        "text": "Getting Up From Being Knocked Down On The Ground",
+        "frames": "82",
+        "motion_id": "c9c90823-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "getting_up",
+        "kind": "ground",
+        "foot_start": 0.09650086931934915,
+        "foot_end": 0.10201583750407839,
+        "hand_min": 0.0835282776659704,
+        "joint_speed": 9.673577308654785,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.103683747103787,
+        "height": 1.3877787807814457e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/getting_up_2",
+      "source": {
+        "name": "getting_up_2",
+        "category": "Recovery and roll",
+        "file": "animation/Getting_Up_2.fbx",
+        "prompt": "Getting Up",
+        "description": "Standing From A Lying Prone",
+        "text": "Standing From A Lying Prone",
+        "frames": "229",
+        "motion_id": "c9cd89ad-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "getting_up_2",
+        "kind": "ground",
+        "foot_start": 0.2095517337354393,
+        "foot_end": 0.09359269955579874,
+        "hand_min": 0.025319480191528694,
+        "joint_speed": 22.102312088012695,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.28960038316699044,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/getting_up_3",
+      "source": {
+        "name": "getting_up_3",
+        "category": "Recovery and roll",
+        "file": "animation/Getting_Up_3.fbx",
+        "prompt": "Getting Up",
+        "description": "Getting Up From Back",
+        "text": "Getting Up From Back",
+        "frames": "251",
+        "motion_id": "c9c7276e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "getting_up_3",
+        "kind": "ground",
+        "foot_start": 0.3240263501890779,
+        "foot_end": 0.07463064391338128,
+        "hand_min": 0.2727954930932946,
+        "joint_speed": 9.802129745483398,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.3279377721684552,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/getting_up_4",
+      "source": {
+        "name": "getting_up_4",
+        "category": "Recovery and roll",
+        "file": "animation/Getting_Up_4.fbx",
+        "prompt": "Getting Up",
+        "description": "Getting Up From Stomach",
+        "text": "Getting Up From Stomach",
+        "frames": "259",
+        "motion_id": "c9c71f39-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "getting_up_4",
+        "kind": "ground",
+        "foot_start": 0.23100623295022724,
+        "foot_end": 0.00862167512103934,
+        "hand_min": 0.1500067284976222,
+        "joint_speed": 8.802553176879883,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.2360240297716427,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jump_5",
+      "source": {
+        "name": "jump_5",
+        "category": "Jump and landing",
+        "file": "animation/Jump_5.fbx",
+        "prompt": "Jump",
+        "description": "Backward Running Jump",
+        "text": "Backward Running Jump",
+        "frames": "29",
+        "motion_id": "c9ccec92-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "gap"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jump_5",
+        "kind": "gap",
+        "foot_start": 0.0891913606339428,
+        "foot_end": 0.05590577806874392,
+        "hand_min": 0.5425793656729169,
+        "joint_speed": 19.538393020629883,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.6283036296591085,
+        "height": 0.7543233470812232,
+        "has_gap": true
+      }
+    },
+    {
+      "id": "mixamo/jump_down_2",
+      "source": {
+        "name": "jump_down_2",
+        "category": "Jump and landing",
+        "file": "animation/Jump_Down_2.fbx",
+        "prompt": "Jump Down",
+        "description": "Jumping Down From 2 Feet Platform With 2 Feet",
+        "text": "Jumping Down From 2 Feet Platform With 2 Feet",
+        "frames": "106",
+        "motion_id": "c9c6695e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jump_down_2",
+        "kind": "jump",
+        "foot_start": 0.17860399189585996,
+        "foot_end": 0.03186290535943255,
+        "hand_min": 0.3366072861157765,
+        "joint_speed": 15.93869686126709,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.1833947526103975,
+        "height": 0.3048745946387027,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jump_over",
+      "source": {
+        "name": "jump_over",
+        "category": "Jump and landing",
+        "file": "animation/Jump_Over.fbx",
+        "prompt": "Jump Over",
+        "description": "Flying Jump Rolling To Run",
+        "text": "Flying Jump Rolling To Run",
+        "frames": "185",
+        "motion_id": "c9caae47-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "gap"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jump_over",
+        "kind": "gap",
+        "foot_start": 0.221409116772338,
+        "foot_end": 0.13363695093088257,
+        "hand_min": 0.44562347886824544,
+        "joint_speed": 27.695636749267578,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 2.487597337588875,
+        "height": 1.1254884480528222,
+        "has_gap": true
+      }
+    },
+    {
+      "id": "mixamo/jumping",
+      "source": {
+        "name": "jumping",
+        "category": "Jump and landing",
+        "file": "animation/Jumping.fbx",
+        "prompt": "Jumping",
+        "description": "Male Jumping Onto Platform",
+        "text": "Male Jumping Onto Platform",
+        "frames": "38",
+        "motion_id": "c9c66a19-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping",
+        "kind": "jump",
+        "foot_start": 0.02926165782877385,
+        "foot_end": 0.22077303707559143,
+        "hand_min": 0.5190492340323284,
+        "joint_speed": 14.512526512145996,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.2405696128592485,
+        "height": 0.05755837415413197,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_11",
+      "source": {
+        "name": "jumping_11",
+        "category": "Jump and landing",
+        "file": "animation/Jumping_11.fbx",
+        "prompt": "Jumping",
+        "description": "Male Stepping Onto Platform",
+        "text": "Male Stepping Onto Platform",
+        "frames": "42",
+        "motion_id": "c9c66acd-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_11",
+        "kind": "jump",
+        "foot_start": 0.042182520486682085,
+        "foot_end": 0.21897608023959728,
+        "hand_min": 0.5197859036947506,
+        "joint_speed": 14.98648452758789,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.23969614790797297,
+        "height": 0.09834256840250166,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_12",
+      "source": {
+        "name": "jumping_12",
+        "category": "Vault",
+        "file": "animation/Jumping_12.fbx",
+        "prompt": "Jumping",
+        "description": "Male Jumping Over An Obstacle With 1 Hand Planted",
+        "text": "Male Jumping Over An Obstacle With 1 Hand Planted",
+        "frames": "36",
+        "motion_id": "c9ca8d0f-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "vault"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_12",
+        "kind": "vault",
+        "foot_start": 0.40710531272567096,
+        "foot_end": 0.03223181838807729,
+        "hand_min": 0.09175139545796512,
+        "joint_speed": 23.07855987548828,
+        "fit_gap": 0.2243690111527049,
+        "max_nearest_foot_gap": 0.8118363518887824,
+        "height": 1.0094275531693149,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_13",
+      "source": {
+        "name": "jumping_13",
+        "category": "Jump and landing",
+        "file": "animation/Jumping_13.fbx",
+        "prompt": "Jumping",
+        "description": "Step Up To Jump Over Object",
+        "text": "Step Up To Jump Over Object",
+        "frames": "87",
+        "motion_id": "c9c849de-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "climb"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "jumping_13",
+        "kind": "climb",
+        "foot_start": 0.1580629364284011,
+        "foot_end": 0.04272910950253464,
+        "hand_min": 0.48512647107733703,
+        "joint_speed": 24.155149459838867,
+        "fit_gap": 0.050784015222288106,
+        "max_nearest_foot_gap": 0.4794427514722706,
+        "height": 0.3832365648810686,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_2",
+      "source": {
+        "name": "jumping_2",
+        "category": "Jump and landing",
+        "file": "animation/Jumping_2.fbx",
+        "prompt": "Jumping",
+        "description": "Male Jumping Down From 2ft High Platform With One Foot",
+        "text": "Male Jumping Down From 2ft High Platform With One Foot",
+        "frames": "73",
+        "motion_id": "c9c66b89-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_2",
+        "kind": "jump",
+        "foot_start": 0.09897534029059507,
+        "foot_end": 0.017462730741059918,
+        "hand_min": 0.5780590152696851,
+        "joint_speed": 17.99362564086914,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.23712078765101552,
+        "height": 0.4752096148281244,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_3",
+      "source": {
+        "name": "jumping_3",
+        "category": "Vault",
+        "file": "animation/Jumping_3.fbx",
+        "prompt": "Jumping",
+        "description": "Male Jumping Over An Obstacle With 2 Hands Planted",
+        "text": "Male Jumping Over An Obstacle With 2 Hands Planted",
+        "frames": "161",
+        "motion_id": "c9ca8bbd-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "vault"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_3",
+        "kind": "vault",
+        "foot_start": 0.29508112515670337,
+        "foot_end": 0.016046927559665497,
+        "hand_min": 0.02424457956416661,
+        "joint_speed": 33.181800842285156,
+        "fit_gap": 0.03019817532039082,
+        "max_nearest_foot_gap": 0.8872737366454514,
+        "height": 1.2136382380411597,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_5",
+      "source": {
+        "name": "jumping_5",
+        "category": "Jump and landing",
+        "file": "animation/Jumping_5.fbx",
+        "prompt": "Jumping",
+        "description": "Male Jumping Down From 4 Feet",
+        "text": "Male Jumping Down From 4 Feet",
+        "frames": "80",
+        "motion_id": "c9c64840-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_5",
+        "kind": "jump",
+        "foot_start": 0.8432997322743898,
+        "foot_end": 0.08595443286975286,
+        "hand_min": 0.4162679011810626,
+        "joint_speed": 19.201990127563477,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.8534368691731014,
+        "height": 5.953161329591561e-06,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_7",
+      "source": {
+        "name": "jumping_7",
+        "category": "Jump and landing",
+        "file": "animation/Jumping_7.fbx",
+        "prompt": "Jumping",
+        "description": "Male Jumping Down From 4ft And Crouching On One Hand",
+        "text": "Male Jumping Down From 4ft And Crouching On One Hand",
+        "frames": "67",
+        "motion_id": "c9c667ea-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_7",
+        "kind": "jump",
+        "foot_start": 0.8128022446456714,
+        "foot_end": 0.05959846632588535,
+        "hand_min": 0.28341665846457154,
+        "joint_speed": 9.808786392211914,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.8212726072915651,
+        "height": 0.005810586255561967,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/jumping_down_12",
+      "source": {
+        "name": "jumping_down_12",
+        "category": "Jump and landing",
+        "file": "animation/Jumping_Down_12.fbx",
+        "prompt": "Jumping Down",
+        "description": "Jumping Down From Higher Level",
+        "text": "Jumping Down From Higher Level",
+        "frames": "98",
+        "motion_id": "c9c8ca31-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "jumping_down_12",
+        "kind": "jump",
+        "foot_start": 0.6528692160991637,
+        "foot_end": 0.03752710101334342,
+        "hand_min": 0.47740753109013595,
+        "joint_speed": 19.973424911499023,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.6529351358047305,
+        "height": 2.7755575615628914e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/kneeling_down",
+      "source": {
+        "name": "kneeling_down",
+        "category": "Recovery and roll",
+        "file": "animation/Kneeling_Down.fbx",
+        "prompt": "Kneeling Down",
+        "description": "Standing To Kneeling Down",
+        "text": "Standing To Kneeling Down",
+        "frames": "84",
+        "motion_id": "c9c8ac04-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection."
+      ],
+      "measurements": {
+        "name": "kneeling_down",
+        "kind": "ground",
+        "foot_start": 0.07220349544704421,
+        "foot_end": 0.015244799164732967,
+        "hand_min": 0.37422560113023545,
+        "joint_speed": 2.441558837890625,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.0772599127136335,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/low_crawl",
+      "source": {
+        "name": "low_crawl",
+        "category": "Crawl and hand support",
+        "file": "animation/Low_Crawl.fbx",
+        "prompt": "Low Crawl",
+        "description": "Super Low Crawl, Or Crawling Up A Wall",
+        "text": "Super Low Crawl, Or Crawling Up A Wall",
+        "frames": "95",
+        "motion_id": "c9ccc173-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "low_crawl",
+        "kind": "passage",
+        "foot_start": 0.2944379534826812,
+        "foot_end": 0.20116487773907368,
+        "hand_min": 0.03310225610098389,
+        "joint_speed": 21.533300399780273,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.3331604185132824,
+        "height": 0.8119623115526817,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.15550433356575624,
+        "median_robot_ground_gap_m": 0.07901779538786458
+      }
+    },
+    {
+      "id": "mixamo/run_to_rolling",
+      "source": {
+        "name": "run_to_rolling",
+        "category": "Recovery and roll",
+        "file": "animation/Run_To_Rolling.fbx",
+        "prompt": "Run To Rolling",
+        "description": "Run Ro Roll Eveade To Run",
+        "text": "Run Ro Roll Eveade To Run",
+        "frames": "104",
+        "motion_id": "c9cac590-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "run_to_rolling",
+        "kind": "ground",
+        "foot_start": 0.41313294947440915,
+        "foot_end": 0.12182652717848455,
+        "hand_min": 0.20031575232150362,
+        "joint_speed": 22.51882553100586,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 1.1031682518149462,
+        "height": -5.551115123125783e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/running_crawl",
+      "source": {
+        "name": "running_crawl",
+        "category": "Crawl and hand support",
+        "file": "animation/Running_Crawl.fbx",
+        "prompt": "Running Crawl",
+        "description": "Running On All Fours",
+        "text": "Running On All Fours",
+        "frames": "21",
+        "motion_id": "c9cca748-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "passage"
+      },
+      "reasons": [
+        "Nearest robot collision surface remains over 0.08 m above ground during the crawl."
+      ],
+      "measurements": {
+        "name": "running_crawl",
+        "kind": "passage",
+        "foot_start": 0.3477758824766397,
+        "foot_end": 0.22406035022421283,
+        "hand_min": 0.026317907504340883,
+        "joint_speed": 22.9420166015625,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.35291987365378596,
+        "height": 0.8318469435440646,
+        "has_gap": false,
+        "max_robot_ground_gap_m": 0.21486879756523816,
+        "median_robot_ground_gap_m": 0.1101514997275263
+      }
+    },
+    {
+      "id": "mixamo/running_jump_2",
+      "source": {
+        "name": "running_jump_2",
+        "category": "Jump and landing",
+        "file": "animation/Running_Jump_2.fbx",
+        "prompt": "Running Jump",
+        "description": "Fast Run To Jump Up Onto Higher Level",
+        "text": "Fast Run To Jump Up Onto Higher Level",
+        "frames": "66",
+        "motion_id": "c9c8fc30-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "running_jump_2",
+        "kind": "jump",
+        "foot_start": 0.1457202626703904,
+        "foot_end": 0.059783648210276374,
+        "hand_min": 0.22241825064392587,
+        "joint_speed": 15.312509536743164,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.2562739878630102,
+        "height": 0.5332560388031524,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/running_up_stairs",
+      "source": {
+        "name": "running_up_stairs",
+        "category": "Stairs",
+        "file": "animation/Running_Up_Stairs.fbx",
+        "prompt": "Running Up Stairs",
+        "description": "",
+        "text": "Running Up Stairs",
+        "frames": "19",
+        "motion_id": "c9ccaa5c-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "stairs"
+      },
+      "reasons": [
+        "Stair fit does not reproduce source support heights: near-flat treads or unsupported endpoint.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "running_up_stairs",
+        "kind": "stairs",
+        "foot_start": 0.015651885978377078,
+        "foot_end": 0.13830190416340155,
+        "hand_min": 0.5886990629203265,
+        "joint_speed": 13.092131614685059,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.14319991320156303,
+        "height": 0.12047973367736212,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/sit_to_stand",
+      "source": {
+        "name": "sit_to_stand",
+        "category": "Sit and stand",
+        "file": "animation/Sit_To_Stand.fbx",
+        "prompt": "Sit To Stand",
+        "description": "Sitting To Standing",
+        "text": "Sitting To Standing",
+        "frames": "69",
+        "motion_id": "c9ccabe2-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "seat"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface."
+      ],
+      "measurements": {
+        "name": "sit_to_stand",
+        "kind": "seat",
+        "foot_start": 0.006329558895853016,
+        "foot_end": 0.06498351690162055,
+        "hand_min": 0.30633094551670603,
+        "joint_speed": 7.992639064788818,
+        "fit_gap": 0.08050341988815601,
+        "max_nearest_foot_gap": 0.09420693122191512,
+        "height": 0.452889623032917,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/sitting_6",
+      "source": {
+        "name": "sitting_6",
+        "category": "Sit and stand",
+        "file": "animation/Sitting_6.fbx",
+        "prompt": "Sitting",
+        "description": "Sitting Down Arms Outside Armrests",
+        "text": "Sitting Down Arms Outside Armrests",
+        "frames": "134",
+        "motion_id": "c9c7911a-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "seat"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface."
+      ],
+      "measurements": {
+        "name": "sitting_6",
+        "kind": "seat",
+        "foot_start": 0.06378932221047864,
+        "foot_end": 0.005115466847751965,
+        "hand_min": 0.04116964999310314,
+        "joint_speed": 5.573448181152344,
+        "fit_gap": 0.054246203464911935,
+        "max_nearest_foot_gap": 0.06640015590274706,
+        "height": 0.4433902694617094,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/sprint_to_wall_climb",
+      "source": {
+        "name": "sprint_to_wall_climb",
+        "category": "Climb and slope",
+        "file": "animation/Sprint_To_Wall_Climb.fbx",
+        "prompt": "Sprint To Wall Climb",
+        "description": "Sprint To Wall Climb To Crouch Idle",
+        "text": "Sprint To Wall Climb To Crouch Idle",
+        "frames": "55",
+        "motion_id": "c9cc0053-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "climb"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s).",
+        "Both feet remain over 0.08 m from terrain during a non-jumping motion without verified hand support."
+      ],
+      "measurements": {
+        "name": "sprint_to_wall_climb",
+        "kind": "climb",
+        "foot_start": 0.19396696318282938,
+        "foot_end": 0.4284505515818179,
+        "hand_min": 0.018705380216227398,
+        "joint_speed": 26.946517944335938,
+        "fit_gap": 0.02929056952725939,
+        "max_nearest_foot_gap": 0.7003423061091384,
+        "height": 1.681197928104189,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/stand",
+      "source": {
+        "name": "stand",
+        "category": "Recovery and roll",
+        "file": "animation/Stand.fbx",
+        "prompt": "Stand",
+        "description": "Standing From Crouched Hands On Ground",
+        "text": "Standing From Crouched Hands On Ground",
+        "frames": "94",
+        "motion_id": "c9c804f0-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection."
+      ],
+      "measurements": {
+        "name": "stand",
+        "kind": "ground",
+        "foot_start": 0.07830381563568956,
+        "foot_end": 0.01091343412064659,
+        "hand_min": 0.11164196591894343,
+        "joint_speed": 6.63342809677124,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.14283406345577618,
+        "height": -3.469446951953614e-18,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/stand_to_crouch",
+      "source": {
+        "name": "stand_to_crouch",
+        "category": "Crouch and duck",
+        "file": "animation/Stand_To_Crouch.fbx",
+        "prompt": "Stand To Crouch",
+        "description": "Standing To Crouching Transition",
+        "text": "Standing To Crouching Transition",
+        "frames": "46",
+        "motion_id": "c9c877e6-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "stand_to_crouch",
+        "kind": "ground",
+        "foot_start": 0.08347617062019494,
+        "foot_end": 0.010159605601732749,
+        "hand_min": 0.7870074069929497,
+        "joint_speed": 4.692396640777588,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.08396389686744787,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/stand_to_roll",
+      "source": {
+        "name": "stand_to_roll",
+        "category": "Recovery and roll",
+        "file": "animation/Stand_To_Roll.fbx",
+        "prompt": "Stand To Roll",
+        "description": "Dive Roll From Standing",
+        "text": "Dive Roll From Standing",
+        "frames": "72",
+        "motion_id": "c9c9a122-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "stand_to_roll",
+        "kind": "ground",
+        "foot_start": 0.3995991512337401,
+        "foot_end": 0.07358317646720078,
+        "hand_min": 0.3114182267412849,
+        "joint_speed": 18.135759353637695,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 1.0407879429539648,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/stand_to_sit",
+      "source": {
+        "name": "stand_to_sit",
+        "category": "Sit and stand",
+        "file": "animation/Stand_To_Sit.fbx",
+        "prompt": "Stand To Sit",
+        "description": "Standing To Sitting Transition",
+        "text": "Standing To Sitting Transition",
+        "frames": "68",
+        "motion_id": "c9ccaece-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "seat"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface."
+      ],
+      "measurements": {
+        "name": "stand_to_sit",
+        "kind": "seat",
+        "foot_start": 0.06643516957071915,
+        "foot_end": 0.008576618088099161,
+        "hand_min": 0.27671694503444766,
+        "joint_speed": 8.37051010131836,
+        "fit_gap": 0.068404284910139,
+        "max_nearest_foot_gap": 0.06803503623995674,
+        "height": 0.44769435119599554,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/stand_up",
+      "source": {
+        "name": "stand_up",
+        "category": "Sit and stand",
+        "file": "animation/Stand_Up.fbx",
+        "prompt": "Stand Up",
+        "description": "Standing Up From Seated Position",
+        "text": "Standing Up From Seated Position",
+        "frames": "146",
+        "motion_id": "c9c7937e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "seat"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground.",
+        "Estimated support point remains over 0.05 m above its support surface."
+      ],
+      "measurements": {
+        "name": "stand_up",
+        "kind": "seat",
+        "foot_start": 0.01729883828626566,
+        "foot_end": 0.04519540510957462,
+        "hand_min": 0.513963652510098,
+        "joint_speed": 1.7894949913024902,
+        "fit_gap": 0.5491068876777142,
+        "max_nearest_foot_gap": 0.047556443831817063,
+        "height": 0.01999128155197258,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/stand_up_2",
+      "source": {
+        "name": "stand_up_2",
+        "category": "Recovery and roll",
+        "file": "animation/Stand_Up_2.fbx",
+        "prompt": "Stand Up",
+        "description": "Standing Up From Back",
+        "text": "Standing Up From Back",
+        "frames": "249",
+        "motion_id": "c9c6d314-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "stand_up_2",
+        "kind": "ground",
+        "foot_start": 0.3318174375274995,
+        "foot_end": 0.09735203736558687,
+        "hand_min": 0.2519032869188706,
+        "joint_speed": 10.819352149963379,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.3335136842238079,
+        "height": 4.163336342344337e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/standing",
+      "source": {
+        "name": "standing",
+        "category": "Recovery and roll",
+        "file": "animation/Standing.fbx",
+        "prompt": "Standing",
+        "description": "Standing Up From A Kneeling Position",
+        "text": "Standing Up From A Kneeling Position",
+        "frames": "84",
+        "motion_id": "c9c8cebb-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection."
+      ],
+      "measurements": {
+        "name": "standing",
+        "kind": "ground",
+        "foot_start": 0.016971080292935606,
+        "foot_end": 0.07274574278327725,
+        "hand_min": 0.36832094506643426,
+        "joint_speed": 2.968520164489746,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.0788055211574969,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/standing_2",
+      "source": {
+        "name": "standing_2",
+        "category": "Crouch and duck",
+        "file": "animation/Standing_2.fbx",
+        "prompt": "Standing",
+        "description": "Standing From A Crouch",
+        "text": "Standing From A Crouch",
+        "frames": "104",
+        "motion_id": "c9c8fa8d-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection."
+      ],
+      "measurements": {
+        "name": "standing_2",
+        "kind": "ground",
+        "foot_start": 0.008536007768638804,
+        "foot_end": 0.038540741698352504,
+        "hand_min": 0.25719945021341956,
+        "joint_speed": 6.252942085266113,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.040694230626710265,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/standing_jump_running_landing",
+      "source": {
+        "name": "standing_jump_running_landing",
+        "category": "Jump and landing",
+        "file": "animation/Standing_Jump_Running_Landing.fbx",
+        "prompt": "Standing Jump Running Landing",
+        "description": "Landing From Running  Jump Into Run Forward",
+        "text": "Landing From Running  Jump Into Run Forward",
+        "frames": "42",
+        "motion_id": "4bc6d762-60d4-438f-b7d1-ae46df74b075",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "standing_jump_running_landing",
+        "kind": "jump",
+        "foot_start": 0.5368825544268924,
+        "foot_end": 0.013449344278577219,
+        "hand_min": 0.6948239081397863,
+        "joint_speed": 17.643613815307617,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.562738444193229,
+        "height": 0.17762747634790435,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/standing_jump_running_to_run_forward",
+      "source": {
+        "name": "standing_jump_running_to_run_forward",
+        "category": "Jump and landing",
+        "file": "animation/Standing_Jump_Running_To_Run_Forward.fbx",
+        "prompt": "Standing Jump Running To Run Forward",
+        "description": "Running Jump To Run Forward",
+        "text": "Running Jump To Run Forward",
+        "frames": "62",
+        "motion_id": "469ad0f4-2f7f-47a1-b12c-203ca355a7f5",
+        "terrain_kind": "gap"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "standing_jump_running_to_run_forward",
+        "kind": "gap",
+        "foot_start": 0.130796975220132,
+        "foot_end": 0.04097013379093467,
+        "hand_min": 0.4986006680310913,
+        "joint_speed": 23.28968048095703,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.603644391041863,
+        "height": 0.9240854912216079,
+        "has_gap": true
+      }
+    },
+    {
+      "id": "mixamo/standing_up",
+      "source": {
+        "name": "standing_up",
+        "category": "Sit and stand",
+        "file": "animation/Standing_Up.fbx",
+        "prompt": "Standing Up",
+        "description": "Sitting To Standing",
+        "text": "Sitting To Standing",
+        "frames": "183",
+        "motion_id": "c9c8335e-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "seat"
+      },
+      "reasons": [
+        "Estimated support point remains over 0.05 m above its support surface.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "standing_up",
+        "kind": "seat",
+        "foot_start": 0.12711661997264206,
+        "foot_end": 0.04134008475019926,
+        "hand_min": 0.07774320973511636,
+        "joint_speed": 7.684738636016846,
+        "fit_gap": 0.15850908357289012,
+        "max_nearest_foot_gap": 0.12741039602219853,
+        "height": 0.13324165758589462,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/standing_up_3",
+      "source": {
+        "name": "standing_up_3",
+        "category": "Recovery and roll",
+        "file": "animation/Standing_Up_3.fbx",
+        "prompt": "Standing Up",
+        "description": "Standing Up From Lying On Stomach",
+        "text": "Standing Up From Lying On Stomach",
+        "frames": "343",
+        "motion_id": "c9c6dc32-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ground"
+      },
+      "reasons": [
+        "Ground slab only; no obstacle interaction for this terrain collection.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "standing_up_3",
+        "kind": "ground",
+        "foot_start": 0.24136061838169284,
+        "foot_end": 0.04474853976681875,
+        "hand_min": 0.10417183913164874,
+        "joint_speed": 6.546463966369629,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.259229716167644,
+        "height": 0.0,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/start_climbing_ladder",
+      "source": {
+        "name": "start_climbing_ladder",
+        "category": "Ladder",
+        "file": "animation/Start_Climbing_Ladder.fbx",
+        "prompt": "Start Climbing Ladder",
+        "description": "Standing To Climb Ladder Quickly",
+        "text": "Standing To Climb Ladder Quickly",
+        "frames": "96",
+        "motion_id": "c9c8e009-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "ladder"
+      },
+      "reasons": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "start_climbing_ladder",
+        "kind": "ladder",
+        "foot_start": 0.06750789791168779,
+        "foot_end": 0.13386647191239506,
+        "hand_min": 0.02101413668475409,
+        "joint_speed": 20.969038009643555,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.17390344144472053,
+        "height": 1.7762089621040862,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/unarmed_jump",
+      "source": {
+        "name": "unarmed_jump",
+        "category": "Jump and landing",
+        "file": "animation/Unarmed_Jump.fbx",
+        "prompt": "Unarmed Jump",
+        "description": "Jumping And Landing In Place",
+        "text": "Jumping And Landing In Place",
+        "frames": "71",
+        "motion_id": "c9ceec50-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "jump"
+      },
+      "reasons": [
+        "Maximum obstacle top is less than 0.10 m above ground."
+      ],
+      "measurements": {
+        "name": "unarmed_jump",
+        "kind": "jump",
+        "foot_start": 0.022948793047204902,
+        "foot_end": 0.02301893607796958,
+        "hand_min": 0.4961851415511895,
+        "joint_speed": 14.625102043151855,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.43382959859908954,
+        "height": 1.3877787807814457e-17,
+        "has_gap": false
+      }
+    },
+    {
+      "id": "mixamo/unarmed_jump_running",
+      "source": {
+        "name": "unarmed_jump_running",
+        "category": "Jump and landing",
+        "file": "animation/Unarmed_Jump_Running.fbx",
+        "prompt": "Unarmed Jump Running",
+        "description": "Running Jump And Landing",
+        "text": "Running Jump And Landing",
+        "frames": "43",
+        "motion_id": "c9ceed14-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "gap"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "unarmed_jump_running",
+        "kind": "gap",
+        "foot_start": 0.10875832741278457,
+        "foot_end": 0.06803405266626034,
+        "hand_min": 0.559620496838299,
+        "joint_speed": 21.216327667236328,
+        "fit_gap": 0,
+        "max_nearest_foot_gap": 0.5734570766168223,
+        "height": 0.7681701337539045,
+        "has_gap": true
+      }
+    },
+    {
+      "id": "mixamo/vault_over_box",
+      "source": {
+        "name": "vault_over_box",
+        "category": "Vault",
+        "file": "animation/Vault_Over_Box.fbx",
+        "prompt": "Vault Over Box",
+        "description": "Vault Over Box And Hide",
+        "text": "Vault Over Box And Hide",
+        "frames": "233",
+        "motion_id": "c9c8bc4d-b96c-11e4-a802-0aaa78deedf9",
+        "terrain_kind": "vault"
+      },
+      "reasons": [
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "measurements": {
+        "name": "vault_over_box",
+        "kind": "vault",
+        "foot_start": 0.3290674091321847,
+        "foot_end": 0.024004525321515868,
+        "hand_min": 0.029423940880173784,
+        "joint_speed": 21.802289962768555,
+        "fit_gap": 0.029423940880173582,
+        "max_nearest_foot_gap": 0.5648773713771413,
+        "height": 0.7828045345754819,
+        "has_gap": false
+      }
+    }
+  ]
+}

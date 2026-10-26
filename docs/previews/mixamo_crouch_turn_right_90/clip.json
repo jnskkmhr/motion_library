@@ -27,6 +27,7 @@
     "provenance": "docs/previews/mixamo_crouch_turn_right_90/provenance.json",
     "validation": "docs/previews/mixamo_crouch_turn_right_90/validation.json",
     "terrain_fit": "docs/previews/mixamo_crouch_turn_right_90/terrain_fit.json",
-    "terrain_validation": "docs/previews/mixamo_crouch_turn_right_90/terrain_validation.json"
+    "terrain_validation": "docs/previews/mixamo_crouch_turn_right_90/terrain_validation.json",
+    "quality_review": "docs/previews/mixamo_crouch_turn_right_90/quality_review.json"
   }
 }

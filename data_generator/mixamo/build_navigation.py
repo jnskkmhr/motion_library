@@ -10,19 +10,31 @@ import hashlib
 import json
 import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 import numpy as np
 from huggingface_hub import hf_hub_download
 
 from data_generator.build_acp_library import run
+from data_generator.mixamo.quality import review
 
 ROOT = Path(__file__).resolve().parents[2]
 
 
 def build(item, manifest, args):
+    # Raw retargeting inputs are temporary build artifacts, never active data.
+    (ROOT / "outputs").mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix="mixamo_build_", dir=ROOT / "outputs") as work:
+        return build_staged(item, manifest, args, Path(work))
+
+
+def build_staged(item, manifest, args, work):
     name = item["name"]
-    dest = ROOT / "data/mixamo" / name
+    final_dest = ROOT / "data/mixamo" / name
+    if final_dest.exists() and not args.resume:
+        raise ValueError(f"Existing final output requires --resume: {final_dest}")
+    dest = work / "raw"
     logs = ROOT / "outputs/mixamo_navigation_logs" / name
     logs.mkdir(parents=True, exist_ok=True)
     request = {
@@ -79,12 +91,12 @@ def build(item, manifest, args):
         )
     # Fit in an isolated staging folder. Promote NPZ and video together only
     # after fitting, collision checks, rendering, and timing checks succeed.
-    final_dest = dest
-    dest = ROOT / "outputs/mixamo_terrain_build" / name
+    raw_dest = dest
+    dest = work / "paired"
     dest.mkdir(parents=True, exist_ok=True)
     terrain_request = {
         "kind": item["terrain_kind"],
-        "raw_sha256": hashlib.sha256((final_dest / "motion_raw.npz").read_bytes()).hexdigest(),
+        "raw_sha256": hashlib.sha256((raw_dest / "motion_raw.npz").read_bytes()).hexdigest(),
         "fitter_sha256": hashlib.sha256(Path(__file__).with_name("fit_terrain.py").read_bytes()).hexdigest(),
     }
     terrain_marker = dest / "terrain_request.json"
@@ -96,7 +108,7 @@ def build(item, manifest, args):
                 "-m",
                 "data_generator.mixamo.fit_terrain",
                 "--input",
-                final_dest / "motion_raw.npz",
+                raw_dest / "motion_raw.npz",
                 "--output",
                 dest / "motion.npz",
                 "--kind",
@@ -123,6 +135,7 @@ def build(item, manifest, args):
     collision = json.loads((dest / "terrain_validation.json").read_text())
     if not collision["robot_terrain_clear_within_2mm"]:
         raise ValueError(f"Terrain intersects G1: {name}: {collision['worst_penetration']}")
+    review(dest / "motion.npz", dest / "terrain_fit.json", dest / "quality_review.json")
     run(
         [
             args.library_python,
@@ -199,7 +212,7 @@ def build(item, manifest, args):
         f"{item['category']}. Static {item['terrain_kind']} terrain fitted to this G1 reference and stored in the NPZ. "
         "Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated."
     )
-    provenance = json.loads((final_dest / "provenance.json").read_text())
+    provenance = json.loads((raw_dest / "provenance.json").read_text())
     provenance.update(
         source_url=source_url,
         source_repository=manifest["repo_id"],
@@ -218,12 +231,8 @@ def build(item, manifest, args):
         public_video_only=True,
     )
     (dest / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
-    archive = ROOT / "outputs/mixamo_before_terrain" / name
-    if not archive.exists():
-        archive.mkdir(parents=True)
-        for filename in ("motion.npz", "motion.mp4", "provenance.json", "validation.json"):
-            if (final_dest / filename).exists():
-                shutil.copy2(final_dest / filename, archive / filename)
+    final_dest.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(raw_dest / "build_request.json", final_dest / "build_request.json")
     for filename in (
         "motion.npz",
         "motion.mp4",
@@ -231,11 +240,19 @@ def build(item, manifest, args):
         "validation.json",
         "terrain_fit.json",
         "terrain_validation.json",
+        "quality_review.json",
     ):
         shutil.copy2(dest / filename, final_dest / filename)
     preview = ROOT / "docs/previews" / f"mixamo_{name}"
     preview.mkdir(parents=True, exist_ok=True)
-    for filename in ("motion.mp4", "provenance.json", "validation.json", "terrain_fit.json", "terrain_validation.json"):
+    for filename in (
+        "motion.mp4",
+        "provenance.json",
+        "validation.json",
+        "terrain_fit.json",
+        "terrain_validation.json",
+        "quality_review.json",
+    ):
         shutil.copy2(dest / filename, preview / filename)
     relative = str(preview.relative_to(ROOT))
     clip = {
@@ -264,7 +281,8 @@ def build(item, manifest, args):
             }
         ],
         "reports": {
-            key: f"{relative}/{key}.json" for key in ("provenance", "validation", "terrain_fit", "terrain_validation")
+            key: f"{relative}/{key}.json"
+            for key in ("provenance", "validation", "terrain_fit", "terrain_validation", "quality_review")
         },
     }
     (preview / "clip.json").write_text(json.dumps(clip, indent=2) + "\n")

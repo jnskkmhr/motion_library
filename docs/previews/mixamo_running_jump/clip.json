@@ -27,6 +27,7 @@
     "provenance": "docs/previews/mixamo_running_jump/provenance.json",
     "validation": "docs/previews/mixamo_running_jump/validation.json",
     "terrain_fit": "docs/previews/mixamo_running_jump/terrain_fit.json",
-    "terrain_validation": "docs/previews/mixamo_running_jump/terrain_validation.json"
+    "terrain_validation": "docs/previews/mixamo_running_jump/terrain_validation.json",
+    "quality_review": "docs/previews/mixamo_running_jump/quality_review.json"
   }
 }

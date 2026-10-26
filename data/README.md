@@ -1,9 +1,15 @@
 # Dataset contract
 
-Each gallery motion has `motion.npz` and `motion.mp4`. Reports and intermediate
-qpos files are preserved when available. `motion_generated.*` is an optional
-version before contact refinement. The catalog indexes final motion/video pairs;
-intermediate `g1_qpos.npz` files are not mimic training files.
+Each active motion directory contains one `motion.npz` and its matching
+`motion.mp4`, with nonempty box or triangle-mesh terrain in the NPZ. Raw retargeting
+exports and old before-refinement variants are not active dataset files.
+`ground_height` alone does not count as terrain geometry.
+
+Catalog building and validation reject missing/empty terrain, intermediate NPZs,
+and clips listed as removed in `curation.json`. Mixamo references also require a
+quality review tied to the current NPZ hash. Removed terrain-free files are listed
+in `terrain_free_removal.json`; recoverable terrain-bearing rejects are outside
+`data/`, under `outputs/quarantine/2026-10-26/`.
 
 All bundled final references use 50 FPS, 29 named joints, and 35 body frames for
 the ball-hand G1. Duration in the gallery is frame count / FPS; the last sample

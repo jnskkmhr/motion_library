@@ -7,6 +7,8 @@ from pathlib import Path
 
 import numpy as np
 
+from tools.terrain_contract import require_active_dataset
+
 ROOT = Path(__file__).resolve().parents[1]
 LABELS = {
     "claw": "CLAW",
@@ -39,6 +41,7 @@ def main():
     )
     args = parser.parse_args()
     root = args.root.resolve()
+    require_active_dataset(root)
     clips = []
     for source, label in LABELS.items():
         if source in ("lafan", "mixamo") and not args.include_local:
@@ -127,7 +130,7 @@ def main():
     catalog_path.write_text(encoded)
     script_path.write_text("window.MOTION_CATALOG = " + encoded.rstrip() + ";\n")
     if args.include_local:
-        page = (root / "docs/index.html").read_text().replace('src="catalog.js"', 'src="local-catalog.js"')
+        page = (root / "docs/index.html").read_text().replace('src="catalog.js', 'src="local-catalog.js')
         page = page.replace("<title>G1 Motion Library</title>", "<title>G1 Motion Library — local previews</title>")
         (root / "docs/local.html").write_text(page)
     print(f"Catalog: {len(clips)} clips; {sum(len(c['variants']) for c in clips)} variants")

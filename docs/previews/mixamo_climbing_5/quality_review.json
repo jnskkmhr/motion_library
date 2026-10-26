@@ -1,0 +1,12 @@
+{
+  "status": "retained_kinematic_candidate",
+  "motion_sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae",
+  "nearest_foot_endpoint_gap_m": [
+    0.02321784422025691,
+    0.04448712468733196
+  ],
+  "maximum_nearest_foot_gap_m": 0.06210896007690872,
+  "terrain_kind": "climb",
+  "rejection_reasons": [],
+  "limitations": "Coarse kinematic screening, not validated support contact, balance, self-collision or tracking."
+}

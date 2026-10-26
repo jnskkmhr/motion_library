@@ -64,14 +64,13 @@ drivers are not pip dependencies of this standalone library. See the
 
 ## Data and provenance
 
-The public catalog includes 41 non-Kimodo references and 35 experimental Kimodo
-outputs, plus 82 rendered Mixamo navigation candidates. Five additional LAFAN
-previews and the 82 converted Mixamo NPZs are prepared locally. Each new Mixamo
-clip is capped at 60 seconds without stretching shorter animations. See
-[ACP source additions](data_generator/ACP_SOURCES.md) for provenance, scripts, and
-why the LAFAN/Mixamo derivatives stay local. Old PARC arm conversions, superseded contact-refinement archives, and a
-duplicate crawl preview are omitted. Kimodo is retained for inspection, separately
-from the non-Kimodo collection previously installed in mimic.
+The active catalog contains 70 clips: 41 non-Kimodo references, 22 experimental
+Kimodo references, and seven reviewed Mixamo candidates. Public Mixamo entries
+provide videos; the paired NPZs are available in the local gallery. Every active
+NPZ contains box or mesh terrain, and every clip has one current video variant.
+Terrain-free LAFAN and early Kimodo references and poor Mixamo pairings have been
+removed. See [ACP source additions](data_generator/ACP_SOURCES.md) for provenance
+and [the curation record](data/curation.json) for exclusions.
 
 Each clip keeps its source provenance and available geometry/contact reports.
 `data/import_manifest.json` records extraction locations; those historical paths
@@ -99,3 +98,14 @@ Optional `motion_generated.npz` and `motion_generated.mp4` provide a second view
 The GitHub repository and branch are configured in `docs/config.js`. The Pages
 workflow publishes the gallery and its data files together, preserving relative
 links. No video transcoding or JavaScript build system is needed.
+
+## Active dataset quality
+
+The gallery contains only final references with nonempty box or mesh terrain.
+Raw exports and old before-refinement comparisons have been removed from `data/`.
+The Mixamo subset was reduced from 82 to seven candidates after obstacle and
+support-gap review. Terrain-free LAFAN and early Kimodo clips, plus five Kimodo
+references that failed their existing geometry checks, are excluded. See
+[`data/curation.json`](data/curation.json) for the removal record. Original source
+assets remain available to the generators; rejected terrain-bearing derivatives
+are recoverable locally under `outputs/quarantine/2026-10-26/`.

@@ -99,3 +99,39 @@ labels, policy rollouts, or training results.
   passed for file opening, a local HTTP server, terrain/report labels, playback,
   category/search filters, mobile layout, and local Mixamo NPZ download links.
 - Ruff formatting/lint, JavaScript syntax, uv lock, and diff checks passed.
+
+# Terrain and motion curation — 2026-10-26
+
+The preceding 82-clip Mixamo terrain check was insufficient: nonempty boxes and
+zero penetration did not establish meaningful obstacles or supporting contact.
+“Jump Up On Box” had terrain tops at ground height. This update replaces that
+collection with a smaller reviewed subset.
+
+- Deleted 460 verified terrain-free generated motion archives and their matching
+  obsolete videos. The exact list is in `data/terrain_free_removal.json`.
+- Removed 75 poor Mixamo pairings from active data and the public gallery. Seven
+  candidates remain: one partial box climb, three crouch/duck clips, and three
+  running gap jumps. Exclusion reasons and measurements are preserved in
+  `data_generator/mixamo/rejected_clips.json`.
+- Removed eight terrain-free early Kimodo and five terrain-free LAFAN clips, plus
+  five Kimodo final references that failed their existing geometric checks.
+  Terrain-bearing rejects, remaining intermediates and before-refinement variants
+  were moved outside active data to `outputs/quarantine/2026-10-26/` for recovery.
+- Every active NPZ has nonempty canonical box or triangle-mesh terrain. No raw
+  qpos NPZ, raw export, or before-refinement variant remains under `data/`.
+  Public catalog: 70 clips, 63 NPZ/video pairs and seven Mixamo video previews.
+  Local catalog: 70 clips and 70 NPZ/video pairs. Both full validators passed.
+- New catalog gates reject absent/empty terrain, restored rejected clips, and
+  intermediate NPZs. Checked these failure cases with temporary fixtures, including
+  compatibility with the existing optional identity-quaternion convention.
+- Mixamo generation uses temporary raw/work folders and screens obstacle presence,
+  foot-to-terrain gaps, and climb support gaps before promoting a paired result.
+  Rebuilt `climbing_5` end to end: retarget, exact USD export, fitting, collision
+  checks, quality screening, and video. Its temporary intermediates were cleaned
+  up, and the active folder contains only the final NPZ plus video and reports.
+- All seven retained Mixamo references pass the new coarse screening. These
+  thresholds are exclusion criteria, not proof of physical support or tracking.
+- Browser checks passed for seven Mixamo selections, absence of “Jump Up On Box,”
+  terrain labels, video playback, filters, mobile layout, existing OmniRetarget
+  downloads, and local Mixamo NPZ links. Python lint/format, JavaScript syntax,
+  and diff checks passed.

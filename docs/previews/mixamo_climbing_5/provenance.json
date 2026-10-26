@@ -40,9 +40,9 @@
   "display_name": "Starting To Climb Onto A Box Or Short Fence",
   "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "terrain_missing": false,
-  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-  "public_video_only": true,
   "terrain_kind": "climb",
   "terrain_box_count": 2,
-  "motion_sha256": "15ef8308ed86081932a97e9ee72d84437a76a2102838c8bb0c19537145e40aef"
+  "motion_sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae",
+  "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+  "public_video_only": true
 }

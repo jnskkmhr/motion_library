@@ -5,23 +5,18 @@ stairs, ladders, ledges and slopes, vaults, crawling, crouching, jumps, sitting,
 and recovery. It excludes dance, weapon animations, unrelated gestures, rope-only
 climbing, and static poses. The earlier dance preview has been removed.
 
-`navigation_manifest.json` selects 82 clips by their source descriptions from
-[Linzhan Mou's Mixamo / UniMate release](https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters).
-The manifest pins the source revision and preserves each filename, motion ID,
-description, and category. ACP cites Mixamo for stairs, ladders, and sitting;
-these are relevant source candidates, not a reconstruction of ACP's exact data.
+`navigation_manifest.json` now contains **seven reviewed candidates** from
+[Linzhan Mou's Mixamo / UniMate release](https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters):
+a partial box climb, three crouch/duck motions, and three running gap jumps.
+The manifest preserves source revision, filename, motion ID, and description.
 
-| Motion type | Selected clips |
-| --- | ---: |
-| Stairs | 4 |
-| Ladder | 5 |
-| Climb and slope | 10 |
-| Vault | 3 |
-| Crawl and hand support | 7 |
-| Crouch and duck | 14 |
-| Jump and landing | 21 |
-| Sit and stand | 5 |
-| Recovery and roll | 13 |
+The earlier 82-clip collection was too permissive. **75 pairings were removed from
+the active data and public gallery**, including “Jump Up On Box.” Its platform
+collapsed to ground height. Other exclusions include distorted ladders, unsupported
+climbs/crawls, near-flat stairs, floating sitting poses, and ground-only motions.
+[`rejected_clips.json`](rejected_clips.json) records the source and measured reason
+for each exclusion. These seven retained clips are kinematic candidates, not ACP's
+exact data or demonstrations validated by a tracking policy.
 
 Each clip retains source timing and is capped at **60 seconds** before retargeting.
 Short source clips are not stretched or looped to fill a minute. The source index reports keyframe counts, not duration; the importer samples the
@@ -44,12 +39,12 @@ uv run python tools/validate_library.py
 uv run python tools/validate_library.py --catalog data/catalog.local.json
 ```
 
-`--limit 6` runs a small initial batch. `--resume` retains outputs only when the
-source request, retargeter, duration cap and robot MJCF match. Terrain fitting is
-repeated when the raw motion, selected terrain kind, or fitting code changes; its
-previous video is then invalidated. `--workers` controls
-concurrent conversion/render processes (default 2). Individual failures are
-reported in `outputs/mixamo_navigation_summary.json`; per-stage logs are in
+`--limit 1` runs a small initial build. `--resume` authorizes replacing an existing
+final pair after the new build passes checks. Every build uses a temporary folder
+under `outputs/` for raw FBX conversion, qpos, and USD export; it cleans up that
+folder on success or failure. Only final paired files and reports enter `data/`.
+`--workers` controls concurrent jobs (default 2). Individual failures are reported
+in `outputs/mixamo_navigation_summary.json`, with logs in
 `outputs/mixamo_navigation_logs/`. A failed batch returns a nonzero exit status.
 
 The pipeline downloads only selected FBXs, runs G1 retargeting, exports body states
@@ -86,20 +81,17 @@ Every final `motion.npz` includes `terrain_position` (box centers),
 body states. The existing Isaac Lab player spawns these boxes directly. There is
 no separate Mixamo terrain format, and no motion arrays or timestamps are changed.
 
-The source FBX does not supply obstacle assets. `fit_terrain.py` follows the shared
-CLAW/terrain fitters: it transforms the actual G1 USD geometry bounds through the
-reference motion and fits static boxes around the swept robot geometry. Each
-manifest entry explicitly selects its terrain type:
+The source FBX does not supply obstacle assets. `fit_terrain.py` uses the shared
+terrain fitters and the actual G1 USD geometry bounds. The retained scene types
+are a climb box, low passage, and separated takeoff/landing platforms. Other
+fitter modes remain available for experiments but are not accepted into this
+reviewed subset.
 
-- Stairs use low-speed foot intervals and foot-edge clearance.
-- Ramps use a tilted box beneath the stance-foot samples.
-- Climbs, vaults, and sitting use support boxes near elevated feet, hands, or pelvis.
-- Ladders use rungs and connected side rails. Rung offsets avoid the swept robot;
-  these can form a nonuniform climbing frame rather than a regular straight ladder.
-- Crawls and ducking use a low roof and posts, following the CLAW overhead example.
-- Traveling jumps use takeoff/landing platforms when an airborne interval permits
-  a gap. In-place jumps use one platform. The floor below a gap is lowered.
-- Ground transitions and recovery use a bounded ground slab.
+`quality.py` rejects missing obstacles, missing jump gaps, endpoint foot-to-terrain
+gaps above 8 cm (median over 0.1 s), and foot gaps above 8 cm during retained
+non-jumping motions. The climb support estimate must be within 5 cm of its box
+top. These are coarse exclusion thresholds, not claims of valid supporting contact.
+Rejected source clips require a new manual motion/terrain review before restoration.
 
 `terrain_fit.json` records dimensions, fitting decisions, estimated contact gaps,
 and the final NPZ hash. `terrain_validation.json` checks all saved poses using the

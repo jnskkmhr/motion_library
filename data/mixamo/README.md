@@ -1,8 +1,9 @@
 # Local Mixamo navigation motions
 
-Selected stair, ladder, slope, climb, vault, crawl, crouch, jump, sit/stand, and
-recovery clips are retargeted to ball-hand G1. Each output is at most 60 seconds.
-The exact selection and source revision are in
+Seven reviewed box-climb, crouch/duck, and running-gap-jump candidates remain.
+The earlier 75 poor pairings are excluded; see
+[`rejected_clips.json`](../../data_generator/mixamo/rejected_clips.json).
+The active source selection is
 [`navigation_manifest.json`](../../data_generator/mixamo/navigation_manifest.json).
 
 Public previews live under `docs/previews/mixamo_<name>/`. Converted NPZs remain

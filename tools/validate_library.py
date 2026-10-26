@@ -9,6 +9,8 @@ from pathlib import Path
 
 import numpy as np
 
+from tools.terrain_contract import require_active_dataset, require_scene
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -22,6 +24,7 @@ def main():
     parser.add_argument("--catalog", type=Path, default=ROOT / "data/catalog.json")
     catalog = json.loads(parser.parse_args().catalog.read_text())
     require(shutil.which("ffprobe"), "Install FFmpeg (ffprobe) to validate video frame counts.")
+    require_active_dataset(ROOT)
     pairs = 0
     previews = 0
     for clip in catalog["clips"]:
@@ -37,6 +40,7 @@ def main():
                 path = ROOT / variant["npz"]
                 require(hashlib.sha256(path.read_bytes()).hexdigest() == variant["sha256"], f"Checksum: {path}")
                 with np.load(path, allow_pickle=False) as data:
+                    require_scene(data, path)
                     n = variant["frames"]
                     require(n > 0 and variant["fps"] > 0, f"Invalid frame count or FPS: {path}")
                     joints, bodies = len(data["joint_names"]), len(data["body_names"])
