@@ -24,8 +24,9 @@ Upstream sources are recorded in each clip's provenance:
   from https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters at the
   revision recorded in data_generator/mixamo/navigation_manifest.json. Credit:
   Adobe Mixamo and the Linzhan Mou / UniMate dataset release. Adobe terms apply.
-  Public files contain rendered G1 videos and provenance, not source FBX or derived
-  animation arrays. This does not grant permission to redistribute or train on the data.
+  Public files contain seven converted G1 motion/terrain NPZs, matching videos,
+  and provenance. Source FBXs are not bundled. The repository code license does
+  not relicense these derivatives or supersede the upstream data terms.
 - G1 robot geometry: Unitree assets and the local newton-assets hand-pad variant.
   Robot meshes, model weights, and credentials are not bundled here.
 

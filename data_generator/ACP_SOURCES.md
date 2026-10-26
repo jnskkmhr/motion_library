@@ -10,10 +10,9 @@ Kimodo for vaulting; and AME policy rollouts for sparse terrain.
 | LAFAN | Importer retained; five terrain-free previews removed | Public Unitree retargeting, not ACP's own retargeting |
 | Mixamo | Seven retained terrain-paired G1 candidates | Box climb, crouch/duck and gap jumps; 75 poor pairings excluded with recorded reasons |
 
-The default gallery indexes publishable bundled data. `--include-local` creates
-`docs/local.html`, `docs/local-catalog.js`, and `data/catalog.local.json`, including
-retained local Mixamo derivatives. These files and derived data directories are
-ignored by Git. The public gallery includes rendered Mixamo navigation previews and links to local NPZ setup instructions.
+The default gallery includes the seven retained Mixamo G1 NPZs, their fitted
+terrain, videos and reports. `--include-local` also supports any separately prepared
+local-only LAFAN candidates. Source FBXs and rejected clips are not published.
 
 No ACP-specific reference trajectories, hand-authored contact labels, or AME policy
 rollouts were retrieved. None of these additions reproduces the ACP training pipeline.

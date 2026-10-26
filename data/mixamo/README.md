@@ -1,4 +1,4 @@
-# Local Mixamo navigation motions
+# Mixamo navigation motions
 
 Seven reviewed box-climb, crouch/duck, and running-gap-jump candidates remain.
 The earlier 75 poor pairings are excluded; see
@@ -6,9 +6,9 @@ The earlier 75 poor pairings are excluded; see
 The active source selection is
 [`navigation_manifest.json`](../../data_generator/mixamo/navigation_manifest.json).
 
-Public previews live under `docs/previews/mixamo_<name>/`. Converted NPZs remain
-local under `data/mixamo/<name>/motion.npz`. Build `docs/local.html` with
-`uv run python tools/build_catalog.py --include-local` for local NPZ downloads.
+Each published clip has `data/mixamo/<name>/motion.npz`, its matching video,
+and provenance/review reports. The public gallery provides GitHub and direct
+NPZ download links. Raw source FBXs and rejected candidates are not bundled.
 
 Every final NPZ includes fitted terrain using the existing `terrain_position`,
 `terrain_dimension` (full sizes), `terrain_quat` (xyzw), and `ground_height` fields.

@@ -1,0 +1,26 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "gap",
+  "terrain_roles": [
+    "takeoff_platform",
+    "landing_platform",
+    "ground_slab"
+  ],
+  "terrain_box_count": 3,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.8872593692535593,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 51,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "d68e863ac173da16b91fdda6b89b1660b7b81da25ba3f283b9b5b3e33de16bb3",
+  "motion_sha256": "e3c95f5185f4d3b81b5d5926392ac33390123e3bf1fbd46090ef0fe8f68ea5ac",
+  "gap_width_m": 1.8318790459741152,
+  "estimated_flight_frames": [
+    5,
+    28
+  ],
+  "original_motion_minimum_world_z_m": -0.2832593692535594
+}

@@ -56,12 +56,13 @@ overshooting source joint limits. The recording frame count must match its NPZ.
 ## Inspect the results
 
 - Public website: select **Mixamo**, then choose a **Motion type**.
-- Local website: open `docs/local.html` for converted NPZ download links.
-- Local data: `data/mixamo/<name>/motion.npz`, `motion.mp4`, and provenance/reports.
+- NPZ downloads: available directly from the public gallery and GitHub.
+- Published data: `data/mixamo/<name>/motion.npz`, `motion.mp4`, and provenance/reports.
 - Public files: `docs/previews/mixamo_<name>/` contains the rendered video,
   provenance, terrain fitting/collision reports, geometric report, and gallery metadata.
 
-The public website contains videos, not source FBXs or converted animation arrays.
+The public website contains final G1 NPZs with terrain, their matching videos,
+and provenance/review reports. Source FBXs are not bundled.
 The [Adobe terms](https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html) remain
 applicable; a public mirror does not grant new redistribution or training rights.
 

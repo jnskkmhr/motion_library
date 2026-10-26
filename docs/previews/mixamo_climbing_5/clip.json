@@ -6,7 +6,7 @@
   "category": "Climb and slope",
   "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
-  "preview_only": true,
+  "preview_only": false,
   "local_only": false,
   "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_5.fbx",
   "poster": null,
@@ -20,7 +20,9 @@
       "duration": 2.28,
       "last_sample_time": 2.26,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "boxes"
+      "terrain": "boxes",
+      "npz": "data/mixamo/climbing_5/motion.npz",
+      "sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae"
     }
   ],
   "reports": {

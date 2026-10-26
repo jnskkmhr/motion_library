@@ -40,8 +40,8 @@ uv run python -m http.server 8000 --bind 127.0.0.1
 The validation command also needs FFmpeg (`ffprobe`) installed on the host.
 Open <http://localhost:8000/docs/>. Select a source and motion, use the previous/next
 buttons or arrow keys, and switch between refined/generated motion where available.
-Bundled references link to their NPZ on GitHub. Mixamo video previews link to the
-source; their converted NPZs are available through the local gallery. Use the
+Every active reference, including the seven retained Mixamo clips, links to its
+NPZ on GitHub and provides a direct download. Use the
 Motion type filter for stairs, ladders, crawling, vaults, and other navigation skills.
 Opening `docs/index.html` directly also works; its catalog is loaded as a script.
 
@@ -66,7 +66,7 @@ drivers are not pip dependencies of this standalone library. See the
 
 The active catalog contains 70 clips: 41 non-Kimodo references, 22 experimental
 Kimodo references, and seven reviewed Mixamo candidates. Public Mixamo entries
-provide videos; the paired NPZs are available in the local gallery. Every active
+include videos, paired NPZs with terrain, and provenance/review reports. Every active
 NPZ contains box or mesh terrain, and every clip has one current video variant.
 Terrain-free LAFAN and early Kimodo references and poor Mixamo pairings have been
 removed. See [ACP source additions](data_generator/ACP_SOURCES.md) for provenance

@@ -9,9 +9,17 @@ __pycache__/
 outputs/
 vendor/
 _site/
-# LAFAN derivatives and Mixamo assets stay local under their source terms.
+# LAFAN derivatives and raw source/build artifacts stay local.
 data/lafan/*/
-data/mixamo/*/
+data/mixamo/*/*
+!data/mixamo/*/motion.npz
+!data/mixamo/*/motion.mp4
+!data/mixamo/*/provenance.json
+!data/mixamo/*/validation.json
+!data/mixamo/*/terrain_fit.json
+!data/mixamo/*/terrain_validation.json
+!data/mixamo/*/quality_review.json
+!data/mixamo/*/build_request.json
 docs/local.html
 docs/local-catalog.js
 

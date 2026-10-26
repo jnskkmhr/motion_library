@@ -135,3 +135,16 @@ collection with a smaller reviewed subset.
   terrain labels, video playback, filters, mobile layout, existing OmniRetarget
   downloads, and local Mixamo NPZ links. Python lint/format, JavaScript syntax,
   and diff checks passed.
+
+# Publish retained Mixamo data — 2026-10-26
+
+- Published all seven retained Mixamo final G1 NPZs with their paired terrain,
+  videos, and provenance/review reports. Raw FBXs and quarantined clips remain
+  excluded. The public catalog now contains 70 NPZ/video pairs, with no video-only
+  entries.
+- Full library validation passed. Browser checks confirmed GitHub and direct NPZ
+  download links for each Mixamo entry. Every catalog NPZ, video and report is
+  included in the tracked publication files; local NPZ hashes match the catalog.
+- Updated the generator and ignore rules to preserve final-pair publication on
+  subsequent builds. Recorded the user's instruction to work directly on main
+  in this standalone repository.

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "status": "retained_kinematic_candidate",
+  "motion_sha256": "9b03ffd793013105bc2f79bd07085d296d2ffd7b030ccbfe80ad4b9b5e9db04e",
+  "measurements": {
+    "name": "ducking_2",
+    "kind": "passage",
+    "foot_start": 0.028748672074347476,
+    "foot_end": 0.009535345624124475,
+    "hand_min": 0.21031942332779266,
+    "joint_speed": 12.306221008300781,
+    "fit_gap": 0,
+    "max_nearest_foot_gap": 0.030894591647315728,
+    "height": 1.243809815405628,
+    "has_gap": false
+  },
+  "review": "Visible obstacle interaction retained after terrain/support-gap screening. Contact forces, balance and dynamic tracking remain unvalidated."
+}

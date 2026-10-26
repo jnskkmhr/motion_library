@@ -37,14 +37,14 @@ def main():
     parser.add_argument(
         "--include-local",
         action="store_true",
-        help="Build a separate gallery including local-only LAFAN/Mixamo exports",
+        help="Build a separate gallery including local-only LAFAN exports",
     )
     args = parser.parse_args()
     root = args.root.resolve()
     require_active_dataset(root)
     clips = []
     for source, label in LABELS.items():
-        if source in ("lafan", "mixamo") and not args.include_local:
+        if source == "lafan" and not args.include_local:
             continue
         for path in sorted((root / "data" / source).rglob("motion.npz")):
             folder = path.parent
@@ -110,8 +110,8 @@ def main():
                     "name": provenance.get("display_name", name),
                     "category": category,
                     "description": provenance.get("description", ""),
-                    "experimental": source == "kimodo",
-                    "local_only": source in ("lafan", "mixamo"),
+                    "experimental": source in ("kimodo", "mixamo"),
+                    "local_only": source == "lafan",
                     "source_url": provenance.get("source_url"),
                     "variants": variants,
                     "reports": reports,

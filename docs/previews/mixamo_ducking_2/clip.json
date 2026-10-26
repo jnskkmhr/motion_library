@@ -6,7 +6,7 @@
   "category": "Crouch and duck",
   "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
-  "preview_only": true,
+  "preview_only": false,
   "local_only": false,
   "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Ducking_2.fbx",
   "poster": null,
@@ -20,7 +20,9 @@
       "duration": 1.54,
       "last_sample_time": 1.52,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "boxes"
+      "terrain": "boxes",
+      "npz": "data/mixamo/ducking_2/motion.npz",
+      "sha256": "9b03ffd793013105bc2f79bd07085d296d2ffd7b030ccbfe80ad4b9b5e9db04e"
     }
   ],
   "reports": {

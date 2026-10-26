@@ -1,0 +1,25 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "climb",
+  "terrain_roles": [
+    "climb_box",
+    "ground_slab"
+  ],
+  "terrain_box_count": 2,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.031065909307240982,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 114,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "bef1a828776f16766fefbe3c6b840aac809e85a4469ac61cbe38c12c98d0c2c5",
+  "motion_sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae",
+  "estimated_support_point": [
+    0.2734248801605065,
+    0.607162451369727,
+    0.5482068237220771
+  ],
+  "support_point_to_box_top_gap_m": 0.011556761722854691
+}

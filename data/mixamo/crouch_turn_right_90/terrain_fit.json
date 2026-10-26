@@ -1,0 +1,25 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "passage",
+  "terrain_roles": [
+    "passage_roof",
+    "passage_post",
+    "passage_post",
+    "passage_post",
+    "passage_post",
+    "ground_slab"
+  ],
+  "terrain_box_count": 6,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.10261489826647748,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 82,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "190a80afb577f281393cb590579b11abf8934c17708e0008027616c7d17751ae",
+  "motion_sha256": "87b36e902d80ddd9b8ae94799a9954633fa1fa5ff98176bf55e812ba6bbe1a7a",
+  "roof_underside_world_z_m": 1.2303793939324827,
+  "roof_to_swept_body_bound_clearance_m": 0.04
+}

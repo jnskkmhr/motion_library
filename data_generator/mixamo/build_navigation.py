@@ -1,6 +1,6 @@
 """Download selected navigation motions, retarget to G1, and build video previews.
 
-Motion arrays remain local. Every final NPZ includes fitted static terrain, and
+Final motion arrays and videos are published together. Every NPZ includes fitted terrain, and
 its video is rendered from that same NPZ. Dynamic tracking remains unvalidated.
 """
 
@@ -228,7 +228,8 @@ def build_staged(item, manifest, args, work):
         terrain_box_count=fit_report["terrain_box_count"],
         motion_sha256=fit_report["motion_sha256"],
         target_robot="UNITREE_G1_29DOF_BALL_HAND_CFG",
-        public_video_only=True,
+        public_video_only=False,
+        public_distribution=True,
     )
     (dest / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
     final_dest.mkdir(parents=True, exist_ok=True)
@@ -263,13 +264,15 @@ def build_staged(item, manifest, args, work):
         "category": item["category"],
         "description": description,
         "experimental": True,
-        "preview_only": True,
+        "preview_only": False,
         "local_only": False,
         "source_url": source_url,
         "poster": None,
         "variants": [
             {
                 "name": "Motion + terrain",
+                "npz": str((final_dest / "motion.npz").relative_to(ROOT)),
+                "sha256": fit_report["motion_sha256"],
                 "video": f"{relative}/motion.mp4",
                 "video_sha256": hashlib.sha256((preview / "motion.mp4").read_bytes()).hexdigest(),
                 "fps": fps,

@@ -1,0 +1,16 @@
+{
+  "item": {
+    "name": "crouch_turn_right_90",
+    "category": "Crouch and duck",
+    "file": "animation/Crouch_Turn_Right_90.fbx",
+    "prompt": "Crouch Turn Right 90",
+    "description": "Turning 90 Degrees Right",
+    "text": "Turning 90 Degrees Right",
+    "frames": "50",
+    "motion_id": "f73f73aa-7b67-43ca-ad1b-f58e6f909e95"
+  },
+  "revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "max_duration": 60,
+  "mjcf_sha256": "25cc3b3179435b3f00f2529e5a1dfbde758de7f0c3476fdbec2ed83e53e0318d",
+  "retarget_sha256": "5fd71ce4067a2a691311beb618e56c70daabf343a1d9ee44e65079c82b694558"
+}

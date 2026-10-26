@@ -1,0 +1,16 @@
+{
+  "item": {
+    "name": "jump_2",
+    "category": "Jump and landing",
+    "file": "animation/Jump_2.fbx",
+    "prompt": "Jump",
+    "description": "Female Forward Running Jump",
+    "text": "Female Forward Running Jump",
+    "frames": "99",
+    "motion_id": "c9ccfe2b-b96c-11e4-a802-0aaa78deedf9"
+  },
+  "revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "max_duration": 60,
+  "mjcf_sha256": "25cc3b3179435b3f00f2529e5a1dfbde758de7f0c3476fdbec2ed83e53e0318d",
+  "retarget_sha256": "5fd71ce4067a2a691311beb618e56c70daabf343a1d9ee44e65079c82b694558"
+}

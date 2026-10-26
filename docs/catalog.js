@@ -2012,234 +2012,241 @@ window.MOTION_CATALOG = {
     },
     {
       "id": "mixamo/climbing_5",
-      "name": "Starting To Climb Onto A Box Or Short Fence",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Starting To Climb Onto A Box Or Short Fence",
       "category": "Climb and slope",
       "description": "Climb and slope. Static climb terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_5.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_climbing_5/motion.mp4",
-          "video_sha256": "a65ae3489eba753c22c68fcd221db3adeb66824da8869d166aa7904092c24ae8",
+          "name": "Reference",
+          "npz": "data/mixamo/climbing_5/motion.npz",
+          "video": "data/mixamo/climbing_5/motion.mp4",
           "fps": 50.0,
           "frames": 114,
           "duration": 2.28,
           "last_sample_time": 2.26,
+          "sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_climbing_5/provenance.json",
-        "validation": "docs/previews/mixamo_climbing_5/validation.json",
-        "terrain_fit": "docs/previews/mixamo_climbing_5/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_climbing_5/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_climbing_5/quality_review.json"
-      }
+        "quality_review": "data/mixamo/climbing_5/quality_review.json",
+        "provenance": "data/mixamo/climbing_5/provenance.json",
+        "validation": "data/mixamo/climbing_5/validation.json",
+        "terrain_fit": "data/mixamo/climbing_5/terrain_fit.json",
+        "terrain_validation": "data/mixamo/climbing_5/terrain_validation.json",
+        "build_request": "data/mixamo/climbing_5/build_request.json"
+      },
+      "poster": null
     },
     {
       "id": "mixamo/crouch_turn_right_90",
-      "name": "Turning 90 Degrees Right",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Turning 90 Degrees Right",
       "category": "Crouch and duck",
       "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouch_Turn_Right_90.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_crouch_turn_right_90/motion.mp4",
-          "video_sha256": "320f9efbe23dde268e2048a2f69f183185d504679530b944aa90f08dc97f9b54",
+          "name": "Reference",
+          "npz": "data/mixamo/crouch_turn_right_90/motion.npz",
+          "video": "data/mixamo/crouch_turn_right_90/motion.mp4",
           "fps": 50.0,
           "frames": 82,
           "duration": 1.64,
           "last_sample_time": 1.62,
+          "sha256": "87b36e902d80ddd9b8ae94799a9954633fa1fa5ff98176bf55e812ba6bbe1a7a",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_crouch_turn_right_90/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_turn_right_90/validation.json",
-        "terrain_fit": "docs/previews/mixamo_crouch_turn_right_90/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_crouch_turn_right_90/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_crouch_turn_right_90/quality_review.json"
-      }
+        "quality_review": "data/mixamo/crouch_turn_right_90/quality_review.json",
+        "provenance": "data/mixamo/crouch_turn_right_90/provenance.json",
+        "validation": "data/mixamo/crouch_turn_right_90/validation.json",
+        "terrain_fit": "data/mixamo/crouch_turn_right_90/terrain_fit.json",
+        "terrain_validation": "data/mixamo/crouch_turn_right_90/terrain_validation.json",
+        "build_request": "data/mixamo/crouch_turn_right_90/build_request.json"
+      },
+      "poster": null
     },
     {
       "id": "mixamo/crouch_walk_right_2",
-      "name": "Walking Right While Crouched",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Walking Right While Crouched",
       "category": "Crouch and duck",
       "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Crouch_Walk_Right_2.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_crouch_walk_right_2/motion.mp4",
-          "video_sha256": "b92c22eaa8ead293040e9bbb4def0ba007823d5886938eddd6fda87aa4f55a70",
+          "name": "Reference",
+          "npz": "data/mixamo/crouch_walk_right_2/motion.npz",
+          "video": "data/mixamo/crouch_walk_right_2/motion.mp4",
           "fps": 50.0,
           "frames": 64,
           "duration": 1.28,
           "last_sample_time": 1.26,
+          "sha256": "95fa630b47cf146051120381e28525ddf8b2548b6479773f5c25f9ea24ff4ac3",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_crouch_walk_right_2/provenance.json",
-        "validation": "docs/previews/mixamo_crouch_walk_right_2/validation.json",
-        "terrain_fit": "docs/previews/mixamo_crouch_walk_right_2/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_crouch_walk_right_2/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_crouch_walk_right_2/quality_review.json"
-      }
+        "quality_review": "data/mixamo/crouch_walk_right_2/quality_review.json",
+        "provenance": "data/mixamo/crouch_walk_right_2/provenance.json",
+        "validation": "data/mixamo/crouch_walk_right_2/validation.json",
+        "terrain_fit": "data/mixamo/crouch_walk_right_2/terrain_fit.json",
+        "terrain_validation": "data/mixamo/crouch_walk_right_2/terrain_validation.json",
+        "build_request": "data/mixamo/crouch_walk_right_2/build_request.json"
+      },
+      "poster": null
     },
     {
       "id": "mixamo/ducking_2",
-      "name": "Ducking For Cover From Standing Idle",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Ducking For Cover From Standing Idle",
       "category": "Crouch and duck",
       "description": "Crouch and duck. Static passage terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Ducking_2.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_ducking_2/motion.mp4",
-          "video_sha256": "7c77003f6f6379ec5650d8e953286a01e9379adbc13f2210f16b323630de6fe9",
+          "name": "Reference",
+          "npz": "data/mixamo/ducking_2/motion.npz",
+          "video": "data/mixamo/ducking_2/motion.mp4",
           "fps": 50.0,
           "frames": 77,
           "duration": 1.54,
           "last_sample_time": 1.52,
+          "sha256": "9b03ffd793013105bc2f79bd07085d296d2ffd7b030ccbfe80ad4b9b5e9db04e",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_ducking_2/provenance.json",
-        "validation": "docs/previews/mixamo_ducking_2/validation.json",
-        "terrain_fit": "docs/previews/mixamo_ducking_2/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_ducking_2/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_ducking_2/quality_review.json"
-      }
+        "quality_review": "data/mixamo/ducking_2/quality_review.json",
+        "provenance": "data/mixamo/ducking_2/provenance.json",
+        "validation": "data/mixamo/ducking_2/validation.json",
+        "terrain_fit": "data/mixamo/ducking_2/terrain_fit.json",
+        "terrain_validation": "data/mixamo/ducking_2/terrain_validation.json",
+        "build_request": "data/mixamo/ducking_2/build_request.json"
+      },
+      "poster": null
     },
     {
       "id": "mixamo/jump_2",
-      "name": "Forward Running Jump",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Forward Running Jump",
       "category": "Jump and landing",
       "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jump_2.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_jump_2/motion.mp4",
-          "video_sha256": "3a118e4aecfd59703ee31aea746fbe728090e76e34e8ce4f054d0900c31b121a",
+          "name": "Reference",
+          "npz": "data/mixamo/jump_2/motion.npz",
+          "video": "data/mixamo/jump_2/motion.mp4",
           "fps": 50.0,
           "frames": 44,
           "duration": 0.88,
           "last_sample_time": 0.86,
+          "sha256": "5fc567acff27620e3ed50415e3dbcdb78f96cc594147593d58815bba0bc7f06b",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_jump_2/provenance.json",
-        "validation": "docs/previews/mixamo_jump_2/validation.json",
-        "terrain_fit": "docs/previews/mixamo_jump_2/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_jump_2/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_jump_2/quality_review.json"
-      }
+        "quality_review": "data/mixamo/jump_2/quality_review.json",
+        "provenance": "data/mixamo/jump_2/provenance.json",
+        "validation": "data/mixamo/jump_2/validation.json",
+        "terrain_fit": "data/mixamo/jump_2/terrain_fit.json",
+        "terrain_validation": "data/mixamo/jump_2/terrain_validation.json",
+        "build_request": "data/mixamo/jump_2/build_request.json"
+      },
+      "poster": null
     },
     {
       "id": "mixamo/jump_3",
-      "name": "Forward Running Jump",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Forward Running Jump",
       "category": "Jump and landing",
       "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jump_3.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_jump_3/motion.mp4",
-          "video_sha256": "9461a46cc49ae993091e56faf4472c46d6d6de2ff56ef463fd394bae1dbcb0c6",
+          "name": "Reference",
+          "npz": "data/mixamo/jump_3/motion.npz",
+          "video": "data/mixamo/jump_3/motion.mp4",
           "fps": 50.0,
           "frames": 51,
           "duration": 1.02,
           "last_sample_time": 1.0,
+          "sha256": "e3c95f5185f4d3b81b5d5926392ac33390123e3bf1fbd46090ef0fe8f68ea5ac",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_jump_3/provenance.json",
-        "validation": "docs/previews/mixamo_jump_3/validation.json",
-        "terrain_fit": "docs/previews/mixamo_jump_3/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_jump_3/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_jump_3/quality_review.json"
-      }
+        "quality_review": "data/mixamo/jump_3/quality_review.json",
+        "provenance": "data/mixamo/jump_3/provenance.json",
+        "validation": "data/mixamo/jump_3/validation.json",
+        "terrain_fit": "data/mixamo/jump_3/terrain_fit.json",
+        "terrain_validation": "data/mixamo/jump_3/terrain_validation.json",
+        "build_request": "data/mixamo/jump_3/build_request.json"
+      },
+      "poster": null
     },
     {
       "id": "mixamo/running_jump",
-      "name": "Jumping From A Sprint",
       "source": "mixamo",
       "source_name": "Mixamo",
+      "name": "Jumping From A Sprint",
       "category": "Jump and landing",
       "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
       "experimental": true,
-      "preview_only": true,
       "local_only": false,
       "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Running_Jump.fbx",
-      "poster": null,
       "variants": [
         {
-          "name": "Motion + terrain",
-          "video": "docs/previews/mixamo_running_jump/motion.mp4",
-          "video_sha256": "a1222af1608e8485148a0dfefdd71db44e2c0c5d3132885e202a223365368a68",
+          "name": "Reference",
+          "npz": "data/mixamo/running_jump/motion.npz",
+          "video": "data/mixamo/running_jump/motion.mp4",
           "fps": 50.0,
           "frames": 46,
           "duration": 0.92,
           "last_sample_time": 0.9,
+          "sha256": "fa49517a86d8789e2823acbb05ba44e2a985d49b67244f2a50649f06366b7a81",
           "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
           "terrain": "boxes"
         }
       ],
       "reports": {
-        "provenance": "docs/previews/mixamo_running_jump/provenance.json",
-        "validation": "docs/previews/mixamo_running_jump/validation.json",
-        "terrain_fit": "docs/previews/mixamo_running_jump/terrain_fit.json",
-        "terrain_validation": "docs/previews/mixamo_running_jump/terrain_validation.json",
-        "quality_review": "docs/previews/mixamo_running_jump/quality_review.json"
-      }
+        "quality_review": "data/mixamo/running_jump/quality_review.json",
+        "provenance": "data/mixamo/running_jump/provenance.json",
+        "validation": "data/mixamo/running_jump/validation.json",
+        "terrain_fit": "data/mixamo/running_jump/terrain_fit.json",
+        "terrain_validation": "data/mixamo/running_jump/terrain_validation.json",
+        "build_request": "data/mixamo/running_jump/build_request.json"
+      },
+      "poster": null
     }
   ]
 };

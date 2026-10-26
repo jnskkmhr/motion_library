@@ -23,7 +23,7 @@
   "source_frames": 69,
   "max_duration_seconds": 60.0,
   "truncated": false,
-  "public_distribution": false,
+  "public_distribution": true,
   "exact_acp_clip": false,
   "terrain_source": "static geometry fitted to the target G1 reference; not supplied by Mixamo",
   "source_joint_trajectory_modified": true,
@@ -44,5 +44,5 @@
   "terrain_box_count": 2,
   "motion_sha256": "efd268f8adbf53866e58c2fe3ba7751602bddb7f07d8aa918f8b1ad3767f6eae",
   "target_robot": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-  "public_video_only": true
+  "public_video_only": false
 }

@@ -6,7 +6,7 @@
   "category": "Jump and landing",
   "description": "Jump and landing. Static gap terrain fitted to this G1 reference and stored in the NPZ. Motion samples and timing preserved. Kinematic replay; dynamic tracking and support contacts remain unvalidated.",
   "experimental": true,
-  "preview_only": true,
+  "preview_only": false,
   "local_only": false,
   "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Jump_3.fbx",
   "poster": null,
@@ -20,7 +20,9 @@
       "duration": 1.02,
       "last_sample_time": 1.0,
       "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
-      "terrain": "boxes"
+      "terrain": "boxes",
+      "npz": "data/mixamo/jump_3/motion.npz",
+      "sha256": "e3c95f5185f4d3b81b5d5926392ac33390123e3bf1fbd46090ef0fe8f68ea5ac"
     }
   ],
   "reports": {

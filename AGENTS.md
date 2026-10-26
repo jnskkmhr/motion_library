@@ -13,3 +13,6 @@ path to Python import search paths.
 - After data changes: `uv run python tools/build_catalog.py` and `uv run python tools/validate_library.py`.
 - After code changes: `uv run ruff check tools data_generator integrations/isaaclab/play_motion_file.py`.
 - The gallery must work via a static server, direct file opening, and GitHub Pages. Keep its labels concise and explain technical terms.
+
+- Work directly on `main` in this standalone repository, per the user’s preference.
+  Create a separate branch only when the user requests one.
