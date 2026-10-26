@@ -1,0 +1,16 @@
+{
+  "item": {
+    "name": "climbing_3",
+    "category": "Ladder",
+    "file": "animation/Climbing_3.fbx",
+    "prompt": "Climbing",
+    "description": "Ladder Climb Two Steps At A Time",
+    "text": "Ladder Climb Two Steps At A Time",
+    "frames": "126",
+    "motion_id": "c9c615dd-b96c-11e4-a802-0aaa78deedf9"
+  },
+  "revision": "7f134bc734557b1d9516cb476d25ea1f577e45c1",
+  "max_duration": 60,
+  "mjcf_sha256": "25cc3b3179435b3f00f2529e5a1dfbde758de7f0c3476fdbec2ed83e53e0318d",
+  "retarget_sha256": "5fd71ce4067a2a691311beb618e56c70daabf343a1d9ee44e65079c82b694558"
+}

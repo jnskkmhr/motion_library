@@ -148,3 +148,13 @@ collection with a smaller reviewed subset.
 - Updated the generator and ignore rules to preserve final-pair publication on
   subsequent builds. Recorded the user's instruction to work directly on main
   in this standalone repository.
+
+# Publish requested ladder clips — 2026-10-26
+
+Restored all five Mixamo ladder NPZ/video pairs with their fitted terrain, source
+provenance, and existing quality reports at the user's explicit request. Their
+hashes and restoration are recorded in `data/curation.json`; `quality_review.json`
+labels them `published_for_inspection`, preserving the original issues. This is
+publication of existing references, not a claim that ladder fitting is repaired.
+The gallery now contains 75 paired references and five selectable ladder clips.
+Browser checks verified all five videos, terrain labels, and NPZ links.

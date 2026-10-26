@@ -45,22 +45,8 @@
       ]
     },
     {
-      "id": "mixamo/climbing_3",
-      "reasons": [
-        "Distorted nonuniform ladder; hand/foot support not established.",
-        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
-      ]
-    },
-    {
       "id": "mixamo/climbing_4",
       "reasons": [
-        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
-      ]
-    },
-    {
-      "id": "mixamo/climbing_6",
-      "reasons": [
-        "Distorted nonuniform ladder; hand/foot support not established.",
         "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
       ]
     },
@@ -80,19 +66,6 @@
       "id": "mixamo/climbing_down_wall",
       "reasons": [
         "Flat panel has no footholds or graspable support for this climbing action.",
-        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
-      ]
-    },
-    {
-      "id": "mixamo/climbing_ladder",
-      "reasons": [
-        "Distorted nonuniform ladder; hand/foot support not established."
-      ]
-    },
-    {
-      "id": "mixamo/climbing_to_top",
-      "reasons": [
-        "Distorted nonuniform ladder; hand/foot support not established.",
         "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
       ]
     },
@@ -465,13 +438,6 @@
       "id": "mixamo/standing_up_3",
       "reasons": [
         "Ground slab only; no obstacle interaction for this terrain collection.",
-        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
-      ]
-    },
-    {
-      "id": "mixamo/start_climbing_ladder",
-      "reasons": [
-        "Distorted nonuniform ladder; hand/foot support not established.",
         "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
       ]
     },
@@ -5559,6 +5525,52 @@
     {
       "from": "outputs/terrain_probe",
       "to": "outputs/quarantine/2026-10-26/outputs/terrain_probe"
+    }
+  ],
+  "restored_clips": [
+    {
+      "id": "mixamo/climbing_3",
+      "motion_sha256": "7c2a268da0e9248dfaab1d24431edc67f2a528e90dabe643dcfc720e20ee9a5a",
+      "quality_issues": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "reason": "Explicit user request to publish ladder clips on main."
+    },
+    {
+      "id": "mixamo/climbing_6",
+      "motion_sha256": "100e99be0d08c3e8c1433a0ccb853873f4ca4a71d6c9b7603144cc09b08282de",
+      "quality_issues": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "reason": "Explicit user request to publish ladder clips on main."
+    },
+    {
+      "id": "mixamo/climbing_ladder",
+      "motion_sha256": "ada4799474e8f97b8141400fbf5799db84e479b2f578d4dce8c3317aed99d15a",
+      "quality_issues": [
+        "Distorted nonuniform ladder; hand/foot support not established."
+      ],
+      "reason": "Explicit user request to publish ladder clips on main."
+    },
+    {
+      "id": "mixamo/climbing_to_top",
+      "motion_sha256": "16e1324594b81db742db4692ce8c362e4f335339d06287503ca6eda5ecd21d75",
+      "quality_issues": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "reason": "Explicit user request to publish ladder clips on main."
+    },
+    {
+      "id": "mixamo/start_climbing_ladder",
+      "motion_sha256": "a97b7c22c874e59c3dc25005ee24f98fb551218d40f392d8c8675aba431029b8",
+      "quality_issues": [
+        "Distorted nonuniform ladder; hand/foot support not established.",
+        "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+      ],
+      "reason": "Explicit user request to publish ladder clips on main."
     }
   ]
 }

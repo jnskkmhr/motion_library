@@ -210,7 +210,8 @@
         "max_nearest_foot_gap": 0.1317985996799899,
         "height": 2.1175946715583325,
         "has_gap": false
-      }
+      },
+      "publication_status": "restored_for_inspection_at_user_request"
     },
     {
       "id": "mixamo/climbing_4",
@@ -269,7 +270,8 @@
         "max_nearest_foot_gap": 0.09957975701555367,
         "height": 1.5804424787056501,
         "has_gap": false
-      }
+      },
+      "publication_status": "restored_for_inspection_at_user_request"
     },
     {
       "id": "mixamo/climbing_down",
@@ -386,7 +388,8 @@
         "max_nearest_foot_gap": 0.059139023160129894,
         "height": 1.9587021844105914,
         "has_gap": false
-      }
+      },
+      "publication_status": "restored_for_inspection_at_user_request"
     },
     {
       "id": "mixamo/climbing_to_top",
@@ -416,7 +419,8 @@
         "max_nearest_foot_gap": 0.2766351066917973,
         "height": 1.9793166490685024,
         "has_gap": false
-      }
+      },
+      "publication_status": "restored_for_inspection_at_user_request"
     },
     {
       "id": "mixamo/climbing_up_wall",
@@ -2143,7 +2147,8 @@
         "max_nearest_foot_gap": 0.17390344144472053,
         "height": 1.7762089621040862,
         "has_gap": false
-      }
+      },
+      "publication_status": "restored_for_inspection_at_user_request"
     },
     {
       "id": "mixamo/unarmed_jump",

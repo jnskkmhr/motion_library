@@ -1,0 +1,23 @@
+{
+  "status": "published_for_inspection",
+  "motion_sha256": "7c2a268da0e9248dfaab1d24431edc67f2a528e90dabe643dcfc720e20ee9a5a",
+  "publication_reason": "User explicitly requested restoring and publishing the ladder clips on 2026-10-26.",
+  "quality_issues": [
+    "Distorted nonuniform ladder; hand/foot support not established.",
+    "Nearest foot remains over 0.08 m from terrain at an endpoint (median over 0.1 s)."
+  ],
+  "measurements": {
+    "name": "climbing_3",
+    "kind": "ladder",
+    "foot_start": 0.07380705534677606,
+    "foot_end": 0.08146054586576182,
+    "hand_min": 0.027323993072111245,
+    "joint_speed": 9.490269660949707,
+    "fit_gap": 0,
+    "max_nearest_foot_gap": 0.1317985996799899,
+    "height": 2.1175946715583325,
+    "has_gap": false
+  },
+  "dynamic_tracking_validated": false,
+  "support_contact_validated": false
+}

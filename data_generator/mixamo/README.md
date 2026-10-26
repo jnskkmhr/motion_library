@@ -122,3 +122,14 @@ selects the action. Optional `--terrain terrain.json` accepts canonical box/mesh
 fields in the target G1 reference frame, after scaling and initial root XY shift.
 It does not infer terrain from the animation. See the shared exporter and player
 commands in `integrations/isaaclab/README.md` for individual outputs.
+
+## Restored ladder references
+
+Five existing ladder NPZ/video pairs are also published under `data/mixamo/` at
+the user's explicit request: `climbing_3`, `climbing_6`, `climbing_ladder`,
+`climbing_to_top`, and `start_climbing_ladder`. Each includes its fitted terrain
+and original collision/quality reports. Their uneven rung geometry and unvalidated
+support contacts have not been corrected by publication. `data/curation.json`
+records their restoration and exact NPZ hashes. The default generation manifest
+still selects the seven screened candidates; these five restored artifacts have
+not been relabeled as passing that screening.

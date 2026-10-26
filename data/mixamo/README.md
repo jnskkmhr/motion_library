@@ -1,7 +1,9 @@
 # Mixamo navigation motions
 
-Seven reviewed box-climb, crouch/duck, and running-gap-jump candidates remain.
-The earlier 75 poor pairings are excluded; see
+Twelve clips are published: five ladder clips and seven reviewed box-climb,
+crouch/duck, and running-gap-jump candidates. The ladders retain their existing
+fitted terrain and recorded quality issues.
+Seventy other pairings remain excluded; see
 [`rejected_clips.json`](../../data_generator/mixamo/rejected_clips.json).
 The active source selection is
 [`navigation_manifest.json`](../../data_generator/mixamo/navigation_manifest.json).

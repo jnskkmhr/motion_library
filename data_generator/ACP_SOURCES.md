@@ -8,9 +8,9 @@ Kimodo for vaulting; and AME policy rollouts for sparse terrain.
 | --- | --- | --- |
 | OmniRetarget | 22 more G1 clips; all 29 published climbing clips now present | Same source dataset; exact ACP selection unknown |
 | LAFAN | Importer retained; five terrain-free previews removed | Public Unitree retargeting, not ACP's own retargeting |
-| Mixamo | Seven retained terrain-paired G1 candidates | Box climb, crouch/duck and gap jumps; 75 poor pairings excluded with recorded reasons |
+| Mixamo | 12 published terrain-paired G1 candidates, including five ladders | Ladder, box climb, crouch/duck and gap jumps; restored ladders retain recorded quality issues |
 
-The default gallery includes the seven retained Mixamo G1 NPZs, their fitted
+The default gallery includes the 12 published Mixamo G1 NPZs, their fitted
 terrain, videos and reports. `--include-local` also supports any separately prepared
 local-only LAFAN candidates. Source FBXs and rejected clips are not published.
 

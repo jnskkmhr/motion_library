@@ -40,7 +40,7 @@ uv run python -m http.server 8000 --bind 127.0.0.1
 The validation command also needs FFmpeg (`ffprobe`) installed on the host.
 Open <http://localhost:8000/docs/>. Select a source and motion, use the previous/next
 buttons or arrow keys, and switch between refined/generated motion where available.
-Every active reference, including the seven retained Mixamo clips, links to its
+Every active reference, including the 12 published Mixamo clips, links to its
 NPZ on GitHub and provides a direct download. Use the
 Motion type filter for stairs, ladders, crawling, vaults, and other navigation skills.
 Opening `docs/index.html` directly also works; its catalog is loaded as a script.
@@ -64,8 +64,8 @@ drivers are not pip dependencies of this standalone library. See the
 
 ## Data and provenance
 
-The active catalog contains 70 clips: 41 non-Kimodo references, 22 experimental
-Kimodo references, and seven reviewed Mixamo candidates. Public Mixamo entries
+The active catalog contains 75 clips: 41 non-Kimodo references, 22 experimental
+Kimodo references, and 12 Mixamo candidates, including five restored ladder clips. Public Mixamo entries
 include videos, paired NPZs with terrain, and provenance/review reports. Every active
 NPZ contains box or mesh terrain, and every clip has one current video variant.
 Terrain-free LAFAN and early Kimodo references and poor Mixamo pairings have been
@@ -103,8 +103,9 @@ links. No video transcoding or JavaScript build system is needed.
 
 The gallery contains only final references with nonempty box or mesh terrain.
 Raw exports and old before-refinement comparisons have been removed from `data/`.
-The Mixamo subset was reduced from 82 to seven candidates after obstacle and
-support-gap review. Terrain-free LAFAN and early Kimodo clips, plus five Kimodo
+Seven Mixamo candidates passed the obstacle/support-gap screening. Five additional
+ladder clips were restored at the user’s request with their original quality issues
+recorded; publication does not mean those issues are fixed. Terrain-free LAFAN and early Kimodo clips, plus five Kimodo
 references that failed their existing geometry checks, are excluded. See
 [`data/curation.json`](data/curation.json) for the removal record. Original source
 assets remain available to the generators; rejected terrain-bearing derivatives

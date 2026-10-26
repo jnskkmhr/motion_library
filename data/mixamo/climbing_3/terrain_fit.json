@@ -1,0 +1,136 @@
+{
+  "geometry_source": "static terrain fitted to G1 reference geometry; not supplied by Mixamo",
+  "method": "existing USD swept-body bounds, foot-box support intervals and canonical terrain schema",
+  "terrain_kind": "ladder",
+  "terrain_roles": [
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rung",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ladder_rail",
+    "ground_slab"
+  ],
+  "terrain_box_count": 27,
+  "world_frame": "unchanged motion frame; meters, Z-up; box quaternion order xyzw",
+  "ground_top_world_z_m": -0.004,
+  "motion_modified": false,
+  "full_source_frame_count_preserved": 149,
+  "dynamic_tracking_validated": false,
+  "contact_forces_measured": false,
+  "ready_for_training": false,
+  "source_motion_sha256": "fcd0c0dbd5c813029ab639c1602364f59dfe4643237d67a5c7e0e47052da60cd",
+  "motion_sha256": "7c2a268da0e9248dfaab1d24431edc67f2a528e90dabe643dcfc720e20ee9a5a",
+  "rung_x_adjustment_for_body_clearance_m": [
+    0.21826150833357374,
+    0.1709617380573879,
+    0.26903632333091876,
+    0.20859572409928218,
+    0.13822920260804195,
+    0.19943328703346697,
+    0.11421220934978649,
+    0.16509562305956538
+  ],
+  "ladder_geometry": "nonuniform rungs and connected side rails fitted to the fixed reference",
+  "ladder_x_from_z": [
+    0.45659990661957317,
+    -0.07408053358987299
+  ],
+  "estimated_support_points": [
+    [
+      0.08513077747885013,
+      0.11568365067556219,
+      0.3097997464942639
+    ],
+    [
+      0.1938964675736767,
+      -0.07579294518895674,
+      0.5711285397449628
+    ],
+    [
+      0.3124611065390137,
+      0.1180769822353198,
+      0.9152941785470867
+    ],
+    [
+      0.4682902917751105,
+      0.15293441373838101,
+      1.2180699551966538
+    ],
+    [
+      0.6455797786102248,
+      0.16295944775051666,
+      1.5541702206930386
+    ],
+    [
+      0.6215752730725491,
+      0.15670882746614448,
+      1.5509934016894262
+    ],
+    [
+      0.6206047611290063,
+      0.1460957953105988,
+      1.556149925652816
+    ],
+    [
+      0.7979690428630584,
+      0.17102430360007587,
+      1.9135946715583327
+    ],
+    [
+      0.48667108504337525,
+      -0.16192435655582055,
+      1.2279910884728258
+    ],
+    [
+      0.4553625904076706,
+      -0.18618602257502215,
+      1.1595340172477553
+    ],
+    [
+      0.6339576391379697,
+      -0.1608324027066451,
+      1.5626469191187962
+    ],
+    [
+      0.6513279931953885,
+      -0.16855850583578316,
+      1.4922412643860523
+    ],
+    [
+      0.6477485546342021,
+      -0.17300436393051374,
+      1.5012689287129153
+    ]
+  ],
+  "rung_top_heights_m": [
+    0.3097997464942639,
+    0.5711285397449628,
+    0.9152941785470867,
+    1.1595340172477553,
+    1.3960000000000001,
+    1.4922412643860523,
+    1.6760000000000002,
+    1.9135946715583327
+  ]
+}

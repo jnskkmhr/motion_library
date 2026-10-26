@@ -36,7 +36,9 @@ def require_scene(data, path):
 def require_active_dataset(root):
     """Reject intermediates, missing terrain, and restored rejected candidates."""
     record = root / "data/curation.json"
-    rejected = {c["id"] for c in json.loads(record.read_text())["removed_clips"]} if record.exists() else set()
+    curation = json.loads(record.read_text()) if record.exists() else {}
+    rejected = {c["id"] for c in curation.get("removed_clips", [])}
+    restored = {c["id"]: c["motion_sha256"] for c in curation.get("restored_clips", [])}
     for path in (root / "data").rglob("*.npz"):
         if path.name != "motion.npz":
             raise ValueError(f"Intermediate or obsolete variant in active data/: {path}")
@@ -47,10 +49,10 @@ def require_active_dataset(root):
             require_scene(data, path)
         if clip_id.startswith("mixamo/"):
             report = json.loads((path.parent / "quality_review.json").read_text())
-            if (
-                report["status"] != "retained_kinematic_candidate"
-                or report["motion_sha256"] != hashlib.sha256(path.read_bytes()).hexdigest()
-            ):
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+            reviewed = report["status"] == "retained_kinematic_candidate"
+            requested = report["status"] == "published_for_inspection" and restored.get(clip_id) == digest
+            if not (reviewed or requested) or report["motion_sha256"] != digest:
                 raise ValueError(f"Mixamo quality review does not match the current motion: {path}")
     for path in (root / "docs/previews").glob("*/clip.json"):
         clip = json.loads(path.read_text())

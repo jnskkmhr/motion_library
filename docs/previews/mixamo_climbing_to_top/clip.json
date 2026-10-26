@@ -1,0 +1,35 @@
+{
+  "id": "mixamo/climbing_to_top",
+  "name": "Climbing Up A Ladder To Standing",
+  "source": "mixamo",
+  "source_name": "Mixamo",
+  "category": "Ladder",
+  "description": "Ladder climbing with fitted box terrain. Existing fit has uneven rungs; hand/foot support and dynamic tracking remain unvalidated.",
+  "experimental": true,
+  "preview_only": false,
+  "local_only": false,
+  "source_url": "https://huggingface.co/datasets/Linzhan/Mixamo-Animations-Characters/blob/7f134bc734557b1d9516cb476d25ea1f577e45c1/animation/Climbing_To_Top.fbx",
+  "poster": null,
+  "variants": [
+    {
+      "name": "Motion + terrain",
+      "video": "docs/previews/mixamo_climbing_to_top/motion.mp4",
+      "video_sha256": "5d4c9d22e3c7c2fea931c34b9e76cda1fe8b358808dce7fb5875de8418839f64",
+      "fps": 50.0,
+      "frames": 201,
+      "duration": 4.02,
+      "last_sample_time": 4.0,
+      "asset": "UNITREE_G1_29DOF_BALL_HAND_CFG",
+      "terrain": "boxes",
+      "npz": "data/mixamo/climbing_to_top/motion.npz",
+      "sha256": "16e1324594b81db742db4692ce8c362e4f335339d06287503ca6eda5ecd21d75"
+    }
+  ],
+  "reports": {
+    "provenance": "docs/previews/mixamo_climbing_to_top/provenance.json",
+    "validation": "docs/previews/mixamo_climbing_to_top/validation.json",
+    "terrain_fit": "docs/previews/mixamo_climbing_to_top/terrain_fit.json",
+    "terrain_validation": "docs/previews/mixamo_climbing_to_top/terrain_validation.json",
+    "quality_review": "docs/previews/mixamo_climbing_to_top/quality_review.json"
+  }
+}
